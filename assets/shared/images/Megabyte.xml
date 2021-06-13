@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Megabyte.png">
+	<!-- Created with Adobe Animate version 18.0.0.107 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="singDOWN" x="1590" y="0" width="430" height="750"/>
+	<SubTexture name="idle0000" x="0" y="0" width="430" height="750"/>
+	<SubTexture name="idle0001" x="0" y="0" width="430" height="750"/>
+	<SubTexture name="idle0002" x="530" y="0" width="430" height="750"/>
+	<SubTexture name="idle0003" x="530" y="0" width="430" height="750"/>
+	<SubTexture name="idle0004" x="1060" y="0" width="430" height="750"/>
+	<SubTexture name="idle0005" x="1060" y="0" width="430" height="750"/>
+	<SubTexture name="idle0006" x="1060" y="0" width="430" height="750"/>
+	<SubTexture name="idle0007" x="1060" y="0" width="430" height="750"/>
+	<SubTexture name="idle0008" x="530" y="0" width="430" height="750"/>
+	<SubTexture name="idle0009" x="530" y="0" width="430" height="750"/>
+	<SubTexture name="idle0010" x="530" y="0" width="430" height="750"/>
+	<SubTexture name="idle0011" x="530" y="0" width="430" height="750"/>
+	<SubTexture name="singLEFT" x="0" y="850" width="430" height="750"/>
+	<SubTexture name="singRIGHT" x="530" y="850" width="430" height="750"/>
+	<SubTexture name="singUP" x="1060" y="850" width="430" height="750"/>
+</TextureAtlas>

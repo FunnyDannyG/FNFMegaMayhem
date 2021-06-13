@@ -527,12 +527,19 @@ class PlayState extends MusicBeatState
 					"If you can beat me here...",
 					"Only then I will even CONSIDER letting you\ndate my daughter!"
 				];
+				
 			case 'senpai':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('senpai/senpaiDialogue'));
 			case 'roses':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'overclocked':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('overclocked/overclockedDialogue'));
+			case 'this-ones-final-hours':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('this-ones-final-hours/this-ones-final-hoursDialogue'));
+			case 'chronokinesis':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('chronokinesis/chronokinesisDialogue'));
 		}
 
 		switch(SONG.song.toLowerCase())
@@ -820,45 +827,17 @@ class PlayState extends MusicBeatState
 					bg.scrollFactor.set(0.8, 0.9);
 					bg.scale.set(6, 6);
 					add(bg);
-
-					/* 
-							var bg:FlxSprite = new FlxSprite(posX, posY).loadGraphic(Paths.image('weeb/evilSchoolBG'));
-							bg.scale.set(6, 6);
-							// bg.setGraphicSize(Std.int(bg.width * 6));
-							// bg.updateHitbox();
-							add(bg);
-							var fg:FlxSprite = new FlxSprite(posX, posY).loadGraphic(Paths.image('weeb/evilSchoolFG'));
-							fg.scale.set(6, 6);
-							// fg.setGraphicSize(Std.int(fg.width * 6));
-							// fg.updateHitbox();
-							add(fg);
-							wiggleShit.effectType = WiggleEffectType.DREAMY;
-							wiggleShit.waveAmplitude = 0.01;
-							wiggleShit.waveFrequency = 60;
-							wiggleShit.waveSpeed = 0.8;
-						*/
-
-					// bg.shader = wiggleShit.shader;
-					// fg.shader = wiggleShit.shader;
-
-					/* 
-								var waveSprite = new FlxEffectSprite(bg, [waveEffectBG]);
-								var waveSpriteFG = new FlxEffectSprite(fg, [waveEffectFG]);
-								// Using scale since setGraphicSize() doesnt work???
-								waveSprite.scale.set(6, 6);
-								waveSpriteFG.scale.set(6, 6);
-								waveSprite.setPosition(posX, posY);
-								waveSpriteFG.setPosition(posX, posY);
-								waveSprite.scrollFactor.set(0.7, 0.8);
-								waveSpriteFG.scrollFactor.set(0.9, 0.8);
-								// waveSprite.setGraphicSize(Std.int(waveSprite.width * 6));
-								// waveSprite.updateHitbox();
-								// waveSpriteFG.setGraphicSize(Std.int(fg.width * 6));
-								// waveSpriteFG.updateHitbox();
-								add(waveSprite);
-								add(waveSpriteFG);
-						*/
 			}
+			case 'megabyte':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'mall2';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('megabyteBG'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+				}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -933,6 +912,9 @@ class PlayState extends MusicBeatState
 			case 'pico':
 				camPos.x += 600;
 				dad.y += 300;
+			case 'danny':
+				camPos.x += 600;
+				dad.y += 200;
 			case 'parents-christmas':
 				dad.x -= 500;
 			case 'senpai':
@@ -942,6 +924,10 @@ class PlayState extends MusicBeatState
 			case 'senpai-angry':
 				dad.x += 150;
 				dad.y += 360;
+
+			case 'mb':
+				dad.x += 62;
+				dad.y -= 21;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'spirit':
 				dad.x -= 150;
@@ -1182,6 +1168,12 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				case 'thorns':
+					schoolIntro(doof);
+				case 'overclocked':
+					schoolIntro(doof);
+				case 'this-ones-final-hours':
+					schoolIntro(doof);
+				case 'chronokinesis':
 					schoolIntro(doof);
 				default:
 					startCountdown();

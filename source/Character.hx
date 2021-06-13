@@ -138,6 +138,21 @@ class Character extends FlxSprite
 				addOffset("singLEFT", -10, 10);
 				addOffset("singDOWN", 0, -30);
 
+			case 'mb':
+				tex = Paths.getSparrowAtlas('Megabyte','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'singUP', 24);
+				animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'singLEFT', 24);
+	
+				addOffset('idle');
+				addOffset("singUP", 9, 0);
+				addOffset("singRIGHT", -27, -4);
+				addOffset("singLEFT", -7, -10);
+				addOffset("singDOWN", -11, -7);
+
 				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('spooky_kids_assets','week2');
@@ -494,6 +509,40 @@ class Character extends FlxSprite
 				addOffset("singLEFT-alt", -30, 15);
 				addOffset("singDOWN-alt", -30, -27);
 
+				playAnim('idle');
+		
+			case 'mb':
+				tex = Paths.getSparrowAtlas('art/mb','week5');
+				frames = tex;
+				animation.addByPrefix('idle', 'Mb idle', 24);
+				animation.addByPrefix('singUP', 'Mb Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Mb Sing Note RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'Mb Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Mb Sing Note LEFT', 24);
+	
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+	
+				playAnim('idle');
+
+			case 'danny':
+				tex = Paths.getSparrowAtlas('DannyNorm','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24);
+				animation.addByPrefix('singUP', 'Sing Up', 24);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+	
+				addOffset("idle");
+				addOffset("singUP", 15, -4);
+				addOffset("singRIGHT", -1, -3);
+				addOffset("singLEFT", -8, -6);
+				addOffset("singDOWN", -61, -16);
+	
 				playAnim('idle');
 		}
 

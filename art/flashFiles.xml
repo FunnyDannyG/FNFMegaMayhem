@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="flashFiles.png">
+	<!-- Created with Adobe Animate version 18.0.0.107 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="FNF logo dave edit purple.png" x="0" y="1768" width="2224" height="1668"/>
+	<SubTexture name="FNF logo dave edit.png" x="0" y="0" width="2224" height="1668"/>
+</TextureAtlas>

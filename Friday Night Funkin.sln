@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "Friday Night Funkin", "export\release\windows\bin\Friday Night Funkin.exe", "{184662A2-E507-45D1-85FE-8F6FA1195FF0}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\Danny-G\Desktop\FNF MOD\Kade-Engine\export\release\windows\bin\Friday Night Funkin.exe
+		RemoteMachine = ULTRA-INSTINCT-
+		StartingDirectory = C:\Users\Danny-G\Desktop\FNF MOD\Kade-Engine\export\release\windows\bin
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184662A2-E507-45D1-85FE-8F6FA1195FF0}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3B68476-518E-4614-9D02-6BACD28E3182}
+	EndGlobalSection
+EndGlobal

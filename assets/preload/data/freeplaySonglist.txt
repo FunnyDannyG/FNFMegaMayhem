@@ -17,3 +17,7 @@ Winter-Horrorland:monster-christmas:5
 Senpai:senpai:6
 Roses:senpai:6
 Thorns:spirit:6
+Megabyte:mb:7
+Chronokinesis:danny:8
+Overclocked:danny:8
+This-Ones-Final-Hours:danny:8
