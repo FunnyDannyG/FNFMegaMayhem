@@ -26,7 +26,7 @@ You'll also need to install a couple things that involve Gits. To do this, you n
 
 ### Compiling the game
 
-Download all of this shit
+download all of this shit
 
 * MSVC v142 - VS 2019 C++ x64/x86 build tools
 * Windows SDK (10.0.17763.0)
@@ -42,4 +42,4 @@ Download all of this shit
 * MSVC v141 - VS 2017 C++ x64/x86 build tools
 * MSVC v140 - VS 2015 C++ build tools (v14.00)
 
-run "lime build windows" at the projects root
+run `lime build windows` at the projects root
