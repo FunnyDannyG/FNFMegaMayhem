@@ -175,12 +175,12 @@ class Character extends FlxSprite
 			case 'mb':
 				tex = Paths.getSparrowAtlas('characters/Megabyte','shared');
 				frames = tex;
-				animation.addByPrefix('idle', 'idle', 24);
-				animation.addByPrefix('singUP', 'singUP', 24);
-				animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
-				animation.addByPrefix('singDOWN', 'singDOWN', 24);
-				animation.addByPrefix('singLEFT', 'singLEFT', 24);
-				animation.addByPrefix('ERROR', 'ERROR', 24);
+				animation.addByPrefix('idle', 'MB_idle', 24);
+				animation.addByPrefix('singUP', 'MB_up', 24);
+				animation.addByPrefix('singRIGHT', 'MB_right', 24);
+				animation.addByPrefix('singDOWN', 'MB_down', 24);
+				animation.addByPrefix('singLEFT', 'MB_left', 24);
+				animation.addByPrefix('ERROR', 'MB_Error', 24);
 	
 				addOffset('idle');
 				addOffset("singUP", 9, 0);
