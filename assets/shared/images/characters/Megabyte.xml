@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Megabyte.png">
+	<!-- Created with Adobe Animate version 18.0.0.107 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="MB_Error" x="0" y="0" width="430" height="750"/>
+	<SubTexture name="MB_down" x="0" y="800" width="430" height="750"/>
+	<SubTexture name="MB_idle0000" x="480" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0001" x="480" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0002" x="960" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0003" x="960" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0004" x="1440" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0005" x="1440" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0006" x="1440" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0007" x="1440" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0008" x="960" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0009" x="960" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0010" x="960" y="0" width="430" height="750"/>
+	<SubTexture name="MB_idle0011" x="960" y="0" width="430" height="750"/>
+	<SubTexture name="MB_left" x="480" y="800" width="430" height="750"/>
+	<SubTexture name="MB_right" x="960" y="800" width="430" height="750"/>
+	<SubTexture name="MB_up" x="1440" y="800" width="430" height="750"/>
+</TextureAtlas>
