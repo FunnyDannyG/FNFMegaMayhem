@@ -606,11 +606,11 @@ class BotPlay extends Option
 	public override function press():Bool
 	{
 		FlxG.save.data.botplay = !FlxG.save.data.botplay;
-		trace('BotPlay : ' + FlxG.save.data.botplay);
+		trace('Cheats : ' + FlxG.save.data.botplay);
 		display = updateDisplay();
 		return true;
 	}
 	
 	private override function updateDisplay():String
-		return "BotPlay " + (FlxG.save.data.botplay ? "on" : "off");
+		return "Cheats " + (FlxG.save.data.botplay ? "on" : "off");
 }

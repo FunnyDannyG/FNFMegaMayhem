@@ -39,8 +39,8 @@ class MainMenuState extends MusicBeatState
 
 	public static var nightly:String = "";
 
-	public static var kadeEngineVer:String = "Mega Mayhem v1.0.5pa";
-	public static var gameVer:String = "0.2.7.1";
+	public static var kadeEngineVer:String = "Alpha 1.0.0";
+	public static var gameVer:String = "Mega Mayhem";
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;

@@ -1,4 +1,5 @@
 import flixel.FlxG;
+import flixel.FlxSprite;
 
 class Ratings
 {
@@ -15,7 +16,7 @@ class Ratings
         else if (PlayState.misses == 0) // Regular FC
             ranking = "(FC)";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
-            ranking = "(SDCB)";
+            ranking = "(Good)";
         else
             ranking = "(Clear)";
 
@@ -48,29 +49,29 @@ class Ratings
                 switch(i)
                 {
                     case 0:
-                        ranking += " AAAAA";
+                        ranking += " How";
                     case 1:
-                        ranking += " AAAA:";
+                        ranking += " God 2";
                     case 2:
-                        ranking += " AAAA.";
+                        ranking += " God";
                     case 3:
-                        ranking += " AAAA";
+                        ranking += " SSS+";
                     case 4:
-                        ranking += " AAA:";
+                        ranking += " SSS";
                     case 5:
-                        ranking += " AAA.";
+                        ranking += " SSS-.";
                     case 6:
-                        ranking += " AAA";
+                        ranking += " SS+";
                     case 7:
-                        ranking += " AA:";
+                        ranking += " SS";
                     case 8:
-                        ranking += " AA.";
+                        ranking += " SS-";
                     case 9:
-                        ranking += " AA";
+                        ranking += " S+";
                     case 10:
-                        ranking += " A:";
+                        ranking += " S";
                     case 11:
-                        ranking += " A.";
+                        ranking += " S-";
                     case 12:
                         ranking += " A";
                     case 13:
@@ -78,7 +79,7 @@ class Ratings
                     case 14:
                         ranking += " C";
                     case 15:
-                        ranking += " D";
+                        ranking += " You Fucking Suck";
                 }
                 break;
             }
@@ -134,7 +135,7 @@ class Ratings
         return 
         (FlxG.save.data.npsDisplay ? "NPS: " + nps + " (Max " + maxNPS + ")" + (!FlxG.save.data.botplay ? " | " : "") : "") + (!FlxG.save.data.botplay ?	// NPS Toggle
         "Score:" + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : "" + score) + 									// Score
-        " | Combo Breaks:" + PlayState.misses + 																				// Misses/Combo Breaks
+        " | Misses:" + PlayState.misses + 																				// Misses/Combo Breaks
         " | Accuracy:" + (FlxG.save.data.botplay ? "N/A" : HelperFunctions.truncateFloat(accuracy, 2) + " %") +  				// Accuracy
         " | " + GenerateLetterRank(accuracy) : ""); 																			// Letter Rank
     }
