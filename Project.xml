@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': Mega Mayhem" file="Mega Mayhem" packageName="com.kadedev.kadeengine" package="com.kadedev.kadeengine" main="Main" version="1.0.0" company="Team Mega Mayhem" />
+	<app title="Friday Night Funkin': Mega Mayhem" file="Mega Mayhem" packageName="com.kadedev.kadeengine" package="com.kadedev.kadeengine" main="Main" version="1.0.0" company="Team Mayhem" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />

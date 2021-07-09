@@ -118,6 +118,36 @@ class DialogueBox extends FlxSpriteGroup
 				box.x = 100;
 				box.y = 375;
 
+			case 'megabyte':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x = 100;
+				box.y = 375;
+		
+			case 'silence':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x = 100;
+				box.y = 375;
+		
+			case 'overload':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x = 100;
+				box.y = 375;
+
 		}
 
 		this.dialogueList = dialogueList;
@@ -168,6 +198,58 @@ class DialogueBox extends FlxSpriteGroup
 			portraitLeft.visible = false;
 			portraitRight = new FlxSprite(0, 40);
 			portraitRight.frames = Paths.getSparrowAtlas('textboxes/DbfPortrait', 'shared');
+			portraitRight.animation.addByPrefix('enter', 'DBoyfriend portrait enter', 24, false);
+			portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.225));
+			portraitRight.updateHitbox();
+			portraitRight.scrollFactor.set();
+			portraitRight.antialiasing = true;
+			add(portraitRight);
+			portraitRight.visible = false;		
+			box.animation.play('normalOpen');
+			box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
+			box.updateHitbox();
+			add(box);
+		}
+
+		if (PlayState.SONG.song.toLowerCase()=='megabyte' || PlayState.SONG.song.toLowerCase()=='silence')
+		{
+			portraitLeft = new FlxSprite(-20, 40);
+			portraitLeft.frames = Paths.getSparrowAtlas('textboxes/MegaPortrait', 'shared');
+			portraitLeft.animation.addByPrefix('enter', 'Megabyte Portrait Enter', 24, false);
+			portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.225));
+			portraitLeft.updateHitbox();
+			portraitLeft.scrollFactor.set();
+			portraitLeft.antialiasing = true;
+			add(portraitLeft);
+			portraitLeft.visible = false;
+			portraitRight = new FlxSprite(0, 40);
+			portraitRight.frames = Paths.getSparrowAtlas('textboxes/DbfPortrait', 'shared');
+			portraitRight.animation.addByPrefix('enter', 'DBoyfriend portrait enter', 24, false);
+			portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.225));
+			portraitRight.updateHitbox();
+			portraitRight.scrollFactor.set();
+			portraitRight.antialiasing = true;
+			add(portraitRight);
+			portraitRight.visible = false;		
+			box.animation.play('normalOpen');
+			box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
+			box.updateHitbox();
+			add(box);
+		}
+
+		if (PlayState.SONG.song.toLowerCase()=='overload')
+		{
+			portraitLeft = new FlxSprite(-20, 40);
+			portraitLeft.frames = Paths.getSparrowAtlas('textboxes/OVERLOAD', 'shared');
+			portraitLeft.animation.addByPrefix('enter', 'Megabyte Portrait Enter', 24, false);
+			portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.225));
+			portraitLeft.updateHitbox();
+			portraitLeft.scrollFactor.set();
+			portraitLeft.antialiasing = true;
+			add(portraitLeft);
+			portraitLeft.visible = false;
+			portraitRight = new FlxSprite(0, 40);
+			portraitRight.frames = Paths.getSparrowAtlas('textboxes/Scared', 'shared');
 			portraitRight.animation.addByPrefix('enter', 'DBoyfriend portrait enter', 24, false);
 			portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.225));
 			portraitRight.updateHitbox();

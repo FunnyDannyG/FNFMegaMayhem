@@ -172,7 +172,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-			case 'mb':
+			case 'mb', "OVmb":
 				tex = Paths.getSparrowAtlas('characters/Megabyte','shared');
 				frames = tex;
 				animation.addByPrefix('idle', 'MB_idle', 24);

@@ -348,6 +348,12 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('overclocked/overclockedDialogue'));
 			case 'singularity':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('singularity/singularityDialogue'));
+			case 'megabyte':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('megabyte/megabyteDialogue'));
+			case 'silence':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('silence/silenceDialogue'));
+			case 'overload':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('overload/overloadDialogue'));
 		
 		}
 		
@@ -869,7 +875,7 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
-			case 'mb':
+			case 'mb', "OVmb":
 				dad.x += 62;
 				dad.y -= 1;
 				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
@@ -1147,6 +1153,12 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'singularity':
 					schoolIntro(doof);
+				case 'megabyte':
+					schoolIntro(doof);
+				case 'silence':
+					schoolIntro(doof);
+				case 'overload':
+					schoolIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -1172,7 +1184,7 @@ class PlayState extends MusicBeatState
 		black.scrollFactor.set();
 		add(black);
 
-		var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFff1b31);
+		var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		red.scrollFactor.set();
 
 		var senpaiEvil:FlxSprite = new FlxSprite();
