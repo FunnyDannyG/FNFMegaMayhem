@@ -173,21 +173,19 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'mb', "OVmb":
-				tex = Paths.getSparrowAtlas('characters/Megabyte','shared');
+				tex = Paths.getSparrowAtlas('characters/Megabyte_Assets','shared');
 				frames = tex;
-				animation.addByPrefix('idle', 'MB_idle', 24);
-				animation.addByPrefix('singUP', 'MB_up', 24);
-				animation.addByPrefix('singRIGHT', 'MB_right', 24);
-				animation.addByPrefix('singDOWN', 'MB_down', 24);
-				animation.addByPrefix('singLEFT', 'MB_left', 24);
-				animation.addByPrefix('ERROR', 'MB_Error', 24);
+				animation.addByPrefix('idle', 'Megabyte idle', 24);
+				animation.addByPrefix('singUP', 'Megabyte up', 24);
+				animation.addByPrefix('singRIGHT', 'Megabyte right', 24);
+				animation.addByPrefix('singDOWN', 'Megabyte down', 24);
+				animation.addByPrefix('singLEFT', 'Megabyte left', 24);
 	
 				addOffset('idle');
-				addOffset("singUP", 9, 0);
-				addOffset("singRIGHT", -27, -4);
-				addOffset("singLEFT", -7, -10);
-				addOffset("singDOWN", -11, -7);
-				addOffset("ERROR", -11, -7);
+				addOffset("singUP", 69, 0);
+				addOffset("singRIGHT", 23, -85);
+				addOffset("singLEFT", 5, -9);
+				addOffset("singDOWN", 0, -99);
 
 				playAnim('idle');
 

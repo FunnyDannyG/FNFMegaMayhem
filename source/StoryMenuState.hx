@@ -25,7 +25,7 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
-		['Overload'],
+		['Megabyte', 'Silence', 'Overload'],
 		['Chronokinesis', 'Overclocked', "Singularity"]
 	];
 	var curDifficulty:Int = 1;
@@ -41,7 +41,7 @@ class StoryMenuState extends MusicBeatState
 	var weekNames:Array<String> = [
 		"",
 		"Bits n Bytes",
-		"Interdimensional Asshole"
+		"Interdimensional Loafer"
 	];
 
 	var txtWeekTitle:FlxText;
