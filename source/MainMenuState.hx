@@ -1,5 +1,6 @@
 package;
 
+import FreeplayState;
 import Controls.KeyboardScheme;
 import flixel.FlxG;
 import flixel.FlxObject;
@@ -39,7 +40,7 @@ class MainMenuState extends MusicBeatState
 
 	public static var nightly:String = "";
 
-	public static var kadeEngineVer:String = "Alpha 1.0.2";
+	public static var kadeEngineVer:String = "Release 1.0.0";
 	public static var gameVer:String = "Mega Mayhem";
 
 	var magenta:FlxSprite;
@@ -137,6 +138,24 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+
+		if (FlxG.keys.pressed.L)
+			{
+			var curDifficulty = 2;
+			var songLowercase = 'leffrey';
+			var songHighscore = 'leffrey';
+			trace(songLowercase);
+			var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
+			trace(poop);
+			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+			PlayState.isStoryMode = false;
+			PlayState.storyDifficulty = curDifficulty;
+			PlayState.storyWeek = 2;
+			trace('CUR WEEK' + PlayState.storyWeek);
+			LoadingState.loadAndSwitchState(new PlayState());
+			}
+
+
 		if (FlxG.sound.music.volume < 0.8)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;

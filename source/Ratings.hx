@@ -3,6 +3,9 @@ import flixel.FlxSprite;
 
 class Ratings
 {
+
+static var combocount = 0;
+
     public static function GenerateLetterRank(accuracy:Float) // generate a letter ranking
     {
         var ranking:String = "N/A";
@@ -98,6 +101,7 @@ class Ratings
 
         var customTimeScale = Conductor.timeScale;
 
+
         if (customSafeZone != null)
             customTimeScale = customSafeZone / 166;
 
@@ -109,34 +113,45 @@ class Ratings
         // trace('Hit Info\nDifference: ' + noteDiff + '\nZone: ' + Conductor.safeZoneOffset * 1.5 + "\nTS: " + customTimeScale + "\nLate: " + 155 * customTimeScale);
 
 	if (FlxG.save.data.botplay)
-	    return "good"; // FUNNY
+	    return "sick"; // FUNNY
 	    
         if (noteDiff > 166 * customTimeScale) // so god damn early its a miss
             return "miss";
         if (noteDiff > 135 * customTimeScale) // way early
+            {
             return "shit";
+            }
         else if (noteDiff > 90 * customTimeScale) // early
+            {
             return "bad";
+            }
         else if (noteDiff > 45 * customTimeScale) // your kinda there
+            {
             return "good";
+            }
         else if (noteDiff < -45 * customTimeScale) // little late
+            {
             return "good";
+            }
         else if (noteDiff < -90 * customTimeScale) // late
+            {
             return "bad";
+            }
         else if (noteDiff < -135 * customTimeScale) // late as fuck
+            {
             return "shit";
+             }
         else if (noteDiff < -166 * customTimeScale) // so god damn late its a miss
             return "miss";
         return "sick";
     }
 
-    public static function CalculateRanking(score:Int,scoreDef:Int,nps:Int,maxNPS:Int,accuracy:Float):String
+    public static function CalculateRanking(score:Int,scoreDef:Int,accuracy:Float,combocount:Int):String
     {
         return 
-        (FlxG.save.data.npsDisplay ? "NPS: " + nps + " (Max " + maxNPS + ")" + (!FlxG.save.data.botplay ? " | " : "") : "") + (!FlxG.save.data.botplay ?	// NPS Toggle
-        "Score:" + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : "" + score) + 									// Score
-        " | Misses:" + PlayState.misses + 																				// Misses/Combo Breaks
-        " | Accuracy:" + (FlxG.save.data.botplay ? "N/A" : HelperFunctions.truncateFloat(accuracy, 2) + " %") +  				// Accuracy
-        " | " + GenerateLetterRank(accuracy) : ""); 																			// Letter Rank
+        "Score:" + (Conductor.safeFrames != 10 ? score + " (" + scoreDef + ")" : "" + score) + 	
+        " | Accuracy:" + (FlxG.save.data.botplay ? "N/A" : HelperFunctions.truncateFloat(accuracy, 2) + " %") +
+        " | Misses:" + PlayState.misses +
+        " | Combo:" + (combocount);								
     }
 }

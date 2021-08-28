@@ -21,7 +21,9 @@ class HealthIcon extends FlxSprite
 		animation.add('mb', [4, 5], 0, false, isPlayer);
 		animation.add('OVmb', [10, 5], 0, false, isPlayer);
 		animation.add('danny', [6, 7], 0, false, isPlayer);
+		animation.add('danny_playable', [6, 7], 0, false, isPlayer);
 		animation.add('dannyTOFH', [9, 8], 0, false, isPlayer);
+		animation.add('leffrey', [11, 12], 0, false, isPlayer);
 		animation.play(char);
 
 		scrollFactor.set();

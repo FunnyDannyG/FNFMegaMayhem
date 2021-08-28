@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="leif.png"><SubTexture name="leif idle0000" x="0" y="0" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif idle0001" x="644" y="0" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif idle0002" x="1288" y="0" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif idle0003" x="0" y="1004" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif idle0004" x="644" y="1004" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif down0000" x="1288" y="1004" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif left0000" x="0" y="2008" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif right0000" x="644" y="2008" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+<SubTexture name="leif up0000" x="1288" y="2008" width="644" height="1004" frameX="0" frameY="0" frameWidth="644" frameHeight="1004" />
+</TextureAtlas>

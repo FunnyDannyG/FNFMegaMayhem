@@ -79,6 +79,7 @@ class PlayState extends MusicBeatState
 	public static var bads:Int = 0;
 	public static var goods:Int = 0;
 	public static var sicks:Int = 0;
+	public static var combocount:Int = 0;
 
 	public static var songPosBG:FlxSprite;
 	public static var songPosBar:FlxBar;
@@ -232,6 +233,7 @@ class PlayState extends MusicBeatState
 		goods = 0;
 
 		misses = 0;
+		combocount = 0;
 
 		repPresses = 0;
 		repReleases = 0;
@@ -723,14 +725,13 @@ class PlayState extends MusicBeatState
 							bg.scrollFactor.set(0.9, 0.9);
 							bg.active = false;
 							add(bg);
-			
-							var stageCrowd:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('MB_stagecrowd'));
-							stageCrowd.updateHitbox();
-							stageCrowd.antialiasing = true;
-							stageCrowd.scrollFactor.set(0.9, 0.9);
-							stageCrowd.active = false;
-			
-							add(stageCrowd);
+
+							var crowd:FlxSprite = new FlxSprite(-600, -380);
+							crowd.frames = Paths.getSparrowAtlas('bgchar','shared');
+							crowd.animation.addByPrefix('idle', 'bgchar bob', 20, true);
+							crowd.scrollFactor.set(0.9, 0.9);
+							crowd.animation.play('idle');
+							add(crowd);
 		
 							var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('MB_stagefront'));
 							stageFront.updateHitbox();
@@ -738,6 +739,13 @@ class PlayState extends MusicBeatState
 							stageFront.scrollFactor.set(0.9, 0.9);
 							stageFront.active = false;
 							add(stageFront);
+
+							var people:FlxSprite = new FlxSprite(-600, -380);
+							people.frames = Paths.getSparrowAtlas('people','shared');
+							people.animation.addByPrefix('idle', 'people bob', 20, true);
+							people.scrollFactor.set(0.9, 0.9);
+							people.animation.play('idle');
+							add(people);
 				}
 
 			case 'Subway':
@@ -875,11 +883,17 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
-			case 'mb', "OVmb":
+			case 'mb':
 				dad.y +=12;
+			case "OVmb":
+				dad.y +=107;
+				
 			case 'danny':
 				camPos.x += 600;
 				dad.y += 200;
+			case 'danny_playable':
+					camPos.x += 600;
+					dad.y += 150;
 			case 'dannyTOFH':
 				camPos.x += 600;
 				dad.y += 200;
@@ -1965,7 +1979,7 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
-		scoreTxt.text = Ratings.CalculateRanking(songScore,songScoreDef,nps,maxNPS,accuracy);
+		scoreTxt.text = Ratings.CalculateRanking(songScore,songScoreDef,accuracy,combocount);
 		if (!FlxG.save.data.accuracyDisplay)
 			scoreTxt.text = "Score: " + songScore;
 
@@ -2218,6 +2232,8 @@ class PlayState extends MusicBeatState
 				{
 					case 'mom':
 						camFollow.y = dad.getMidpoint().y;
+					case 'mb':
+						camFollow.y += 80;
 					case 'senpai':
 						camFollow.y = dad.getMidpoint().y - 430;
 						camFollow.x = dad.getMidpoint().x - 100;
@@ -2463,27 +2479,39 @@ class PlayState extends MusicBeatState
 						{
 							case 2:
 								dad.playAnim('singUP' + altAnim, true);
-								if (PlayState.SONG.song.toLowerCase()=='this-ones-final-hours')
+								if (PlayState.SONG.song.toLowerCase()=='this-ones-final-hours') //shut the fuck up the player never sees this
 									{
-										health -= 0.006;
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
 									}
 							case 3:
 								dad.playAnim('singRIGHT' + altAnim, true);
 								if (PlayState.SONG.song.toLowerCase()=='this-ones-final-hours')
 									{
-										health -= 0.006;
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
 									}
 							case 1:
 								dad.playAnim('singDOWN' + altAnim, true);
 								if (PlayState.SONG.song.toLowerCase()=='this-ones-final-hours')
 									{
-										health -= 0.006;
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
 									}
 							case 0:
 								dad.playAnim('singLEFT' + altAnim, true);
 								if (PlayState.SONG.song.toLowerCase()=='this-ones-final-hours')
 									{
-										health -= 0.006;
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
 									}
 						}
 						
@@ -2777,6 +2805,7 @@ class PlayState extends MusicBeatState
 							health -= 0.2;
 							ss = false;
 							shits++;
+							combocount += 1;
 							if (FlxG.save.data.accuracyMod == 0)
 								totalNotesHit += 0.25;
 						case 'bad':
@@ -2785,6 +2814,7 @@ class PlayState extends MusicBeatState
 							health -= 0.06;
 							ss = false;
 							bads++;
+							combocount += 1;
 							if (FlxG.save.data.accuracyMod == 0)
 								totalNotesHit += 0.50;
 						case 'good':
@@ -2792,11 +2822,13 @@ class PlayState extends MusicBeatState
 							score = 200;
 							ss = false;
 							goods++;
+							combocount += 1;
 							if (health < 2)
 								health += 0.04;
 							if (FlxG.save.data.accuracyMod == 0)
 								totalNotesHit += 0.75;
 						case 'sick':
+							combocount += 1;
 							if (health < 2)
 								health += 0.1;
 							if (FlxG.save.data.accuracyMod == 0)
@@ -3262,12 +3294,16 @@ class PlayState extends MusicBeatState
 			{
 				case 0:
 					boyfriend.playAnim('singLEFTmiss', true);
+					combocount = 0;
 				case 1:
 					boyfriend.playAnim('singDOWNmiss', true);
+					combocount = 0;
 				case 2:
 					boyfriend.playAnim('singUPmiss', true);
+					combocount = 0;
 				case 3:
 					boyfriend.playAnim('singRIGHTmiss', true);
+					combocount = 0;
 			}
 
 			#if windows

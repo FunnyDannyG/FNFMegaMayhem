@@ -172,7 +172,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-			case 'mb', "OVmb":
+			case 'mb':
 				tex = Paths.getSparrowAtlas('characters/Megabyte_Assets','shared');
 				frames = tex;
 				animation.addByPrefix('idle', 'Megabyte idle', 24);
@@ -186,6 +186,23 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 23, -85);
 				addOffset("singLEFT", 5, -9);
 				addOffset("singDOWN", 0, -99);
+
+				playAnim('idle');
+
+				case 'OVmb':
+				tex = Paths.getSparrowAtlas('characters/megabyte_overload','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'singUP', 24);
+				animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'singLEFT', 24);
+	
+				addOffset('idle');
+				addOffset("singUP", 46, -26);
+				addOffset("singRIGHT", -67, -15);
+				addOffset("singLEFT", 74, 33);
+				addOffset("singDOWN", -33, -73);
 
 				playAnim('idle');
 
@@ -207,6 +224,50 @@ class Character extends FlxSprite
 		
 				playAnim('idle');
 
+			case 'leffrey':
+				tex = Paths.getSparrowAtlas('characters/leif','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'leif idle', 12);
+				animation.addByPrefix('singUP', 'leif up', 24);
+				animation.addByPrefix('singRIGHT', 'leif right', 24);
+				animation.addByPrefix('singDOWN', 'leif dowm', 24);
+				animation.addByPrefix('singLEFT', 'leif left', 24);
+			
+				addOffset("idle");
+				addOffset("singUP", 15, -4);
+				addOffset("singRIGHT", -1, -3);
+				addOffset("singLEFT", -8, -6);
+				addOffset("singDOWN", -61, -16);
+			
+				playAnim('idle');
+
+				
+			case 'danny_playable':
+				tex = Paths.getSparrowAtlas('characters/Danny','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 26);
+				animation.addByPrefix('singUP', 'Sing Up', 24);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+				animation.addByPrefix('singUPmiss', 'Missup', 24);
+				animation.addByPrefix('singRIGHTmiss', 'Missright', 24);
+				animation.addByPrefix('singDOWNmiss', 'Missdown', 24);
+				animation.addByPrefix('singLEFTmiss', 'Missleft', 24);
+				
+		
+				addOffset("idle");
+				addOffset("singUP", 15, -4);
+				addOffset("singRIGHT", -1, -3);
+				addOffset("singLEFT", -8, -6);
+				addOffset("singDOWN", -61, -16);
+				addOffset("singUPmiss", 15, -4);
+				addOffset("singRIGHTmiss", -1, -3);
+				addOffset("singLEFTmiss", -8, -6);
+				addOffset("singDOWNmiss", -61, -16);
+		
+				playAnim('idle');
+
 			case 'dannyTOFH':
 				tex = Paths.getSparrowAtlas('characters/TOFH','shared');
 				frames = tex;
@@ -215,6 +276,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
 				animation.addByPrefix('singDOWN', 'Sing Down', 24);
 				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+				
 		
 				addOffset("idle");
 				addOffset("singUP", 15, -4);
