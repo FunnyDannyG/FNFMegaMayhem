@@ -885,6 +885,8 @@ class PlayState extends MusicBeatState
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 			case 'mb':
 				dad.y +=12;
+			case 'SCmb':
+					dad.y +=12;
 			case "OVmb":
 				dad.y +=107;
 				

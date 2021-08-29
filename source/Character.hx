@@ -189,6 +189,25 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
+
+		
+			case 'SCmb':
+				tex = Paths.getSparrowAtlas('characters/silence','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Megabyte idle', 24);
+				animation.addByPrefix('singUP', 'Megabyte up', 24);
+				animation.addByPrefix('singRIGHT', 'Megabyte right', 24);
+				animation.addByPrefix('singDOWN', 'Megabyte down', 24);
+				animation.addByPrefix('singLEFT', 'Megabyte left', 24);
+	
+				addOffset('idle');
+				addOffset("singUP", 69, 0);
+				addOffset("singRIGHT", 23, -85);
+				addOffset("singLEFT", 5, -9);
+				addOffset("singDOWN", 0, -99);
+
+				playAnim('idle');
+
 				case 'OVmb':
 				tex = Paths.getSparrowAtlas('characters/megabyte_overload','shared');
 				frames = tex;
