@@ -1,10 +1,10 @@
-:dad:. . . . . . . . . . 
-:bf:bop..?
-:dad:. . . . . . . . . . 
-:bf:boop!
-:dad:Language Identified: Funklish. Attempting translation. 
-:bf:skedoopbop????
-:dad:Translation complete: "aw hell naw da microwave angy"
-:bf:b
-:dad:Target Identified... Boyfriend.XML. Terminating unit.
+:dad:...
+:bf:beep?
+:dad:HIGH DANGER DETECTED.
+:bf:...?
+:dad:D-Dammit, I-I warned you...
+:dad:L-Look, you should g-get outta here, like, right now... I can't stop mys-
+:dad:NGH!
+:bf:beep?!
+:dad:MANUAL OVERRIDE; ACTIVATING OVERLOAD.EXE
 :bf:funk
