@@ -760,13 +760,6 @@ class PlayState extends MusicBeatState
 							bg.scrollFactor.set(0.9, 0.9);
 							bg.active = false;
 							add(bg);
-
-							var crowd:FlxSprite = new FlxSprite(-600, -380);
-							crowd.frames = Paths.getSparrowAtlas('bgchar','shared');
-							crowd.animation.addByPrefix('idle', 'bgchar bob', 20, true);
-							crowd.scrollFactor.set(0.9, 0.9);
-							crowd.animation.play('idle');
-							add(crowd);
 		
 							var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('overload_front'));
 							stageFront.updateHitbox();
