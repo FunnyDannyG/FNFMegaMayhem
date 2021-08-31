@@ -748,6 +748,41 @@ class PlayState extends MusicBeatState
 							add(people);
 				}
 
+
+
+			case 'OverloadMall':
+				{
+							defaultCamZoom = 0.82;
+							curStage = 'OverloadMall';
+		
+							var bg:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('overload_back'));
+							bg.antialiasing = true;
+							bg.scrollFactor.set(0.9, 0.9);
+							bg.active = false;
+							add(bg);
+
+							var crowd:FlxSprite = new FlxSprite(-600, -380);
+							crowd.frames = Paths.getSparrowAtlas('bgchar','shared');
+							crowd.animation.addByPrefix('idle', 'bgchar bob', 20, true);
+							crowd.scrollFactor.set(0.9, 0.9);
+							crowd.animation.play('idle');
+							add(crowd);
+		
+							var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('overload_front'));
+							stageFront.updateHitbox();
+							stageFront.antialiasing = true;
+							stageFront.scrollFactor.set(0.9, 0.9);
+							stageFront.active = false;
+							add(stageFront);
+
+							var people:FlxSprite = new FlxSprite(-600, -380);
+							people.frames = Paths.getSparrowAtlas('mbfriend','shared');
+							people.animation.addByPrefix('idle', 'people bob', 20, true);
+							people.scrollFactor.set(0.9, 0.9);
+							people.animation.play('idle');
+							add(people);
+				}
+
 			case 'Subway':
 				{
 							defaultCamZoom = 0.81;
