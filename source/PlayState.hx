@@ -768,6 +768,8 @@ class PlayState extends MusicBeatState
 							stageFront.active = false;
 							add(stageFront);
 
+
+							/*
 							var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('overload_fogb'));
 							stageFront.updateHitbox();
 							stageFront.antialiasing = true;
@@ -776,12 +778,14 @@ class PlayState extends MusicBeatState
 							add(stageFront);
 
 			
+							
 							var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('overload_fogf'));
 							stageFront.updateHitbox();
 							stageFront.antialiasing = true;
 							stageFront.scrollFactor.set(0.9, 0.9);
 							stageFront.active = false;
 							add(stageFront);
+							*/
 
 							var people:FlxSprite = new FlxSprite(-600, -380);
 							people.frames = Paths.getSparrowAtlas('mbfriend','shared');
