@@ -124,6 +124,7 @@ class TitleState extends MusicBeatState
 	var gfDance:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
+	var ImportantFiles:FlxSprite;
 
 	function startIntro()
 	{
@@ -162,6 +163,11 @@ class TitleState extends MusicBeatState
 		// bg.setGraphicSize(Std.int(bg.width * 0.6));
 		// bg.updateHitbox();
 		add(bg);
+
+		/*
+		ImportantFiles = new FlxSprite(0 ,0).loadGraphic(Paths.image('thebodiesweremutilatedbeyondrecognition'));
+		add(ImportantFiles);
+		*/
 
 		logoBl = new FlxSprite(-150, -100);
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');

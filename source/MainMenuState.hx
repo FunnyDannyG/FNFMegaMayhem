@@ -1,5 +1,28 @@
 package;
 
+
+import flixel.FlxG;
+import flixel.FlxSprite;
+import flixel.FlxState;
+import flixel.addons.display.FlxGridOverlay;
+import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileDiamond;
+import flixel.addons.transition.FlxTransitionableState;
+import flixel.addons.transition.TransitionData;
+import flixel.graphics.FlxGraphic;
+import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.group.FlxGroup;
+import flixel.input.gamepad.FlxGamepad;
+import flixel.math.FlxPoint;
+import flixel.math.FlxRect;
+import flixel.system.FlxSound;
+import flixel.system.ui.FlxSoundTray;
+import flixel.text.FlxText;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import flixel.util.FlxColor;
+import io.newgrounds.NG;
+import lime.app.Application;
+import openfl.Assets;
 import FreeplayState;
 import Controls.KeyboardScheme;
 import flixel.FlxG;
@@ -42,7 +65,7 @@ class MainMenuState extends MusicBeatState
 	var newGaming:FlxText;
 	var newGaming2:FlxText;
 
-	var logoBl:FlxSprite;
+	var MayhemLogo:FlxSprite;
 
 	public static var firstStart:Bool = true;
 
@@ -62,6 +85,8 @@ class MainMenuState extends MusicBeatState
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		}
 
+		Conductor.changeBPM(102);
+		persistentUpdate = true;
 		persistentUpdate = persistentDraw = true;
 
 		var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('MAYHEM_MENU'));
@@ -73,25 +98,24 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = true;
 		add(bg);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuBGMagenta'));
 		magenta.scrollFactor.x = 0;
 		magenta.scrollFactor.y = 0.10;
-		magenta.setGraphicSize(Std.int(magenta.width * 1.1));
+		magenta.setGraphicSize(Std.int(magenta.width * 1.0));
 		magenta.updateHitbox();
 		magenta.screenCenter();
 		magenta.visible = false;
 		magenta.antialiasing = true;
-		magenta.color = 0xFFfd719b;
 		add(magenta);
 
-		logoBl = new FlxSprite(-150, -100);
-		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
-		logoBl.antialiasing = true;
-		logoBl.screenCenter(X);
-		logoBl.updateHitbox();
-		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
-		logoBl.animation.play('bump');
-		add(logoBl);
+		MayhemLogo = new FlxSprite(-150, -100);
+		MayhemLogo.frames = Paths.getSparrowAtlas('logoBumpin');
+		MayhemLogo.antialiasing = true;
+		MayhemLogo.animation.addByPrefix('bump', 'logo bumpin', 24);
+		MayhemLogo.animation.play('bump');
+		MayhemLogo.screenCenter(X);
+		MayhemLogo.updateHitbox();
+		add(MayhemLogo);
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
@@ -137,6 +161,8 @@ class MainMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+
+		Conductor.songPosition = FlxG.sound.music.time;
 
 		if (FlxG.keys.pressed.L)
 			{
@@ -228,6 +254,16 @@ class MainMenuState extends MusicBeatState
 		}
 	}
 	
+	override function beatHit()
+
+		{
+
+			super.beatHit();
+
+			MayhemLogo.animation.play('bump');
+		
+		}
+
 	function goToState()
 	{
 		var daChoice:String = optionShit[curSelected];
@@ -237,6 +273,7 @@ class MainMenuState extends MusicBeatState
 			case 'story mode':
 				FlxG.switchState(new StoryMenuState());
 				trace("Story Menu Selected");
+				
 			case 'freeplay':
 				FlxG.switchState(new FreeplayState());
 
@@ -267,8 +304,10 @@ class MainMenuState extends MusicBeatState
 
 			if (spr.ID == curSelected && finishedFunnyMove)
 			{
-				//spr.animation.play('selected');
+				spr.color = 0xDD19BA;
 			}
+			else 
+				spr.color = 0xFFFFFF;
 
 			spr.updateHitbox();
 		});
