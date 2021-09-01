@@ -13,18 +13,18 @@ class HealthIcon extends FlxSprite
 		loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 
 		antialiasing = true;
-		animation.add('bf', [0, 1], 0, false, isPlayer);
-		animation.add('bft', [0, 1], 0, false, isPlayer);
-		animation.add('gf', [2, 2], 0, false, isPlayer);
-		animation.add('gft', [2, 2], 0, false, isPlayer);
-		animation.add('dummy', [3, 3], 0, false, isPlayer);
-		animation.add('mb', [4, 5], 0, false, isPlayer);
-		animation.add('SCmb', [4, 5], 0, false, isPlayer);
-		animation.add('OVmb', [10, 13], 0, false, isPlayer);
-		animation.add('danny', [6, 7], 0, false, isPlayer);
-		animation.add('danny_playable', [6, 7], 0, false, isPlayer);
-		animation.add('dannyTOFH', [9, 8], 0, false, isPlayer);
-		animation.add('leffrey', [11, 12], 0, false, isPlayer);
+		animation.add('bf', [0, 1, 2], 0, false, isPlayer);
+		animation.add('bft', [0, 1, 2], 0, false, isPlayer);
+		animation.add('gf', [3, 3, 3], 0, false, isPlayer);
+		animation.add('gft', [3, 3, 3], 0, false, isPlayer);
+		animation.add('dummy', [4, 4, 4], 0, false, isPlayer);
+		animation.add('mb', [5, 6, 7], 0, false, isPlayer);
+		animation.add('SCmb', [5, 6, 7], 0, false, isPlayer);
+		animation.add('OVmb', [8, 9, 9], 0, false, isPlayer);
+		animation.add('danny', [10, 11, 12], 0, false, isPlayer);
+		animation.add('danny_playable', [10, 11, 12], 0, false, isPlayer);
+		animation.add('dannyTOFH', [13, 14, 14], 0, false, isPlayer);
+		animation.add('leffrey', [57, 58, 59], 0, false, isPlayer);
 		animation.play(char);
 
 		scrollFactor.set();
