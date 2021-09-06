@@ -24,6 +24,7 @@ import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
 import FreeplayState;
+import MayhemState;
 import Controls.KeyboardScheme;
 import flixel.FlxG;
 import flixel.FlxObject;
@@ -51,7 +52,7 @@ class MainMenuState extends MusicBeatState
 
 	public static var nightly:String = "";
 
-	public static var kadeEngineVer:String = "Release 1.0.0";
+	public static var kadeEngineVer:String = "2.0.0 Beta";
 	public static var gameVer:String = "Mega Mayhem";
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -113,7 +114,8 @@ class MainMenuState extends MusicBeatState
 		MayhemLogo.antialiasing = true;
 		MayhemLogo.animation.addByPrefix('bump', 'logo bumpin', 24);
 		MayhemLogo.animation.play('bump');
-		MayhemLogo.screenCenter(X);
+		MayhemLogo.screenCenter();
+		MayhemLogo.y -= 105;
 		MayhemLogo.updateHitbox();
 		add(MayhemLogo);
 
@@ -275,6 +277,10 @@ class MainMenuState extends MusicBeatState
 				trace("Story Menu Selected");
 				
 			case 'freeplay':
+				if (FlxG.keys.pressed.M)
+					{
+					FlxG.switchState(new MayhemState());
+					}
 				FlxG.switchState(new FreeplayState());
 
 				trace("Freeplay Menu Selected");
