@@ -24,7 +24,6 @@ import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
 import FreeplayState;
-import MayhemState;
 import Controls.KeyboardScheme;
 import flixel.FlxG;
 import flixel.FlxObject;
@@ -58,7 +57,7 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
-	var optionShit:Array<String> = ['freeplay', 'story mode', 'options'];
+	var optionShit:Array<String> = ['freeplay', 'story mode', 'donate', 'options'];
 	#else
 	var optionShit:Array<String> = ['story mode', 'freeplay'];
 	#end
@@ -135,8 +134,8 @@ class MainMenuState extends MusicBeatState
 			menuItem.scrollFactor.set();
 			menuItem.antialiasing = true;
 			finishedFunnyMove = true;
-			menuItem.setGraphicSize(Std.int(FlxG.height * 0.45));
-			FlxTween.tween(menuItem,{x: 60 + (i * 400)},1 + (i * 0.25) ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
+			menuItem.setGraphicSize(Std.int(FlxG.height * 0.32));
+			FlxTween.tween(menuItem,{x: 30 + (i * 325)},1 + (i * 0.25) ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
 				{ 
 					finishedFunnyMove = true; 
 					changeItem();
@@ -211,7 +210,7 @@ class MainMenuState extends MusicBeatState
 			{
 				if (optionShit[curSelected] == 'donate')
 				{
-					FlxG.sound.play(Paths.sound('bruh'));
+					FlxG.switchState(new OutdatedSubState());
 				}
 				else
 				{
@@ -277,10 +276,6 @@ class MainMenuState extends MusicBeatState
 				trace("Story Menu Selected");
 				
 			case 'freeplay':
-				if (FlxG.keys.pressed.M)
-					{
-					FlxG.switchState(new MayhemState());
-					}
 				FlxG.switchState(new FreeplayState());
 
 				trace("Freeplay Menu Selected");

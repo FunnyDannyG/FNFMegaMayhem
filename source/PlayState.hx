@@ -2540,9 +2540,23 @@ class PlayState extends MusicBeatState
 										else
 											health -= 0.025;
 									}
+								if (PlayState.SONG.song.toLowerCase()=='tofh-m') //shut the fuck up the player never sees this
+									{
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
+									}
 							case 3:
 								dad.playAnim('singRIGHT' + altAnim, true);
 								if (PlayState.SONG.song.toLowerCase()=='this-ones-final-hours')
+									{
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
+									}
+								if (PlayState.SONG.song.toLowerCase()=='tofh-m') //shut the fuck up the player never sees this
 									{
 										if (health <= 0.08)
 											health -= 0.000;
@@ -2558,9 +2572,23 @@ class PlayState extends MusicBeatState
 										else
 											health -= 0.025;
 									}
+								if (PlayState.SONG.song.toLowerCase()=='tofh-m') //shut the fuck up the player never sees this
+									{
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
+									}
 							case 0:
 								dad.playAnim('singLEFT' + altAnim, true);
 								if (PlayState.SONG.song.toLowerCase()=='this-ones-final-hours')
+									{
+										if (health <= 0.08)
+											health -= 0.000;
+										else
+											health -= 0.025;
+									}
+								if (PlayState.SONG.song.toLowerCase()=='tofh-m') //shut the fuck up the player never sees this
 									{
 										if (health <= 0.08)
 											health -= 0.000;
