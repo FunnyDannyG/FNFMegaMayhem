@@ -1,7 +1,0 @@
-Megabyte-M:mb:1
-Silence-M:mb:1
-Overload-M:OVmb:1
-Chronokinesis-M:danny:2
-Overclocked-M:danny:2
-Singularity-M:danny:2
-TOFH-M:dannyTOFH:2

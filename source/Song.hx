@@ -5,6 +5,11 @@ import haxe.Json;
 import haxe.format.JsonParser;
 import lime.utils.Assets;
 
+#if sys
+import sys.io.File;
+import sys.FileSystem;
+#end
+
 using StringTools;
 
 typedef SwagSong =
@@ -17,9 +22,11 @@ typedef SwagSong =
 
 	var player1:String;
 	var player2:String;
-	var gfVersion:String;
-	var noteStyle:String;
+	var player3:String;
 	var stage:String;
+
+	var arrowSkin:String;
+	var splashSkin:String;
 	var validScore:Bool;
 }
 
@@ -29,13 +36,14 @@ class Song
 	public var notes:Array<SwagSection>;
 	public var bpm:Float;
 	public var needsVoices:Bool = true;
+	public var arrowSkin:String;
+	public var splashSkin:String;
 	public var speed:Float = 1;
+	public var stage:String;
 
 	public var player1:String = 'bf';
 	public var player2:String = 'dad';
-	public var gfVersion:String = 'gf';
-	public var noteStyle:String = 'normal';
-	public var stage:String = 'stage';
+	public var player3:String = 'gf';
 
 	public function new(song, notes, bpm)
 	{
@@ -46,18 +54,24 @@ class Song
 
 	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong
 	{
-		trace(jsonInput);
+		var rawJson = null;
 		
-		// pre lowercasing the song name (update)
-		var folderLowercase = StringTools.replace(folder, " ", "-").toLowerCase();
-		switch (folderLowercase) {
-			case 'dad-battle': folderLowercase = 'dadbattle';
-			case 'philly-nice': folderLowercase = 'philly';
+		var formattedFolder:String = Paths.formatToSongPath(folder);
+		var formattedSong:String = Paths.formatToSongPath(jsonInput);
+		#if MODS_ALLOWED
+		var moddyFile:String = Paths.modsJson(formattedFolder + '/' + formattedSong);
+		if(FileSystem.exists(moddyFile)) {
+			rawJson = File.getContent(moddyFile).trim();
 		}
-		
-		trace('loading ' + folderLowercase + '/' + jsonInput.toLowerCase());
+		#end
 
-		var rawJson = Assets.getText(Paths.json(folderLowercase + '/' + jsonInput.toLowerCase())).trim();
+		if(rawJson == null) {
+			#if sys
+			rawJson = File.getContent(Paths.json(formattedFolder + '/' + formattedSong)).trim();
+			#else
+			rawJson = Assets.getText(Paths.json(formattedFolder + '/' + formattedSong)).trim();
+			#end
+		}
 
 		while (!rawJson.endsWith("}"))
 		{
@@ -81,7 +95,9 @@ class Song
 				daSong = songData.song;
 				daBpm = songData.bpm; */
 
-		return parseJSONshit(rawJson);
+		var songJson:SwagSong = parseJSONshit(rawJson);
+		if(jsonInput != 'events') StageData.loadDirectory(songJson);
+		return songJson;
 	}
 
 	public static function parseJSONshit(rawJson:String):SwagSong

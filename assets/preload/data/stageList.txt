@@ -1,5 +1,5 @@
 stage
-MegaMall
-Subway
-SubwayTOFH
-OverloadMall
+megamall
+megamall_overload
+subway
+subway_TOFH

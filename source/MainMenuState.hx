@@ -1,66 +1,35 @@
 package;
 
-
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.FlxState;
-import flixel.addons.display.FlxGridOverlay;
-import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileDiamond;
-import flixel.addons.transition.FlxTransitionableState;
-import flixel.addons.transition.TransitionData;
-import flixel.graphics.FlxGraphic;
-import flixel.graphics.frames.FlxAtlasFrames;
-import flixel.group.FlxGroup;
-import flixel.input.gamepad.FlxGamepad;
-import flixel.math.FlxPoint;
-import flixel.math.FlxRect;
-import flixel.system.FlxSound;
-import flixel.system.ui.FlxSoundTray;
-import flixel.text.FlxText;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
-import io.newgrounds.NG;
-import lime.app.Application;
-import openfl.Assets;
-import FreeplayState;
-import Controls.KeyboardScheme;
+import flixel.util.FlxTimer;
+#if desktop
+import Discord.DiscordClient;
+#end
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
+import flixel.FlxCamera;
+import flixel.addons.transition.FlxTransitionableState;
 import flixel.effects.FlxFlicker;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.text.FlxText;
+import flixel.math.FlxMath;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
-import flixel.util.FlxTimer;
-import io.newgrounds.NG;
 import lime.app.Application;
-
-#if windows
-import Discord.DiscordClient;
-#end
-
+import Achievements;
+import editors.MasterEditorMenu;
 using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
+	public static var psychEngineVersion:String = '0.4.2'; //This is also used for Discord RPC
 	var curSelected:Int = 0;
-
-	public static var nightly:String = "";
-
-	public static var kadeEngineVer:String = "2.0.0 Beta";
-	public static var gameVer:String = "Mega Mayhem";
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
-	#if !switch
-	var optionShit:Array<String> = ['freeplay', 'story mode', 'donate', 'options'];
-	#else
-	var optionShit:Array<String> = ['story mode', 'freeplay'];
-	#end
+	var optionShit:Array<String> = ['story_mode', 'freeplay', 'awards', 'options'];
 
 	var newGaming:FlxText;
 	var newGaming2:FlxText;
@@ -88,7 +57,7 @@ class MainMenuState extends MusicBeatState
 		Conductor.changeBPM(102);
 		persistentUpdate = true;
 		persistentUpdate = persistentDraw = true;
-
+		
 		var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('MAYHEM_MENU'));
 		bg.scrollFactor.x = 0;
 		bg.scrollFactor.y = 0.10;
@@ -97,6 +66,15 @@ class MainMenuState extends MusicBeatState
 		bg.screenCenter();
 		bg.antialiasing = true;
 		add(bg);
+
+		var overlay:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('TitleOverlay'));
+		overlay.scrollFactor.x = 0;
+		overlay.scrollFactor.y = 0.10;
+		overlay.setGraphicSize(Std.int(overlay.width * 1.0));
+		overlay.updateHitbox();
+		overlay.screenCenter();
+		overlay.antialiasing = true;
+		add(overlay);
 
 		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuBGMagenta'));
 		magenta.scrollFactor.x = 0;
@@ -121,20 +99,23 @@ class MainMenuState extends MusicBeatState
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
-		var tex = Paths.getSparrowAtlas('FNF_main_menu_assets');
-
 		for (i in 0...optionShit.length)
 		{
-			var menuItem:FlxSprite = new FlxSprite(0, FlxG.height * 1.6);
-			menuItem.frames = tex;
-			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
-			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
-			menuItem.animation.play('idle');
-			menuItem.ID = i;
-			menuItem.scrollFactor.set();
-			menuItem.antialiasing = true;
-			finishedFunnyMove = true;
+			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
+            var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
+            menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
+            menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
+            menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
+            menuItem.animation.play('idle');
+            menuItem.ID = i;
+            menuItem.screenCenter(X);
+            menuItems.add(menuItem);
+            var scr:Float = (optionShit.length - 4) * 0.135;
+            if(optionShit.length < 6) scr = 0;
+            menuItem.scrollFactor.set(0, scr);
+            menuItem.antialiasing = ClientPrefs.globalAntialiasing;
 			menuItem.setGraphicSize(Std.int(FlxG.height * 0.32));
+			//ok whAT THE FUCK
 			FlxTween.tween(menuItem,{x: 30 + (i * 325)},1 + (i * 0.25) ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
 				{ 
 					finishedFunnyMove = true; 
@@ -142,17 +123,12 @@ class MainMenuState extends MusicBeatState
 				}});
 			menuItem.y = 570;
 			menuItems.add(menuItem);
+            menuItem.updateHitbox();
 		}
 
 		firstStart = false;
 
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
-
-		if (FlxG.save.data.dfjk)
-			controls.setKeyboardScheme(KeyboardScheme.Solo, true);
-		else
-			controls.setKeyboardScheme(KeyboardScheme.Duo(true), true);
-
 		changeItem();
 
 		super.create();
@@ -165,20 +141,35 @@ class MainMenuState extends MusicBeatState
 
 		Conductor.songPosition = FlxG.sound.music.time;
 
-		if (FlxG.keys.pressed.L)
+		if (FlxG.keys.justPressed.SEVEN)
 			{
-			var curDifficulty = 2;
-			var songLowercase = 'leffrey';
-			var songHighscore = 'leffrey';
-			trace(songLowercase);
-			var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
-			trace(poop);
-			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-			PlayState.isStoryMode = false;
-			PlayState.storyDifficulty = curDifficulty;
-			PlayState.storyWeek = 2;
-			trace('CUR WEEK' + PlayState.storyWeek);
-			LoadingState.loadAndSwitchState(new PlayState());
+				selectedSomethin = true;
+				MusicBeatState.switchState(new MasterEditorMenu());
+			}
+
+		if (FlxG.keys.justPressed.L)
+			{
+				var curDifficulty = 2;
+				var songLowercase = 'leffrey';
+				var songHighscore = 'leffrey';
+				trace(songLowercase);
+				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
+				trace(poop);
+				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+				PlayState.isStoryMode = false;
+				PlayState.storyDifficulty = curDifficulty;
+				PlayState.storyWeek = 2;
+				trace('CUR WEEK' + PlayState.storyWeek);
+				LoadingState.loadAndSwitchState(new PlayState());
+			}
+
+		if (FlxG.keys.justPressed.B)
+			{
+				FlxG.sound.play(Paths.sound('bruh'));
+			}
+		if (FlxG.keys.justPressed.C)
+			{
+				FlxG.switchState(new CreditsState());
 			}
 
 
@@ -189,26 +180,26 @@ class MainMenuState extends MusicBeatState
 
 		if (!selectedSomethin)
 		{
-			if (controls.LEFT_P)
+			if (FlxG.keys.justPressed.LEFT)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(-1);
 			}
 
-			if (controls.RIGHT_P)
+			if (FlxG.keys.justPressed.RIGHT)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(1);
 			}
 
-			if (controls.BACK)
+			if (FlxG.keys.justPressed.ESCAPE)
 			{
 				FlxG.switchState(new TitleState());
 			}
 
-			if (controls.ACCEPT)
+			if (FlxG.keys.justPressed.ENTER)
 			{
-				if (optionShit[curSelected] == 'donate')
+				if (optionShit[curSelected] == 'awards')
 				{
 					FlxG.switchState(new OutdatedSubState());
 				}
@@ -271,17 +262,14 @@ class MainMenuState extends MusicBeatState
 
 		switch (daChoice)
 		{
-			case 'story mode':
-				FlxG.switchState(new StoryMenuState());
-				trace("Story Menu Selected");
-				
+			case 'story_mode':
+				MusicBeatState.switchState(new StoryMenuState());
 			case 'freeplay':
-				FlxG.switchState(new FreeplayState());
-
-				trace("Freeplay Menu Selected");
-
+				MusicBeatState.switchState(new FreeplayState());
+			case 'awards':
+				MusicBeatState.switchState(new OutdatedSubState());
 			case 'options':
-				FlxG.switchState(new OptionsMenu());
+				MusicBeatState.switchState(new OptionsState());
 		}
 	}
 

@@ -1,0 +1,37 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		270,
+		130
+	],
+	"scale": 2,
+	"animations": [
+		{
+			"loop_name": "MB01",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "MB01",
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "MBOVERLOADED01",
+			"idle_offsets": [
+				-5,
+				2
+			],
+			"idle_name": "MBOVERLOADED01",
+			"anim": "shocked",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "MayhemGrid"
+}

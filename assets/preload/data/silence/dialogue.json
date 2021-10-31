@@ -1,0 +1,67 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.07,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Huff... jeez... you're uh... pretty good\\nlittle dude..."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Y-you want another match? Uhm...\\nI'm not sure... I shouldn't-"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beeeeep!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Look, it was fun, but if we keep goin'\\nsomething bad might happen."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I don't want you dyin' in front of all\\nof these people..."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beepa Skideep boop!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Huhhh fine just- don't blame me for what\\nmight happen..."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Skatbeep"
+		}
+	]
+}

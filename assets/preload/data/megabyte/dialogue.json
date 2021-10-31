@@ -1,0 +1,74 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Huh?"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh! It's you! You're that one popstars\\ndaughters boyfriend, right?"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bappity bep."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yeah man, I've heard of you. I saw you\\nin the mall during Christmas a while back!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Even my boy Cyrix has fought ya!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "boop"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Nice to meet ya too. The name's Megabyte!\\nI'm something of a music artist myself."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Say, since I'm here, how's about we give\\nthis crowd a show huh?"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep!"
+		}
+	]
+}

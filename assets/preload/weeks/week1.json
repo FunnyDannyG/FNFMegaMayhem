@@ -1,0 +1,43 @@
+{
+	"storyName": "Bits n Bytes",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"megabyte",
+			"megabyte",
+			[
+				207,
+				117,
+				238
+			]
+		],
+		[
+			"silence",
+			"megabyte",
+			[
+				207,
+				117,
+				238
+			]
+		],
+		[
+			"overload",
+			"megabyte",
+			[
+				207,
+				117,
+				238
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week 1"
+}

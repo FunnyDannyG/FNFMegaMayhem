@@ -1,0 +1,74 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.35,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "..."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep?"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "HIGH DANGER DETECTED."
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "...?"
+		},
+		{
+			"speed": 0.06,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "D-dammit, I-I warned you..."
+		},
+		{
+			"speed": 0.06,
+			"portrait": "Mayhem_MB",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "L-look, you should g-get outta here, like\\nright now... I can't stop mys-"
+		},
+		{
+			"speed": 0.02,
+			"portrait": "Mayhem_MB",
+			"boxState": "angry",
+			"expression": "shocked",
+			"text": "NGH!"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "beep?!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "Mayhem_MB",
+			"boxState": "angry",
+			"expression": "shocked",
+			"text": "MANUAL OVERRIDE: ACTIVATING\\nOVERLOAD.EXE"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "funk"
+		}
+	]
+}

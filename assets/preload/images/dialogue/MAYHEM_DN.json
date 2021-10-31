@@ -1,0 +1,37 @@
+{
+	"position": [
+		190,
+		160
+	],
+	"dialogue_pos": "left",
+	"scale": 2,
+	"image": "MayhemGrid",
+	"animations": [
+		{
+			"idle_offsets": [
+				-1,
+				-11
+			],
+			"loop_offsets": [
+				-1,
+				-11
+			],
+			"anim": "talk",
+			"idle_name": "DANNY01",
+			"loop_name": "DANNY01"
+		},
+		{
+			"idle_offsets": [
+				-1,
+				-11
+			],
+			"anim": "pissed",
+			"loop_offsets": [
+				-1,
+				-11
+			],
+			"idle_name": "DANNYPISSED01",
+			"loop_name": "DANNYPISSED01"
+		}
+	]
+}

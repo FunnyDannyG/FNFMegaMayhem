@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MayhemGrid.png">
+	<!-- created without adobe animate, by hand, in visual studio code, by funnydannyg -->
+	<SubTexture name="BF01" x="35" y="116" width="232" height="184"/>
+	<SubTexture name="BFSCARED01" x="335" y="104" width="232" height="196"/>
+	<SubTexture name="MB01" x="61" y="380" width="179" height="220"/>
+	<SubTexture name="MBOVERLOADED01" x="348" y="380" width="206" height="220"/>
+	<SubTexture name="DANNY01" x="42" y="709" width="218" height="191"/>
+	<SubTexture name="DANNYPISSED01" x="342" y="709" width="218" height="191"/>
+</TextureAtlas>

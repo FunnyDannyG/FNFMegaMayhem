@@ -1,0 +1,37 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		-20,
+		170
+	],
+	"scale": 2,
+	"animations": [
+		{
+			"loop_name": "BF01",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF01",
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "BFSCARED01",
+			"idle_offsets": [
+				0,
+				10
+			],
+			"idle_name": "BFSCARED01",
+			"anim": "shocked",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "MayhemGrid"
+}

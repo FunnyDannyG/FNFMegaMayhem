@@ -1,0 +1,88 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Ah crap, this doesn't look like the right\\nplace..."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I don't see ####### anywhere, she's\\nsuch a klutz."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Maybe I didn't warp to La Soleil, it wouldn't\\nbe the first time I've messed up my warp."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Let's just try this agai-"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Oh, hey, fellow blue haired individual.\\nDo you know what this place is called?"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep boop."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Ah, the subway station. (crap)"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Not where I was trying to go... Uh...\\nDo you know where La Soleil is?"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Skidibeep!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I see. (I'm in one of *these&* places, huh)"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Well alright, then. Let's see what you got!"
+		}
+	]
+}
