@@ -9,4 +9,10 @@ gf-pixel
 megabyte-normal
 megabyte-silence
 megabyte-overload
+danny-normal
+megabyte-normal-m
+megabyte-silence-m
+megabyte-overload-m
+danny-normal-m
 leffrey
+leffrey-m

@@ -1,0 +1,60 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Heh, you're better than you look, kid.\\nYou keep doing your thing."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Maybe you'll top Kanye or something."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep?"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Just someone I've heard of. But, I gotta\\nhead out. I have places to be."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "Mayhem_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "skibidibop"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You're not done yet, are you?"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_BF",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep bop"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "One more song, and then I have got to\\nget going."
+		}
+	]
+}

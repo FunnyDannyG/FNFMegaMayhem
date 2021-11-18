@@ -86,7 +86,7 @@ class Note extends FlxSprite
 				case 'Hurt Note':
 					ignoreNote = mustPress;
 					reloadNote('HURT');
-					noteSplashTexture = 'HURTnoteSplashes';
+					noteSplashTexture = 'noteSplashes';
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
@@ -96,6 +96,15 @@ class Note extends FlxSprite
 						missHealth = 0.3;
 					}
 					hitCausesMiss = true;
+
+				case 'Heal Note':
+					ignoreNote = mustPress;
+					reloadNote('Heal');
+					noteSplashTexture = 'HealSplash';
+					colorSwap.hue = 0;
+					colorSwap.saturation = 0;
+					colorSwap.brightness = 0;
+
 				case 'No Animation':
 					noAnimation = true;
 			}

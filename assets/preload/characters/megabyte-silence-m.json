@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				-14
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Megabyte left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				9,
+				-99
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Megabyte down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				54,
+				1
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Megabyte up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				-72
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Megabyte right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Megabyte idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				-91
+			],
+			"anim": "error",
+			"fps": 24,
+			"name": "Megabyte error",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Mayhem_Mode/silence",
+	"position": [
+		0,
+		20
+	],
+	"healthicon": "megabyte-M",
+	"flip_x": false,
+	"healthbar_colors": [
+		238,
+		126,
+		117
+	],
+	"camera_position": [
+		-40,
+		100
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

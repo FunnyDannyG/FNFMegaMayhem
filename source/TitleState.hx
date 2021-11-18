@@ -448,7 +448,7 @@ class TitleState extends MusicBeatState
 				case 7:
 					addMoreText(' ', -60);
 					addMoreText('Megabyte, FunnyDannyG', -60);
-					addMoreText('Crypted, Ezogaming', -60);
+					addMoreText('Sam, Ezogaming', -60);
 					addMoreText('Viath, Jordi', -60);
 					addMoreText('Pizzi', -60);
 				// credTextShit.text += '\nNewgrounds';

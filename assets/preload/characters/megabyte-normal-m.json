@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				16,
+				-14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Megabyte left"
+		},
+		{
+			"offsets": [
+				9,
+				-99
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Megabyte down"
+		},
+		{
+			"offsets": [
+				54,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Megabyte up"
+		},
+		{
+			"offsets": [
+				30,
+				-72
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Megabyte right"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Megabyte idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Mayhem_Mode/Megabyte_Assets",
+	"position": [
+		0,
+		20
+	],
+	"healthicon": "megabyte-M",
+	"flip_x": false,
+	"healthbar_colors": [
+		238,
+		126,
+		117
+	],
+	"camera_position": [
+		-40,
+		100
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

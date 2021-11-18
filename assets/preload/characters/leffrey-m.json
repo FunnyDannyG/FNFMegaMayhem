@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				1,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "leif idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				-14
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "leif left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				-18
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "leif down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				-19
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "leif up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				-12
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "leif right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Mayhem_Mode/leif",
+	"position": [
+		-190,
+		-160
+	],
+	"healthicon": "leffrey",
+	"flip_x": false,
+	"healthbar_colors": [
+		239,
+		116,
+		60
+	],
+	"camera_position": [
+		-80,
+		-70
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

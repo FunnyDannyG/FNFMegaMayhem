@@ -1,0 +1,53 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "MAYHEM_DN",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Alright kid."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "mayhem_dn",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I really need to get going."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "mayhem_bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "skidbeep!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "mayhem_dn",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "One more song and then you will show me off?"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "mayhem_bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bep"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "mayhem_dn",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Alright, cool."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "mayhem_dn",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "Let's not hold back, then."
+		}
+	]
+}
