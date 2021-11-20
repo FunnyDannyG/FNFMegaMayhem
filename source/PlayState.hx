@@ -2328,33 +2328,33 @@ class PlayState extends MusicBeatState
 						switch (Math.abs(daNote.noteData))
 						{
 							case 0:
-								if (PlayState.SONG.song.toLowerCase() == 'tofh')
 								animToPlay = 'singLEFT';
-								if (health < 0.07)
-									health += 0.00;
-								else
-									health -= 0.017;
+								if (PlayState.SONG.song.toLowerCase() == 'tofh')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.017;
 							case 1:
-								if (PlayState.SONG.song.toLowerCase() == 'tofh')
 								animToPlay = 'singDOWN';
-								if (health < 0.07)
-									health += 0.00;
-								else
-									health -= 0.017;
+								if (PlayState.SONG.song.toLowerCase() == 'tofh')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.017;
 							case 2:
-								if (PlayState.SONG.song.toLowerCase() == 'tofh')
 								animToPlay = 'singUP';
-								if (health < 0.07)
-									health += 0.00;
-								else
-									health -= 0.017;
-							case 3:
 								if (PlayState.SONG.song.toLowerCase() == 'tofh')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.017;
+							case 3:
 								animToPlay = 'singRIGHT';
-								if (health < 0.07)
-									health += 0.00;
-								else
-									health -= 0.017;
+								if (PlayState.SONG.song.toLowerCase() == 'tofh')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.017;
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
