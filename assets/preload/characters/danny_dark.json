@@ -49,20 +49,20 @@
 				-5,
 				0
 			],
-			"indices": [],
+			"loop": true,
 			"fps": 24,
 			"anim": "idle",
-			"loop": true,
+			"indices": [],
 			"name": "Idle"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Mega_Mayhem/DannyNorm",
+	"image": "characters/Mega_Mayhem/TOFH",
 	"position": [
 		-50,
 		220
 	],
-	"healthicon": "danny",
+	"healthicon": "danny_angry",
 	"flip_x": false,
 	"healthbar_colors": [
 		126,

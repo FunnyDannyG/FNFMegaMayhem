@@ -812,7 +812,7 @@ class PlayState extends MusicBeatState
 				resetFastCar();
 				insert(members.indexOf(gfGroup) - 1, fastCar);
 			
-			case 'schoolEvil':
+			case 'subway_TOFH':
 				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
 				insert(members.indexOf(dadGroup) - 1, evilTrail);
 		}
@@ -2328,13 +2328,33 @@ class PlayState extends MusicBeatState
 						switch (Math.abs(daNote.noteData))
 						{
 							case 0:
+								if (PlayState.SONG.song.toLowerCase() == 'tofh')
 								animToPlay = 'singLEFT';
+								if (health < 0.07)
+									health += 0.00;
+								else
+									health -= 0.017;
 							case 1:
+								if (PlayState.SONG.song.toLowerCase() == 'tofh')
 								animToPlay = 'singDOWN';
+								if (health < 0.07)
+									health += 0.00;
+								else
+									health -= 0.017;
 							case 2:
+								if (PlayState.SONG.song.toLowerCase() == 'tofh')
 								animToPlay = 'singUP';
+								if (health < 0.07)
+									health += 0.00;
+								else
+									health -= 0.017;
 							case 3:
+								if (PlayState.SONG.song.toLowerCase() == 'tofh')
 								animToPlay = 'singRIGHT';
+								if (health < 0.07)
+									health += 0.00;
+								else
+									health -= 0.017;
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
@@ -3515,7 +3535,7 @@ class PlayState extends MusicBeatState
 			switch(note.noteType) {
 				case 'Heal Note':
 					FlxG.sound.play(Paths.sound('power'));
-					health += 0.5;
+					health += 0.3;
 			}
 
 			if (!note.isSustainNote)
