@@ -1,0 +1,67 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "RXptcm9veg==",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "VGltZSBpcyBydW5uaW5nIG91dCEgWW91IGhhdmUgdG8gZ2V0IGhlcmVcXG5hbmQgZmFzdCE="
+		},
+		{
+			"speed": 0.04,
+			"portrait": "V3ptbWI=",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "T2sgd2hhdCB0aGUgZnVjayBpcyBoYXBwZW5pbmc/"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "RXptcm9veg==",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "U2hlJ3MgYmVnaW5uaW5nIHRvIGZvdW5kIG91dCB0aGUgdHJ1dGgu"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "V3ptbWI=",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "T2ggbm8sIHJlYWxseT8gSSdtIGtpbmQgb2Ygc3R1Y2sgaGVyZSBjdXJyZW50bHku"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "V3ptbWI=",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "VGhlcmUncyB0aGlzIGJsdWUgaGFpcmVkIGtpZCBoZXJlLCByZWFsbHkgc2hvcnQsIHRvby4="
+		},
+		{
+			"speed": 0.04,
+			"portrait": "V3ptbWI=",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "SGUgdG9sZCBtZSBoZSB3YXMgY2FsbGVkICdCb3lmcmllbmQuWE1MJw=="
+		},
+		{
+			"speed": 0.04,
+			"portrait": "RXptcm9veg==",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "SSBkb24ndCBjYXJlIHdobyBoZSBpcywgeW91IG5lZWQgdG8gaHVycnkh"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "V3ptbWI=",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "QWxyaWdodCwgSSBnb3QgdGhpcy4gSSBqdXN0IGdvdHRhIGdvXFxuZnVsbCBwb3dlciBvbiB0aGVtLg=="
+		},
+		{
+			"speed": 0.04,
+			"portrait": "RXptcm9veg==",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "QWxyaWdodCwganVzdCwgUExFQVNFIGdldCBoZXJlIHNvb24u"
+		}
+	]
+}
