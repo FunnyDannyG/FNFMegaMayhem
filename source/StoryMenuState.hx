@@ -58,6 +58,8 @@ class StoryMenuState extends MusicBeatState
 		WeekData.reloadWeekFiles(true);
 		if(curWeek >= WeekData.weeksList.length) curWeek = 0;
 		persistentUpdate = persistentDraw = true;
+		var MayhemStoryBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('UI/Story_BG'));
+		add(MayhemStoryBG);
 
 		scoreText = new FlxText(10, 10, 0, "SCORE: 49324858", 36);
 		scoreText.setFormat("VCR OSD Mono", 32);
@@ -81,7 +83,6 @@ class StoryMenuState extends MusicBeatState
 		add(grpWeekText);
 
 		var blackBarThingie:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, 56, FlxColor.BLACK);
-		add(blackBarThingie);
 
 		grpWeekCharacters = new FlxTypedGroup<MenuCharacter>();
 
@@ -161,7 +162,6 @@ class StoryMenuState extends MusicBeatState
 		rightArrow.antialiasing = ClientPrefs.globalAntialiasing;
 		difficultySelectors.add(rightArrow);
 
-		add(bgYellow);
 		add(bgSprite);
 		add(grpWeekCharacters);
 
@@ -360,7 +360,7 @@ class StoryMenuState extends MusicBeatState
 			bullShit++;
 		}
 
-		bgSprite.visible = true;
+		bgSprite.visible = false;
 		var assetName:String = leWeek.weekBackground;
 		if(assetName == null || assetName.length < 1) {
 			bgSprite.visible = false;
