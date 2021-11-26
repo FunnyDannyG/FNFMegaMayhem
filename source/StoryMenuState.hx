@@ -136,37 +136,47 @@ class StoryMenuState extends MusicBeatState
 		sprDifficultyGroup = new FlxTypedGroup<FlxSprite>();
 		add(sprDifficultyGroup);
 
-		
+		var sprDifficulty:FlxSprite = new FlxSprite(921, 2);
+		sprDifficulty.frames = Paths.getSparrowAtlas('UI/diffics');
+		sprDifficulty.animation.addByPrefix('easy', 'EASY');
+		sprDifficulty.animation.addByPrefix('normal', 'NORMAL');
+		sprDifficulty.animation.addByPrefix('hard', 'HARD');
+		sprDifficulty.animation.play('normal');
+		sprDifficulty.y = 2;
+		sprDifficulty.antialiasing = ClientPrefs.globalAntialiasing;
+
 		for (i in 0...CoolUtil.difficultyStuff.length) {
-			var sprDifficulty:FlxSprite = new FlxSprite(921, 2).loadGraphic(Paths.image('menudifficulties/' + CoolUtil.difficultyStuff[i][0].toLowerCase()));
 			
 			switch (CoolUtil.difficultyStuff[i][0].toLowerCase())
 			{
 				case 'easy':
 				{
+					remove(sprDifficulty);
 					sprDifficulty.x += 61;
 					diffic = '-easy';
+					sprDifficulty.animation.play('easy');
+					sprDifficultyGroup.add(sprDifficulty);
 				}
 
 
 				case 'normal':
 				{
+					remove(sprDifficulty);
 					sprDifficulty.x += 4;	
 					diffic = '';
+					sprDifficulty.animation.play('normal');
+					sprDifficultyGroup.add(sprDifficulty);
 				}
 				
 				case 'hard':
 				{
+					remove(sprDifficulty);
 					sprDifficulty.x += 58;
 					diffic = '-hard';
+					sprDifficulty.animation.play('hard');
+					sprDifficultyGroup.add(sprDifficulty);
 				}
 			}
-
-
-			sprDifficulty.y = 2;
-			sprDifficulty.ID = i;
-			sprDifficulty.antialiasing = ClientPrefs.globalAntialiasing;
-			sprDifficultyGroup.add(sprDifficulty);
 		}
 		changeDifficulty();
 
@@ -195,7 +205,7 @@ class StoryMenuState extends MusicBeatState
 		txtTracklist.y = 559;
 		add(txtTracklist);
 		//add(rankText);
-		add(scoreText);
+		//add(scoreText);
 		add(txtWeekTitle);
 
 		changeWeek();

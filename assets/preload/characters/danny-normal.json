@@ -1,66 +1,66 @@
 {
 	"animations": [
 		{
-			"loop": false,
-			"offsets": [
-				-7,
-				2
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Sing Left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-68,
-				-15
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Sing Down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				8,
-				3
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "Sing Up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-12,
-				-5
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Sing Right",
-			"indices": []
-		},
-		{
+			"loop": true,
 			"offsets": [
 				-5,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": true,
-			"name": "Idle"
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				76,
+				8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BackwardsAnim"
+		},
+		{
+			"offsets": [
+				-46,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DownAnim"
+		},
+		{
+			"offsets": [
+				12,
+				24
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "UpAnim"
+		},
+		{
+			"offsets": [
+				-79,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "ForwardsAnim"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Mega_Mayhem/DannyNorm",
 	"position": [
 		-50,
-		220
+		200
 	],
 	"healthicon": "danny",
 	"flip_x": false,
