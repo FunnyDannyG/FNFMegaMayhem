@@ -1,7 +1,7 @@
 {
 	"storyName": "Interdimensional Crackhead",
 	"hideFreeplay": false,
-	"weekBackground": "stage",
+	"weekBackground": "danny",
 	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
@@ -9,11 +9,6 @@
 		253
 	],
 	"startUnlocked": true,
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
 	"songs": [
 		[
 			"chronokinesis",
@@ -44,5 +39,10 @@
 		]
 	],
 	"hideStoryMode": false,
+	"weekCharacters": [
+		"cheesedanny",
+		"bf",
+		"gf"
+	],
 	"weekName": "Week 2"
 }

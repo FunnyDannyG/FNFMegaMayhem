@@ -1,0 +1,10 @@
+{
+	"idle_anim": "IdleAnim",
+	"image": "cheesedanny",
+	"position": [
+		100,
+		84
+	],
+	"scale": 0.65,
+	"confirm_anim": "M Dad Idle"
+}

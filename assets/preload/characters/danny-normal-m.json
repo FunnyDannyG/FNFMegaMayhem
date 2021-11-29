@@ -1,66 +1,66 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				-7,
-				2
-			],
 			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "Sing Left"
-		},
-		{
-			"offsets": [
-				-68,
-				-15
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "Sing Down"
-		},
-		{
-			"offsets": [
-				8,
-				3
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
-			"indices": [],
-			"name": "Sing Up"
-		},
-		{
-			"offsets": [
-				-12,
-				-5
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Sing Right"
-		},
-		{
-			"loop": true,
 			"offsets": [
 				-5,
 				0
 			],
 			"anim": "idle",
-			"fps": 25,
+			"fps": 24,
 			"name": "Idle",
 			"indices": []
+		},
+		{
+			"offsets": [
+				76,
+				8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BackwardsAnim"
+		},
+		{
+			"offsets": [
+				-46,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DownAnim"
+		},
+		{
+			"offsets": [
+				12,
+				24
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "UpAnim"
+		},
+		{
+			"offsets": [
+				-79,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "ForwardsAnim"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Mayhem_Mode/DannyNorm",
 	"position": [
 		-50,
-		220
+		200
 	],
 	"healthicon": "danny-M",
 	"flip_x": false,
