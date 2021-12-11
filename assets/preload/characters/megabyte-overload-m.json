@@ -5,55 +5,55 @@
 				57,
 				31
 			],
-			"loop": false,
+			"indices": [],
 			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "singLEFT"
+			"loop": false,
+			"name": "Megabyte left overload"
 		},
 		{
 			"offsets": [
 				-29,
 				-71
 			],
-			"loop": false,
+			"indices": [],
 			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "singDOWN"
+			"loop": false,
+			"name": "Megabyte down overload"
 		},
 		{
 			"offsets": [
 				0,
 				2
 			],
-			"loop": true,
+			"indices": [],
 			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"loop": true,
+			"name": "Megabyte idle overload"
 		},
 		{
 			"offsets": [
 				44,
 				-19
 			],
-			"loop": false,
+			"indices": [],
 			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "singUP"
+			"loop": false,
+			"name": "Megabyte up overload"
 		},
 		{
 			"offsets": [
 				-60,
 				-12
 			],
-			"loop": false,
+			"indices": [],
 			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "singRIGHT"
+			"loop": false,
+			"name": "Megabyte right overload"
 		}
 	],
 	"no_antialiasing": false,
