@@ -13,6 +13,9 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.FlxCamera;
+import String;
+
+using StringTools;
 
 class PauseSubState extends MusicBeatSubstate
 {
@@ -178,11 +181,18 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
 					CustomFadeTransition.nextCamera = transCamera;
-					if(PlayState.isStoryMode) {
-						MusicBeatState.switchState(new StoryMenuState());
-					} else {
-						MusicBeatState.switchState(new FreeplayState());
-					}
+					if(PlayState.isStoryMode)
+						{
+							MusicBeatState.switchState(new StoryMenuState());
+						} 
+					else
+						{
+							if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
+								MusicBeatState.switchState(new AchievementsMenuState());
+							else
+								MusicBeatState.switchState(new FreeplayState());
+						}
+						
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					PlayState.usedPractice = false;
 					PlayState.changedDifficulty = false;

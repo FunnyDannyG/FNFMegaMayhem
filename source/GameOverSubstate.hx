@@ -9,6 +9,10 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import String;
+
+using StringTools;
+
 
 class GameOverSubstate extends MusicBeatSubstate
 {
@@ -83,10 +87,17 @@ class GameOverSubstate extends MusicBeatSubstate
 			PlayState.deathCounter = 0;
 			PlayState.seenCutscene = false;
 
-			if (PlayState.isStoryMode)
-				MusicBeatState.switchState(new StoryMenuState());
+			if(PlayState.isStoryMode)
+				{
+					MusicBeatState.switchState(new StoryMenuState());
+				} 
 			else
-				MusicBeatState.switchState(new FreeplayState());
+				{
+					if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
+						MusicBeatState.switchState(new AchievementsMenuState());
+					else
+						MusicBeatState.switchState(new FreeplayState());
+				}
 
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 			lePlayState.callOnLuas('onGameOverConfirm', [false]);

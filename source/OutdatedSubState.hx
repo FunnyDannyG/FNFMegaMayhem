@@ -20,18 +20,19 @@ import WeekData;
 
 using StringTools;
 
-class OutdatedSubState extends MusicBeatState
+class AchievementsMenuState extends MusicBeatState
 {
-	var songs:Array<MayhemMetaData> = [];
+	var songs:Array<MayhemSongMetaData> = [];
 
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
 	private static var curDifficulty:Int = 1;
 
+
 	
 	var scoreBG:FlxSprite;
 	var scoreText:FlxText;
-	//var diffText:FlxText;
+	var diffText:FlxText;
 	var lerpScore:Int = 0;
 	var lerpRating:Float = 0;
 	var intendedScore:Int = 0;
@@ -43,8 +44,6 @@ class OutdatedSubState extends MusicBeatState
 	private var iconArray:Array<HealthIcon> = [];
 
 	var bg:FlxSprite;
-	var intendedColor:Int;
-	var colorTween:FlxTween;
 
 	override function create()
 	{
@@ -65,15 +64,6 @@ class OutdatedSubState extends MusicBeatState
 				leSongs.push(leWeek.songs[j][0]);
 				leChars.push(leWeek.songs[j][1]);
 			}
-
-			WeekData.setDirectoryFromWeek(leWeek);
-			for (song in leWeek.songs) {
-				var colors:Array<Int> = song[2];
-				if(colors == null || colors.length < 3) {
-					colors = [146, 113, 253];
-				}
-				//addSong(song[0], i, song[1], FlxColor.fromRGB(colors[0], colors[1], colors[2]));
-			}
 		}
 		WeekData.setDirectoryFromWeek();
 
@@ -82,9 +72,10 @@ class OutdatedSubState extends MusicBeatState
 		{
 			if(initSonglist[i] != null && initSonglist[i].length > 0) {
 				var songArray:Array<String> = initSonglist[i].split(":");
-				addSong(songArray[0], 0, songArray[1], Std.parseInt(songArray[2]));
+				addSong(songArray[0], 0, songArray[1]);
 			}
 		}
+
 
 		// LOAD MUSIC
 
@@ -125,17 +116,15 @@ class OutdatedSubState extends MusicBeatState
 		scoreBG.alpha = 0.6;
 		add(scoreBG);
 
-		/*
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
 		diffText.font = scoreText.font;
-		add(diffText);
-		*/
+		//add(diffText);
 
 		add(scoreText);
 
 		if(curSelected >= songs.length) curSelected = 0;
 		changeSelection();
-		//changeDiff();
+		changeDiff();
 
 		var swag:Alphabet = new Alphabet(1, 0, "swag");
 
@@ -176,26 +165,10 @@ class OutdatedSubState extends MusicBeatState
 		super.closeSubState();
 	}
 
-	public function addSong(songName:String, weekNum:Int, songCharacter:String, color:Int)
+	public function addSong(songName:String, weekNum:Int, songCharacter:String)
 	{
-		songs.push(new MayhemMetaData(songName, weekNum, songCharacter, color));
+		songs.push(new MayhemSongMetaData(songName, weekNum, songCharacter));
 	}
-
-	/*public function addWeek(songs:Array<String>, weekNum:Int, weekColor:Int, ?songCharacters:Array<String>)
-	{
-		if (songCharacters == null)
-			songCharacters = ['bf'];
-
-		var num:Int = 0;
-		for (song in songs)
-		{
-			addSong(song, weekNum, songCharacters[num]);
-			this.songs[this.songs.length-1].color = weekColor;
-
-			if (songCharacters.length != 1)
-				num++;
-		}
-	}*/
 
 	var instPlaying:Int = -1;
 	private static var vocals:FlxSound = null;
@@ -225,22 +198,6 @@ class OutdatedSubState extends MusicBeatState
 		var shiftMult:Int = 1;
 		if(FlxG.keys.pressed.SHIFT) shiftMult = 3;
 
-		if (FlxG.keys.justPressed.L)
-			{
-				var curDifficulty = 2;
-				var songLowercase = 'leffrey-m';
-				var songHighscore = 'leffrey-m';
-				trace(songLowercase);
-				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
-				trace(poop);
-				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-				PlayState.isStoryMode = false;
-				PlayState.storyDifficulty = curDifficulty;
-				PlayState.storyWeek = 2;
-				trace('CUR WEEK' + PlayState.storyWeek);
-				LoadingState.loadAndSwitchState(new PlayState());
-			}
-
 		if (upP)
 		{
 			changeSelection(-shiftMult);
@@ -251,15 +208,12 @@ class OutdatedSubState extends MusicBeatState
 		}
 
 		if (controls.UI_LEFT_P)
-			//changeDiff(-1);
+			trace('farticle');
 		if (controls.UI_RIGHT_P)
-			//changeDiff(1);
+			trace('farticle');
 
 		if (controls.BACK)
 		{
-			if(colorTween != null) {
-				colorTween.cancel();
-			}
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			MusicBeatState.switchState(new MainMenuState());
 		}
@@ -305,9 +259,6 @@ class OutdatedSubState extends MusicBeatState
 
 			PlayState.storyWeek = songs[curSelected].week;
 			trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
-			if(colorTween != null) {
-				colorTween.cancel();
-			}
 			LoadingState.loadAndSwitchState(new PlayState());
 
 			FlxG.sound.music.volume = 0;
@@ -345,7 +296,7 @@ class OutdatedSubState extends MusicBeatState
 		#end
 
 		PlayState.storyDifficulty = curDifficulty;
-		//diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
+		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
 		positionHighscore();
 	}
 
@@ -390,7 +341,7 @@ class OutdatedSubState extends MusicBeatState
 				// item.setGraphicSize(Std.int(item.width));
 			}
 		}
-		//changeDiff();
+		changeDiff();
 		Paths.currentModDirectory = songs[curSelected].folder;
 	}
 
@@ -399,25 +350,23 @@ class OutdatedSubState extends MusicBeatState
 
 		scoreBG.scale.x = FlxG.width - scoreText.x + 6;
 		scoreBG.x = FlxG.width - (scoreBG.scale.x / 2);
-		//diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
-		//diffText.x -= diffText.width / 2;
+		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
+		diffText.x -= diffText.width / 2;
 	}
 }
 
-class MayhemMetaData
+class MayhemSongMetaData
 {
 	public var songName:String = "";
 	public var week:Int = 0;
 	public var songCharacter:String = "";
-	public var color:Int = -7179779;
 	public var folder:String = "";
 
-	public function new(song:String, week:Int, songCharacter:String, color:Int)
+	public function new(song:String, week:Int, songCharacter:String)
 	{
 		this.songName = song;
 		this.week = week;
 		this.songCharacter = songCharacter;
-		this.color = color;
 		this.folder = Paths.currentModDirectory;
 		if(this.folder == null) this.folder = '';
 	}

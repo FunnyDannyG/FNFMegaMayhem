@@ -147,11 +147,27 @@ class MainMenuState extends MusicBeatState
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
 
-		if (FlxG.keys.justPressed.L)
+		if (FlxG.keys.pressed.L && FlxG.keys.justPressed.ONE)
 			{
 				var curDifficulty = 2;
 				var songLowercase = 'leffrey';
 				var songHighscore = 'leffrey';
+				trace(songLowercase);
+				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
+				trace(poop);
+				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+				PlayState.isStoryMode = false;
+				PlayState.storyDifficulty = curDifficulty;
+				PlayState.storyWeek = 2;
+				trace('CUR WEEK' + PlayState.storyWeek);
+				LoadingState.loadAndSwitchState(new PlayState());
+			}
+
+		else if (FlxG.keys.pressed.L && FlxG.keys.justPressed.TWO)
+			{
+				var curDifficulty = 2;
+				var songLowercase = 'leffrey-mitai';
+				var songHighscore = 'leffrey-mitai';
 				trace(songLowercase);
 				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
 				trace(poop);
@@ -259,7 +275,7 @@ class MainMenuState extends MusicBeatState
 			case 'freeplay':
 				MusicBeatState.switchState(new FreeplayState());
 			case 'awards':
-				MusicBeatState.switchState(new OutdatedSubState());
+				MusicBeatState.switchState(new AchievementsMenuState());
 			case 'options':
 				MusicBeatState.switchState(new OptionsState());
 		}
