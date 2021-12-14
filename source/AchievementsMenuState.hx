@@ -211,8 +211,8 @@ class AchievementsMenuState extends MusicBeatState
 		if (FlxG.keys.pressed.L && FlxG.keys.justPressed.ONE)
 			{
 				var curDifficulty = 2;
-				var songLowercase = 'leffrey';
-				var songHighscore = 'leffrey';
+				var songLowercase = 'leffrey-m';
+				var songHighscore = 'leffrey-m';
 				trace(songLowercase);
 				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
 				trace(poop);
@@ -227,8 +227,8 @@ class AchievementsMenuState extends MusicBeatState
 		else if (FlxG.keys.pressed.L && FlxG.keys.justPressed.TWO)
 			{
 				var curDifficulty = 2;
-				var songLowercase = 'leffrey-mitai';
-				var songHighscore = 'leffrey-mitai';
+				var songLowercase = 'leffrey-mitai-m';
+				var songHighscore = 'leffrey-mitai-m';
 				trace(songLowercase);
 				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
 				trace(poop);
