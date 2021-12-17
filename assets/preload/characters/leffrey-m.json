@@ -1,62 +1,62 @@
 {
 	"animations": [
 		{
-			"loop": true,
 			"offsets": [
 				1,
 				0
 			],
-			"anim": "idle",
+			"loop": true,
 			"fps": 12,
-			"name": "leif idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "leif idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				16,
 				-14
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "leif left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "leif left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-4,
 				-18
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "leif down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "leif down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-7,
 				-19
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "leif up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "leif up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-50,
 				-12
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "leif right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "leif right"
 		}
 	],
-	"no_antialiasing": true,
+	"no_antialiasing": false,
 	"image": "characters/Mayhem_Mode/leif",
 	"position": [
 		-190,

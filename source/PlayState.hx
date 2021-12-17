@@ -372,54 +372,64 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 
-			case 'megamall':
-				var bg:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/MB_stageback'));
-				bg.antialiasing = true;
-				bg.scrollFactor.set(0.9, 0.9);
-				bg.active = false;
-				add(bg);
+				case 'megamall':
+                    var bg:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/MB_stageback'));
+                    bg.antialiasing = true;
+                    bg.scrollFactor.set(0.9, 0.9);
+                    bg.active = false;
+                    add(bg);
+    
+                    var crowd:FlxSprite = new FlxSprite(-600, -340);
+                    crowd.frames = Paths.getSparrowAtlas('Megabyte/bgchar','shared');
+                    crowd.animation.addByPrefix('idle', 'top bop', 24, true);
+                    crowd.scrollFactor.set(0.9, 0.9);
+                    crowd.antialiasing = true;
+                    crowd.animation.play('idle');
+                    add(crowd);
+            
+                    var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/MB_stagefront'));
+                    stageFront.updateHitbox();
+                    stageFront.antialiasing = true;
+                    stageFront.scrollFactor.set(0.9, 0.9);
+                    stageFront.active = false;
+                    add(stageFront);
+    
+                    var people:FlxSprite = new FlxSprite(850, 400);
+                    people.frames = Paths.getSparrowAtlas('Megabyte/people','shared');
+                    people.animation.addByPrefix('idle', 'fuckers', 24, true);
+                    people.scrollFactor.set(0.9, 0.9);
+                    people.antialiasing = true;
+                    people.animation.play('idle');
+                    add(people);
 
-				var crowd:FlxSprite = new FlxSprite(-600, -380);
-				crowd.frames = Paths.getSparrowAtlas('Megabyte/bgchar','shared');
-				crowd.animation.addByPrefix('idle', 'bgchar bob', 20, true);
-				crowd.scrollFactor.set(0.9, 0.9);
-				crowd.animation.play('idle');
-				add(crowd);
-		
-				var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/MB_stagefront'));
-				stageFront.updateHitbox();
-				stageFront.antialiasing = true;
-				stageFront.scrollFactor.set(0.9, 0.9);
-				stageFront.active = false;
-				add(stageFront);
+                    var dude:FlxSprite = new FlxSprite(-400, 150);
+                    dude.frames = Paths.getSparrowAtlas('Megabyte/friendo','shared');
+                    dude.animation.addByPrefix('idle', 'bop', 24, true);
+                    dude.scrollFactor.set(0.9, 0.9);
+                    dude.antialiasing = true;
+                    dude.animation.play('idle');
+                    add(dude);
 
-				var people:FlxSprite = new FlxSprite(-600, -380);
-				people.frames = Paths.getSparrowAtlas('Megabyte/people','shared');
-				people.animation.addByPrefix('idle', 'people bob', 20, true);
-				people.scrollFactor.set(0.9, 0.9);
-				people.animation.play('idle');
-				add(people);
+				case 'megamall_overload':
+					var bg:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/overload_back'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+			
+					var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/overload_front'));
+					stageFront.updateHitbox();
+					stageFront.antialiasing = true;
+					stageFront.scrollFactor.set(0.9, 0.9);
+					stageFront.active = false;
+					add(stageFront);
 
-			case 'megamall_overload':
-				var bg:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/overload_back'));
-				bg.antialiasing = true;
-				bg.scrollFactor.set(0.9, 0.9);
-				bg.active = false;
-				add(bg);
-		
-				var stageFront:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/overload_front'));
-				stageFront.updateHitbox();
-				stageFront.antialiasing = true;
-				stageFront.scrollFactor.set(0.9, 0.9);
-				stageFront.active = false;
-				add(stageFront);
-
-				var people:FlxSprite = new FlxSprite(-600, -380);
-				people.frames = Paths.getSparrowAtlas('Megabyte/mbfriend','shared');
-				people.animation.addByPrefix('idle', 'people bob', 20, true);
-				people.scrollFactor.set(0.9, 0.9);
-				people.animation.play('idle');
-				add(people);
+					var people:FlxSprite = new FlxSprite(-400, 150);
+					people.frames = Paths.getSparrowAtlas('Megabyte/mbfriend','shared');
+					people.animation.addByPrefix('idle', 'darkbop', 24, true);
+					people.scrollFactor.set(0.9, 0.9);
+					people.animation.play('idle');
+					add(people);
 
 			case 'subway':
 				var bg:BGSprite = new BGSprite('Danny/danny_stageback', -600, -230, 0.6, 0.9);
@@ -812,9 +822,9 @@ class PlayState extends MusicBeatState
 				resetFastCar();
 				insert(members.indexOf(gfGroup) - 1, fastCar);
 			
-			case 'subway_TOFH':
-				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
-				insert(members.indexOf(dadGroup) - 1, evilTrail);
+			//case 'subway_TOFH':
+				//var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
+				//insert(members.indexOf(dadGroup) - 1, evilTrail);
 		}
 
 		var file:String = Paths.json(songName + '/dialogue'); //Checks for json/Psych Engine dialogue
@@ -1891,6 +1901,8 @@ class PlayState extends MusicBeatState
 			iconP1.swapOldIcon();
 		}*/
 
+		//trace  (SONG.player1);
+
 		callOnLuas('onUpdate', [elapsed]);
 
 		switch (curStage)
@@ -2334,6 +2346,11 @@ class PlayState extends MusicBeatState
 										health += 0.00;
 									else
 										health -= 0.017;
+								if (PlayState.SONG.song.toLowerCase() == 'tofh-m')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.014;
 							case 1:
 								animToPlay = 'singDOWN';
 								if (PlayState.SONG.song.toLowerCase() == 'tofh')
@@ -2341,6 +2358,11 @@ class PlayState extends MusicBeatState
 										health += 0.00;
 									else
 										health -= 0.017;
+								if (PlayState.SONG.song.toLowerCase() == 'tofh-m')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.014;
 							case 2:
 								animToPlay = 'singUP';
 								if (PlayState.SONG.song.toLowerCase() == 'tofh')
@@ -2348,6 +2370,11 @@ class PlayState extends MusicBeatState
 										health += 0.00;
 									else
 										health -= 0.017;
+								if (PlayState.SONG.song.toLowerCase() == 'tofh-m')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.014;
 							case 3:
 								animToPlay = 'singRIGHT';
 								if (PlayState.SONG.song.toLowerCase() == 'tofh')
@@ -2355,6 +2382,11 @@ class PlayState extends MusicBeatState
 										health += 0.00;
 									else
 										health -= 0.017;
+								if (PlayState.SONG.song.toLowerCase() == 'tofh-m')
+									if (health < 0.07)
+										health += 0.00;
+									else
+										health -= 0.014;
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
@@ -2828,6 +2860,8 @@ class PlayState extends MusicBeatState
 							dad.visible = true;
 							iconP2.changeIcon(dad.healthIcon);
 						}
+
+						
 
 					case 2:
 						if(gf.curCharacter != value2) {

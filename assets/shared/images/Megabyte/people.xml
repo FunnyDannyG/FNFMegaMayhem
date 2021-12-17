@@ -1,9 +1,14 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="people.png"><SubTexture name="people bob0000" x="0" y="0" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="people bob0001" x="2564" y="0" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="people bob0002" x="0" y="1404" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="people bob0003" x="2564" y="1404" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="people bob0004" x="0" y="2808" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="people bob0005" x="2564" y="2808" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="people bob0006" x="0" y="4212" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="people.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fuckers0000" x="795" y="386" width="834" height="356" frameX="0" frameY="-26" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0001" x="795" y="386" width="834" height="356" frameX="0" frameY="-26" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0002" x="0" y="386" width="790" height="378" frameX="-22" frameY="-3" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0003" x="0" y="386" width="790" height="378" frameX="-22" frameY="-3" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0004" x="0" y="0" width="784" height="381" frameX="-25" frameY="0" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0005" x="0" y="0" width="784" height="381" frameX="-25" frameY="0" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0006" x="789" y="0" width="784" height="381" frameX="-25" frameY="0" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0007" x="789" y="0" width="784" height="381" frameX="-25" frameY="0" frameWidth="834" frameHeight="382"/>
+	<SubTexture name="fuckers0008" x="789" y="0" width="784" height="381" frameX="-25" frameY="0" frameWidth="834" frameHeight="382"/>
 </TextureAtlas>

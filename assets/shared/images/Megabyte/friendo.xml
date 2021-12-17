@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="friendo.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bop0000" x="0" y="0" width="361" height="648" frameX="0" frameY="-33" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0001" x="0" y="0" width="361" height="648" frameX="0" frameY="-33" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0002" x="366" y="0" width="341" height="674" frameX="-10" frameY="-7" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0003" x="366" y="0" width="341" height="674" frameX="-10" frameY="-7" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0004" x="712" y="0" width="337" height="681" frameX="-12" frameY="0" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0005" x="712" y="0" width="337" height="681" frameX="-12" frameY="0" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0006" x="712" y="0" width="337" height="681" frameX="-12" frameY="0" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0007" x="712" y="0" width="337" height="681" frameX="-12" frameY="0" frameWidth="361" frameHeight="681"/>
+	<SubTexture name="bop0008" x="712" y="0" width="337" height="681" frameX="-12" frameY="0" frameWidth="361" frameHeight="681"/>
+</TextureAtlas>

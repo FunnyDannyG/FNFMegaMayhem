@@ -1,58 +1,58 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				16,
 				-14
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "Megabyte left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Megabyte left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				9,
 				-99
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "Megabyte down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Megabyte down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				54,
 				1
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Megabyte up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Megabyte up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				30,
 				-72
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "Megabyte right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Megabyte right"
 		},
 		{
 			"offsets": [
 				0,
 				0
 			],
-			"loop": true,
+			"indices": [],
 			"fps": 24,
 			"anim": "idle",
-			"indices": [],
+			"loop": false,
 			"name": "Megabyte idle"
 		}
 	],

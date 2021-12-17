@@ -45,7 +45,7 @@
 			"name": "Megabyte right"
 		},
 		{
-			"loop": true,
+			"loop": false,
 			"offsets": [
 				0,
 				0
@@ -65,9 +65,9 @@
 	"healthicon": "megabyte-M",
 	"flip_x": false,
 	"healthbar_colors": [
-		238,
-		126,
-		117
+		84,
+		255,
+		81
 	],
 	"camera_position": [
 		-40,

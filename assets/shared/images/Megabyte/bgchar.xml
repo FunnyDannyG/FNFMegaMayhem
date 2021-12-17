@@ -1,9 +1,14 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="bgchar.png"><SubTexture name="bgchar bob0000" x="0" y="0" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="bgchar bob0001" x="2564" y="0" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="bgchar bob0002" x="0" y="1404" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="bgchar bob0003" x="2564" y="1404" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="bgchar bob0004" x="0" y="2808" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="bgchar bob0005" x="2564" y="2808" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
-<SubTexture name="bgchar bob0006" x="0" y="4212" width="2564" height="1404" frameX="0" frameY="0" frameWidth="2564" frameHeight="1404" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bgchar.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="top bop0000" x="0" y="1776" width="2637" height="534" frameX="0" frameY="-56" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0001" x="0" y="1776" width="2637" height="534" frameX="0" frameY="-56" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0002" x="0" y="1189" width="2578" height="582" frameX="-29" frameY="-7" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0003" x="0" y="1189" width="2578" height="582" frameX="-29" frameY="-7" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0004" x="0" y="595" width="2570" height="589" frameX="-33" frameY="0" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0005" x="0" y="595" width="2570" height="589" frameX="-33" frameY="0" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0006" x="0" y="0" width="2569" height="590" frameX="-33" frameY="0" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0007" x="0" y="0" width="2569" height="590" frameX="-33" frameY="0" frameWidth="2637" frameHeight="590"/>
+	<SubTexture name="top bop0008" x="0" y="0" width="2569" height="590" frameX="-33" frameY="0" frameWidth="2637" frameHeight="590"/>
 </TextureAtlas>

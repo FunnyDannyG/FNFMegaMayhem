@@ -3,45 +3,45 @@
 		{
 			"loop": false,
 			"offsets": [
-				16,
-				-14
+				76,
+				8
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "Megabyte left",
+			"name": "BackwardsAnim",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				9,
-				-99
+				-46,
+				-12
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "Megabyte down",
+			"name": "DownAnim",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				54,
-				1
+				12,
+				24
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "Megabyte up",
+			"name": "UpAnim",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				30,
-				-72
+				-79,
+				-15
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "Megabyte right",
+			"name": "ForwardsAnim",
 			"indices": []
 		},
 		{
@@ -49,41 +49,41 @@
 				0,
 				0
 			],
-			"loop": true,
-			"fps": 24,
-			"anim": "idle",
 			"indices": [],
-			"name": "Megabyte idle"
+			"fps": 48,
+			"anim": "",
+			"loop": false,
+			"name": ""
 		},
 		{
-			"loop": false,
 			"offsets": [
-				10,
-				-91
+				-5,
+				0
 			],
-			"anim": "error",
-			"fps": 24,
-			"name": "Megabyte error",
-			"indices": []
+			"indices": [],
+			"fps": 48,
+			"anim": "idle",
+			"loop": false,
+			"name": "Idle"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Mayhem_Mode/silence",
+	"image": "characters/Mayhem_Mode/TOFH",
 	"position": [
-		0,
-		20
+		-50,
+		200
 	],
-	"healthicon": "megabyte-M",
+	"healthicon": "danny-angry-m",
 	"flip_x": false,
 	"healthbar_colors": [
-		238,
+		247,
 		126,
-		117
+		188
 	],
 	"camera_position": [
-		-40,
-		100
+		0,
+		0
 	],
-	"sing_duration": 6.1,
+	"sing_duration": 4,
 	"scale": 1
 }

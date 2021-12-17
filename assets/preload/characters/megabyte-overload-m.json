@@ -5,22 +5,44 @@
 				57,
 				31
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "Megabyte left overload"
+			"indices": [],
+			"name": "singLEFT"
 		},
 		{
 			"offsets": [
 				-29,
 				-71
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
+			"indices": [],
+			"name": "singDOWN"
+		},
+		{
+			"offsets": [
+				44,
+				-19
+			],
 			"loop": false,
-			"name": "Megabyte down overload"
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "singUP"
+		},
+		{
+			"offsets": [
+				-60,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "singRIGHT"
 		},
 		{
 			"offsets": [
@@ -30,30 +52,8 @@
 			"indices": [],
 			"fps": 24,
 			"anim": "idle",
-			"loop": true,
-			"name": "Megabyte idle overload"
-		},
-		{
-			"offsets": [
-				44,
-				-19
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singUP",
 			"loop": false,
-			"name": "Megabyte up overload"
-		},
-		{
-			"offsets": [
-				-60,
-				-12
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Megabyte right overload"
+			"name": "idle"
 		}
 	],
 	"no_antialiasing": false,
@@ -65,9 +65,9 @@
 	"healthicon": "megabyte-overload-M",
 	"flip_x": false,
 	"healthbar_colors": [
-		228,
-		126,
-		117
+		84,
+		255,
+		81
 	],
 	"camera_position": [
 		10,

@@ -444,11 +444,11 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
 				case 5:
-					createCoolText(['This mod is made by'], -60);
+					createCoolText(['Mayhem Team'], -60);
 				case 7:
 					addMoreText(' ', -60);
 					addMoreText('Megabyte, FunnyDannyG', -60);
-					addMoreText('Sam, Ezogaming', -60);
+					addMoreText('Sam, EzoGaming', -60);
 					addMoreText('Viath, Jordi', -60);
 					addMoreText('Pizzi', -60);
 				// credTextShit.text += '\nNewgrounds';
@@ -470,7 +470,7 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('Friday');
+					addMoreText('FRiday');
 				// credTextShit.visible = true;
 				case 14:
 					addMoreText('Night');

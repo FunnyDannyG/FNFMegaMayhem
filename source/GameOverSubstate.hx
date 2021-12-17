@@ -31,9 +31,41 @@ class GameOverSubstate extends MusicBeatSubstate
 	public static var endSoundName:String = 'gameOverEnd';
 
 	public static function resetVariables() {
-		characterName = 'bf';
+
+		if (PlayState.SONG.player1.contains('danny') && PlayState.SONG.player1.endsWith('-m') || PlayState.SONG.player1.endsWith('-super'))
+			characterName = 'playable-danny-m';
+
+		
+		else if (PlayState.SONG.player1.contains('danny'))
+			characterName = 'playable-danny';
+
+		else
+			characterName = 'bf';
+
+		if (PlayState.SONG.player1.contains('danny'))
+			
+			if(PlayState.SONG.player2.contains('leffrey'))
+			loopSoundName = 'gameover_epic_edition';
+
+			else if (PlayState.SONG.player2.contains('megabyte'))
+				loopSoundName = 'gameover_mb_edition';
+
+			else if (PlayState.SONG.player2.contains('danny'))
+				loopSoundName = 'gameover_danny_edition';
+
+			else if (PlayState.SONG.player2.contains('gf'))
+				loopSoundName = 'gameover_girlfriend_edition';
+
+			else if (PlayState.SONG.player2.contains('bf'))
+				loopSoundName = 'gameover_bf_edition';
+
+			else
+				loopSoundName = 'gameOver';
+
+		else
+			loopSoundName = 'gameOver';
+
 		deathSoundName = 'fnf_loss_sfx';
-		loopSoundName = 'gameOver';
 		endSoundName = 'gameOverEnd';
 	}
 
@@ -50,7 +82,12 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		camFollow = new FlxPoint(bf.getGraphicMidpoint().x, bf.getGraphicMidpoint().y);
 
-		FlxG.sound.play(Paths.sound(deathSoundName));
+		if (PlayState.SONG.player1.contains('danny'))
+			FlxG.sound.play(Paths.sound('danny_gameover'));
+
+		else
+			FlxG.sound.play(Paths.sound(deathSoundName));
+
 		Conductor.changeBPM(100);
 		// FlxG.camera.followLerp = 1;
 		// FlxG.camera.focusOn(FlxPoint.get(FlxG.width / 2, FlxG.height / 2));

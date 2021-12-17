@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				76,
+				8
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BackwardsAnim",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-46,
+				-12
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DownAnim",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				12,
+				24
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "UpAnim",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-79,
+				-15
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "ForwardsAnim",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 48,
+			"anim": "",
+			"loop": false,
+			"name": ""
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"indices": [],
+			"fps": 48,
+			"anim": "idle",
+			"loop": false,
+			"name": "Idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Mayhem_Mode/TOFH_Special",
+	"position": [
+		-50,
+		200
+	],
+	"healthicon": "danny-angry-m",
+	"flip_x": false,
+	"healthbar_colors": [
+		247,
+		126,
+		188
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
