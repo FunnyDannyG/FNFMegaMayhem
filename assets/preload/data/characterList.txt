@@ -16,8 +16,8 @@ gf-pixel
 leffrey
 leffrey-m
 megabyte-normal
-megabyte-normal-n
+megabyte-normal-m
 megabyte-overload
 megabyte-overload-m
 playable-danny
-playabel-danny-m
+playable-danny-m

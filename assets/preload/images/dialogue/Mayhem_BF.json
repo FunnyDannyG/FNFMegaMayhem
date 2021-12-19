@@ -7,30 +7,30 @@
 	"scale": 2,
 	"animations": [
 		{
-			"loop_name": "BF01",
 			"idle_offsets": [
 				0,
 				0
 			],
-			"idle_name": "BF01",
 			"anim": "talk",
 			"loop_offsets": [
 				0,
 				0
-			]
+			],
+			"idle_name": "BF01",
+			"loop_name": "BF01"
 		},
 		{
-			"loop_name": "BFSCARED01",
 			"idle_offsets": [
-				0,
-				10
+				10,
+				29
 			],
-			"idle_name": "BFSCARED01",
 			"anim": "shocked",
 			"loop_offsets": [
-				0,
-				0
-			]
+				10,
+				29
+			],
+			"idle_name": "BFSCARED01",
+			"loop_name": "BFSCARED01"
 		}
 	],
 	"image": "MayhemGrid"

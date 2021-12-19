@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				1,
-				0
-			],
-			"loop": true,
-			"fps": 12,
-			"anim": "idle",
-			"indices": [],
-			"name": "leif idle"
-		},
-		{
+			"loop": false,
 			"offsets": [
 				16,
 				-14
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "leif left"
+			"fps": 24,
+			"name": "leif left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-4,
 				-18
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "leif down"
+			"fps": 24,
+			"name": "leif down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-7,
 				-19
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "leif up"
+			"fps": 24,
+			"name": "leif up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-50,
 				-12
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "leif right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				1,
+				0
+			],
 			"indices": [],
-			"name": "leif right"
+			"fps": 12,
+			"anim": "idle",
+			"loop": false,
+			"name": "leif idle"
 		}
 	],
 	"no_antialiasing": false,

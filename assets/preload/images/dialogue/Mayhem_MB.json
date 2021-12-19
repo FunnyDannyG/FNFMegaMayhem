@@ -1,37 +1,37 @@
 {
-	"dialogue_pos": "left",
 	"position": [
 		270,
 		130
 	],
+	"dialogue_pos": "left",
 	"scale": 2,
+	"image": "MayhemGrid",
 	"animations": [
 		{
-			"loop_name": "MB01",
-			"idle_offsets": [
-				0,
-				0
-			],
-			"idle_name": "MB01",
-			"anim": "talk",
 			"loop_offsets": [
 				0,
-				0
-			]
+				10
+			],
+			"anim": "talk",
+			"idle_offsets": [
+				0,
+				10
+			],
+			"loop_name": "MB01",
+			"idle_name": "MB01"
 		},
 		{
-			"loop_name": "MBOVERLOADED01",
+			"loop_offsets": [
+				-5,
+				14
+			],
+			"anim": "shocked",
 			"idle_offsets": [
 				-5,
-				2
+				14
 			],
-			"idle_name": "MBOVERLOADED01",
-			"anim": "shocked",
-			"loop_offsets": [
-				0,
-				0
-			]
+			"loop_name": "MBOVERLOADED01",
+			"idle_name": "MBOVERLOADED01"
 		}
-	],
-	"image": "MayhemGrid"
+	]
 }

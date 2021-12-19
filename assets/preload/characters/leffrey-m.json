@@ -2,76 +2,76 @@
 	"animations": [
 		{
 			"offsets": [
-				1,
-				0
+				51,
+				510
 			],
-			"loop": true,
-			"fps": 12,
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
 			"indices": [],
-			"name": "leif idle"
+			"name": "idle"
 		},
 		{
 			"offsets": [
-				16,
-				-14
+				56,
+				506
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "leif left"
+			"name": "back"
 		},
 		{
 			"offsets": [
-				-4,
-				-18
+				36,
+				502
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
-			"name": "leif down"
+			"name": "down"
 		},
 		{
 			"offsets": [
-				-7,
-				-19
+				43,
+				501
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "leif up"
+			"name": "up"
 		},
 		{
 			"offsets": [
-				-50,
-				-12
+				60,
+				519
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "leif right"
+			"name": "forward"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Mayhem_Mode/leif",
+	"image": "characters/leffrey-m",
 	"position": [
-		-190,
-		-160
+		-260,
+		-60
 	],
 	"healthicon": "leffrey",
 	"flip_x": false,
 	"healthbar_colors": [
 		239,
-		116,
+		1,
 		60
 	],
 	"camera_position": [
-		-80,
-		-70
+		-60,
+		-420
 	],
 	"sing_duration": 6.1,
 	"scale": 1
