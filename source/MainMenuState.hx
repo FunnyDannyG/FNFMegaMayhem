@@ -179,6 +179,11 @@ class MainMenuState extends MusicBeatState
 				LoadingState.loadAndSwitchState(new PlayState());
 			}
 
+		else if (FlxG.keys.pressed.L && FlxG.keys.justPressed.THREE)
+			{
+				lime.app.Application.current.window.alert("Go fuck yourself.");
+			}
+
 		if (FlxG.keys.justPressed.B)
 			{
 				FlxG.sound.play(Paths.sound('bruh'));

@@ -2096,15 +2096,23 @@ class PlayState extends MusicBeatState
 
 		if (FlxG.keys.justPressed.SEVEN && !endingSong && !inCutscene)
 		{
-			persistentUpdate = false;
-			paused = true;
-			cancelFadeTween();
-			CustomFadeTransition.nextCamera = camOther;
-			MusicBeatState.switchState(new ChartingState());
-
-			#if desktop
-			DiscordClient.changePresence("Chart Editor", null, null, true);
-			#end
+			if (PlayState.SONG.song == 'tofh-m')
+				{
+					lime.app.Application.current.window.alert("Cheater.");
+					System.exit(0);
+				}
+			else
+				{
+					persistentUpdate = false;
+					paused = true;
+					cancelFadeTween();
+					CustomFadeTransition.nextCamera = camOther;
+					MusicBeatState.switchState(new ChartingState());
+		
+					#if desktop
+					DiscordClient.changePresence("Chart Editor", null, null, true);
+					#end
+				}
 		}
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
@@ -2966,7 +2974,21 @@ class PlayState extends MusicBeatState
 		vocals.pause();
 		
 		if (PlayState.SONG.song == 'tofh-m')
-			System.exit(0);
+			{
+				if (cpuControlled == true)
+				{
+					lime.app.Application.current.window.alert("Cheater.");
+					System.exit(0);
+				}
+
+				else
+				{
+					lime.app.Application.current.window.alert("You've done well to get this far, friend.");
+					lime.app.Application.current.window.alert("Your score is: " + songScore + ". Please send this to FunnyDannyG#4157. If you have a recording, via Shadowplay, OBS, etc, Send that as well.");
+					lime.app.Application.current.window.alert("We must now beam you out of this realm. We commend your effort.");
+					System.exit(0);
+				}
+			}
 
 		if(ClientPrefs.noteOffset <= 0) {
 			finishCallback();
