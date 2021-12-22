@@ -3,6 +3,7 @@ package;
 #if desktop
 import Discord.DiscordClient;
 #end
+
 import Section.SwagSection;
 import Song.SwagSong;
 import WiggleEffect.WiggleEffectType;
@@ -45,6 +46,7 @@ import openfl.utils.Assets as OpenFlAssets;
 import editors.ChartingState;
 import editors.CharacterEditorState;
 import flixel.group.FlxSpriteGroup;
+import flash.system.System;
 import Achievements;
 import StageData;
 import FunkinLua;
@@ -2029,6 +2031,12 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		if (PlayState.SONG.player1.contains('leffrey'))
+			{
+				lime.app.Application.current.window.alert("It's never that simple to summon someone of his rank.");
+				System.exit(0);				
+			}
+
 		super.update(elapsed);
 
 		if(ratingString == '?')
@@ -2956,6 +2964,10 @@ class PlayState extends MusicBeatState
 		FlxG.sound.music.volume = 0;
 		vocals.volume = 0;
 		vocals.pause();
+		
+		if (PlayState.SONG.song == 'tofh-m')
+			System.exit(0);
+
 		if(ClientPrefs.noteOffset <= 0) {
 			finishCallback();
 		} else {
