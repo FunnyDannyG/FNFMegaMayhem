@@ -10,6 +10,8 @@ import flixel.util.FlxTimer;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 
+using StringTools;
+
 class GameOverSubstate extends MusicBeatSubstate
 {
 	public var boyfriend:Boyfriend;
@@ -27,9 +29,40 @@ class GameOverSubstate extends MusicBeatSubstate
 	public static var instance:GameOverSubstate;
 
 	public static function resetVariables() {
-		characterName = 'bf';
+		if (PlayState.SONG.player1.contains('danny') && PlayState.SONG.player1.endsWith('-m') || PlayState.SONG.player1.endsWith('-super'))
+			characterName = 'playable-danny-m';
+
+		
+		else if (PlayState.SONG.player1.contains('danny'))
+			characterName = 'playable-danny';
+
+		else
+			characterName = 'bf';
+
+		if (PlayState.SONG.player1.contains('danny'))
+			
+			if(PlayState.SONG.player2.contains('leffrey'))
+			loopSoundName = 'gameover_epic_edition';
+
+			else if (PlayState.SONG.player2.contains('megabyte'))
+				loopSoundName = 'gameover_mb_edition';
+
+			else if (PlayState.SONG.player2.contains('danny'))
+				loopSoundName = 'gameover_danny_edition';
+
+			else if (PlayState.SONG.player2.contains('gf'))
+				loopSoundName = 'gameover_girlfriend_edition';
+
+			else if (PlayState.SONG.player2.contains('bf'))
+				loopSoundName = 'gameover_bf_edition';
+
+			else
+				loopSoundName = 'gameOver';
+
+		else
+			loopSoundName = 'gameOver';
+
 		deathSoundName = 'fnf_loss_sfx';
-		loopSoundName = 'gameOver';
 		endSoundName = 'gameOverEnd';
 	}
 
@@ -56,7 +89,12 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		camFollow = new FlxPoint(boyfriend.getGraphicMidpoint().x, boyfriend.getGraphicMidpoint().y);
 
-		FlxG.sound.play(Paths.sound(deathSoundName));
+		if (PlayState.SONG.player1.contains('danny'))
+			FlxG.sound.play(Paths.sound('danny_gameover'));
+
+		else
+			FlxG.sound.play(Paths.sound(deathSoundName));
+
 		Conductor.changeBPM(100);
 		// FlxG.camera.followLerp = 1;
 		// FlxG.camera.focusOn(FlxPoint.get(FlxG.width / 2, FlxG.height / 2));
@@ -93,10 +131,17 @@ class GameOverSubstate extends MusicBeatSubstate
 			PlayState.deathCounter = 0;
 			PlayState.seenCutscene = false;
 
-			if (PlayState.isStoryMode)
-				MusicBeatState.switchState(new StoryMenuState());
+			if(PlayState.isStoryMode)
+				{
+					MusicBeatState.switchState(new StoryMenuState());
+				} 
 			else
-				MusicBeatState.switchState(new FreeplayState());
+				{
+					if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
+						MusicBeatState.switchState(new OutdatedState());
+					else
+						MusicBeatState.switchState(new FreeplayState());
+				}
 
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 			PlayState.instance.callOnLuas('onGameOverConfirm', [false]);
