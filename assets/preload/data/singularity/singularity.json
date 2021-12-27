@@ -3009,6 +3009,7 @@
 		"validScore": true,
 		"sections": 0,
 		"bpm": 142,
-		"speed": 1.9
+		"speed": 1.9,
+		"mania": 3
 	}
 }

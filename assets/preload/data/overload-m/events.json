@@ -2349,6 +2349,7 @@
 		"bpm": 180,
 		"arrowSkin": null,
 		"needsVoices": true,
-		"song": "overload-m"
+		"song": "overload-m",
+		"mania": 3
 	}
 }

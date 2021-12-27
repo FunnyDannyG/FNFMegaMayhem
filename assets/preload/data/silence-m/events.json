@@ -1230,6 +1230,7 @@
 		"bpm": 160,
 		"arrowSkin": null,
 		"needsVoices": true,
-		"song": "Silence-M"
+		"song": "Silence-M",
+		"mania": 3
 	}
 }

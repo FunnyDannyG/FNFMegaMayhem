@@ -3803,6 +3803,7 @@
 		"needsVoices": true,
 		"validScore": true,
 		"bpm": 110,
-		"speed": 3
+		"speed": 3,
+		"mania":3
 	}
 }

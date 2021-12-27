@@ -16329,6 +16329,7 @@
 		"needsVoices": true,
 		"validScore": true,
 		"speed": 3.7,
-		"bpm": 135
+		"bpm": 135,
+		"mania": 3
 	}
 }

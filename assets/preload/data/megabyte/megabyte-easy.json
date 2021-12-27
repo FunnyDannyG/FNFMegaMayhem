@@ -2178,6 +2178,7 @@
 		"needsVoices": true,
 		"stage": "megamall",
 		"speed": 1.50000000000002,
-		"bpm": 158
+		"bpm": 158,
+		"mania": 3
 	}
 }

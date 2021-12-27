@@ -2449,6 +2449,7 @@
 		"sections": 0,
 		"needsVoices": true,
 		"bpm": 158,
-		"speed": 1.80000000000002
+		"speed": 1.80000000000002,
+		"mania": 3
 	}
 }

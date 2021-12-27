@@ -2,7 +2,7 @@
 	"song": {
 		"sectionLengths": [],
 		"player1": "bf_dark",
-		"gfVersion": "gft",
+		"gfVersion": "gf_dark",
 		"player2": "danny_dark",
 		"notes": [
 			{
@@ -7319,6 +7319,7 @@
 		"needsVoices": true,
 		"noteStyle": "nonCanon",
 		"speed": 3.1,
-		"bpm": 133
+		"bpm": 133,
+		"mania": 3
 	}
 }

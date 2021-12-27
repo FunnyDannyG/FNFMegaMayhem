@@ -3516,6 +3516,7 @@
 		"sections": 0,
 		"stage": "subway",
 		"speed": 2.4,
-		"bpm": 142
+		"bpm": 142,
+		"mania": 3
 	}
 }

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="diffics.png">
-	<SubTexture name="NORMAL" x="0" y="0" width="308" height="67"/>
-	<SubTexture name="HARD" x="0" y="67" width="308" height="67"/>
-	<SubTexture name="EASY" x="0" y="133" width="41" height="74"/>
-</TextureAtlas>

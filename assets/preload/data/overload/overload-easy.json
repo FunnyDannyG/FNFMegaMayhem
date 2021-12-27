@@ -4837,6 +4837,7 @@
 		"validScore": true,
 		"needsVoices": true,
 		"bpm": 175,
-		"speed": 1.8
+		"speed": 1.8,
+		"mania": 3
 	}
 }

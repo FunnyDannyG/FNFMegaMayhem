@@ -560,6 +560,7 @@
 		"bpm": 158,
 		"arrowSkin": null,
 		"needsVoices": true,
-		"song": "Megabyte"
+		"song": "Megabyte",
+		"mania": 3
 	}
 }

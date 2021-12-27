@@ -2497,6 +2497,7 @@
 		"sections": 0,
 		"needsVoices": true,
 		"speed": 2,
-		"bpm": 156
+		"bpm": 156,
+		"mania": 3
 	}
 }

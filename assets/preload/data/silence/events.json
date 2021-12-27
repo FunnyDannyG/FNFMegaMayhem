@@ -835,6 +835,7 @@
 		"bpm": 160,
 		"arrowSkin": null,
 		"needsVoices": true,
-		"song": "Silence"
+		"song": "Silence",
+		"mania": 3
 	}
 }

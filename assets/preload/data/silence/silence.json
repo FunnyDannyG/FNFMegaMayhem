@@ -2987,6 +2987,7 @@
 		"validScore": true,
 		"sections": 0,
 		"speed": 1.90000000000002,
-		"bpm": 160
+		"bpm": 160,
+		"mania": 3
 	}
 }

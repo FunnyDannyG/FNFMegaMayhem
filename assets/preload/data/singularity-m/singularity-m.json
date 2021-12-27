@@ -3046,6 +3046,7 @@
 		"sections": 0,
 		"needsVoices": true,
 		"gf": "gf",
-		"bpm": 130
+		"bpm": 130,
+		"mania": 3
 	}
 }

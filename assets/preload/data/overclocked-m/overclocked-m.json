@@ -4207,6 +4207,7 @@
 		"sections": 0,
 		"needsVoices": true,
 		"bpm": 156,
-		"gf": "gf"
+		"gf": "gf",
+		"mania": 3
 	}
 }

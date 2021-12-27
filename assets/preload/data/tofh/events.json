@@ -1676,6 +1676,7 @@
 		"bpm": 133,
 		"arrowSkin": null,
 		"needsVoices": true,
-		"song": "tofh"
+		"song": "tofh",
+		"mania": 3
 	}
 }

@@ -2802,6 +2802,7 @@
 		"validScore": true,
 		"stage": "subway",
 		"speed": 2.2,
-		"bpm": 156
+		"bpm": 156,
+		"mania": 3
 	}
 }

@@ -907,6 +907,7 @@
 		"bpm": 135,
 		"arrowSkin": null,
 		"needsVoices": true,
-		"song": "tofh-m"
+		"song": "tofh-m",
+		"mania": 3
 	}
 }

@@ -3023,6 +3023,7 @@
 		"validScore": true,
 		"sections": 0,
 		"bpm": 142,
-		"speed": 1.4
+		"speed": 1.4,
+		"mania": 3
 	}
 }
