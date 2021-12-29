@@ -78,6 +78,7 @@
 	
 	<assets path='example_mods' rename='mods' embed='false' if="MODS_ALLOWED"/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
+	<assets path='art/temp_controls.txt' rename='temp_controls.txt' />
 	<!-- <template path='mods' /> -->
 
 	<!--assets path='example_mods/trickyrecharts' delete='true' unless='MODPACK'/-->

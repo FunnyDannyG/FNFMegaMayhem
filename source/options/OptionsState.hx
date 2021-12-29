@@ -38,8 +38,15 @@ class OptionsState extends MusicBeatState
 		switch(label) {
 			case 'Note Colors':
 				openSubState(new options.NotesSubState());
+			#if desktop
 			case 'Controls':
-				openSubState(new options.ControlsSubState());
+				lime.app.Application.current.window.alert("Keybindings are currently broken as of this version. We are actively trying to find a fix but we think it has something to do with the amount of keybindings that get set. Default bindings are as follows:");
+				lime.app.Application.current.window.alert("Set One\n\n1K:  Space\n2K:  D  K\n3K: D  Space  K\n4K: D  F  J  K\n5K: D  F  Space  J  K\n6K: S  D  F  J  K  L\n7K: S  D  F  Space  J  K  L\n8K: A  S  D  F  H  J  K  L\n9K: A  S  D  F  Space  H  J  K  L\n10K: Q  W  E  R  G  H  U  I  O  P");
+				lime.app.Application.current.window.alert("Alternate keybinds are provided in case you do not like the ones specified.");
+				lime.app.Application.current.window.alert("Those keybinds are the bottom row of the Keyboard ( ZXCVBNM,./ ) Increasing by one key for each mania, for example, 1k is Z, 3k is ZXC, 6k is ZXCVBN. All the way up to 10k.");
+				lime.app.Application.current.window.alert("Please be patient while we work on a fix, to view this information again, check the temp_controls.txt file, or select this option again.");
+				//openSubState(new options.ControlsSubState());
+			#end
 			case 'Graphics':
 				openSubState(new options.GraphicsSettingsSubState());
 			case 'Visuals and UI':
