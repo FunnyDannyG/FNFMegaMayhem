@@ -114,6 +114,7 @@ class ControlsSubState extends MusicBeatSubstate {
 		['Down 2', 'note_ten8'],
 		['Up 2', 'note_ten9'],
 		['Right 2', 'note_ten10'],
+		[''],
 		['11 KEYS'],
 		['Left 1', 'note_elev1'],
 		['Down 1', 'note_elev2'],
