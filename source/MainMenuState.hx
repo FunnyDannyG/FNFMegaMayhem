@@ -147,41 +147,10 @@ class MainMenuState extends MusicBeatState
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
 
-		if (FlxG.keys.pressed.L && FlxG.keys.justPressed.ONE)
+		if (FlxG.keys.pressed.L)
 			{
-				var curDifficulty = 2;
-				var songLowercase = 'leffrey';
-				var songHighscore = 'leffrey';
-				trace(songLowercase);
-				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
-				trace(poop);
-				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-				PlayState.isStoryMode = false;
-				PlayState.storyDifficulty = curDifficulty;
-				PlayState.storyWeek = 2;
-				trace('CUR WEEK' + PlayState.storyWeek);
-				LoadingState.loadAndSwitchState(new PlayState());
-			}
-
-		else if (FlxG.keys.pressed.L && FlxG.keys.justPressed.TWO)
-			{
-				var curDifficulty = 2;
-				var songLowercase = 'leffrey-mitai';
-				var songHighscore = 'leffrey-mitai';
-				trace(songLowercase);
-				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
-				trace(poop);
-				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-				PlayState.isStoryMode = false;
-				PlayState.storyDifficulty = curDifficulty;
-				PlayState.storyWeek = 2;
-				trace('CUR WEEK' + PlayState.storyWeek);
-				LoadingState.loadAndSwitchState(new PlayState());
-			}
-
-		else if (FlxG.keys.pressed.L && FlxG.keys.justPressed.THREE)
-			{
-				lime.app.Application.current.window.alert("Go fuck yourself.");
+				//lime.app.Application.current.window.alert('You are making a terrible mistake.');
+				MusicBeatState.switchState(new AchievementsMenuState());
 			}
 
 		if (FlxG.keys.justPressed.B)

@@ -183,9 +183,15 @@ class PauseSubState extends MusicBeatSubstate
 					CustomFadeTransition.nextCamera = transCamera;
 					if(PlayState.isStoryMode) {
 						MusicBeatState.switchState(new StoryMenuState());
-					} else {
-						if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
+					} else 
+					
+					{
+						if (PlayState.SONG.song.toLowerCase().contains('leffrey'))
+							MusicBeatState.switchState(new AchievementsMenuState());
+	
+						else if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
 							MusicBeatState.switchState(new OutdatedState());
+	
 						else
 							MusicBeatState.switchState(new FreeplayState());
 					}

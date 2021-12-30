@@ -137,8 +137,12 @@ class GameOverSubstate extends MusicBeatSubstate
 				} 
 			else
 				{
-					if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
+					if (PlayState.SONG.song.toLowerCase().contains('leffrey'))
+						MusicBeatState.switchState(new AchievementsMenuState());
+
+					else if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
 						MusicBeatState.switchState(new OutdatedState());
+
 					else
 						MusicBeatState.switchState(new FreeplayState());
 				}
