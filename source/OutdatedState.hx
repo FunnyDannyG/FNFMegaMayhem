@@ -209,38 +209,6 @@ class OutdatedState extends MusicBeatState
 			changeSelection(shiftMult);
 		}
 
-		if (FlxG.keys.pressed.L && FlxG.keys.justPressed.ONE)
-			{
-				var curDifficulty = 2;
-				var songLowercase = 'leffrey-m';
-				var songHighscore = 'leffrey-m';
-				trace(songLowercase);
-				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
-				trace(poop);
-				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-				PlayState.isStoryMode = false;
-				PlayState.storyDifficulty = curDifficulty;
-				PlayState.storyWeek = 2;
-				trace('CUR WEEK' + PlayState.storyWeek);
-				LoadingState.loadAndSwitchState(new PlayState());
-			}
-
-		else if (FlxG.keys.pressed.L && FlxG.keys.justPressed.TWO)
-			{
-				var curDifficulty = 2;
-				var songLowercase = 'leffrey-mitai-m';
-				var songHighscore = 'leffrey-mitai-m';
-				trace(songLowercase);
-				var poop:String = Highscore.formatSong(songHighscore, curDifficulty);
-				trace(poop);
-				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-				PlayState.isStoryMode = false;
-				PlayState.storyDifficulty = curDifficulty;
-				PlayState.storyWeek = 2;
-				trace('CUR WEEK' + PlayState.storyWeek);
-				LoadingState.loadAndSwitchState(new PlayState());
-			}
-
 		if (controls.UI_LEFT_P)
 			trace('farticle');
 		if (controls.UI_RIGHT_P)

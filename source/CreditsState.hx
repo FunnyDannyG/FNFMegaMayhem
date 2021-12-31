@@ -86,7 +86,7 @@ class CreditsState extends MusicBeatState
 			['Pizzi',		'pizzi',		'Composer of Mega Mayhem',	'https://en.wikipedia.org/wiki/Testicular_torsion',	'2CECBC'],
 			['EzoGaming',		'ezogaming',		'Animator of Mega Mayhem',	'balls.funnydannyg.net',	'57CEE0'],
 			['Sam',		'sam',		'Animator and Writer of Mega Mayhem',	'https://www.youtube.com/user/sjl057',	'7C1308'],
-			['Jordi',		'jordi',		'Writer of Mega Mayhem',	'https://www.twitch.tv/jordi_g__',	'8400FF'],
+			['Jordi',		'jordi',		'Writer of Mega Mayhem',	'https://www.twitch.tv/jordi_live_',	'8400FF'],
 			['Leffrey',		'leffrey',		'Leffrey',	'https://twitter.com/markiplier/status/353586063379402753?t=jTho6Vac3ACtMw9OyVh5lQ&s=19',	'282EF4'],
 			[''],
 			['Mega Mayhem Website'],

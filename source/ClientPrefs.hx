@@ -77,7 +77,7 @@ class ClientPrefs {
 		'note_six3'		=> [F, C],
 		'note_six4'		=> [J, V],
 		'note_six5'		=> [K, B],
-		'note_six6'		=> [L, C],
+		'note_six6'		=> [L, N],
 
 		'note_seven1'	=> [S, Z],
 		'note_seven2'	=> [D, X],
