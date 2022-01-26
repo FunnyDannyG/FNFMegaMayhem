@@ -34,6 +34,7 @@ class HealthIcon extends FlxSprite
 		else changeIcon('bf');
 	}
 
+	private var iconOffsets:Array<Float> = [0, 0,];
 	public function changeIcon(char:String) {
 		if(this.char != char) {
 			var name:String = 'icons/' + char;
@@ -51,6 +52,13 @@ class HealthIcon extends FlxSprite
 				antialiasing = false;
 			}
 		}
+	}
+
+	override function updateHitbox()
+	{
+		super.updateHitbox();
+		offset.x = iconOffsets[0];
+		offset.y = iconOffsets[1];
 	}
 
 	public function getCharacter():String {

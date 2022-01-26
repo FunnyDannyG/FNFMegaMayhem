@@ -441,7 +441,7 @@ class TitleState extends MusicBeatState
 				if(titleText != null) titleText.animation.play('press');
 
 				FlxG.camera.flash(FlxColor.WHITE, 1);
-				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
+				//FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 
 				transitioning = true;
 				// FlxG.sound.music.stop();
@@ -632,7 +632,7 @@ class TitleState extends MusicBeatState
 					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
 
 				case 16:
-					skipIntro();
+					MusicBeatState.switchState(new MainMenuState());
 			}
 		}
 	}
@@ -643,10 +643,7 @@ class TitleState extends MusicBeatState
 	{
 		if (!skippedIntro)
 		{
-			remove(ngSpr);
-
-			FlxG.camera.flash(FlxColor.WHITE, 4);
-			remove(credGroup);
+			MusicBeatState.switchState(new MainMenuState());
 			skippedIntro = true;
 		}
 	}

@@ -43,6 +43,9 @@ class CreditsState extends MusicBeatState
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		add(bg);
 
+		bg.scale.x = bg.scale.y = scaleRatio;
+		bg.screenCenter();
+		
 		grpOptions = new FlxTypedGroup<Alphabet>();
 		add(grpOptions);
 
@@ -80,21 +83,17 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			['Team Mayhem'],
-			['Megabyte',		'megabyte',		'Creator and Concept Artist of Mega Mayhem',					'https://twitter.com/MegaByteBruh',	'DDACDF'],
-			['FunnyDannyG',		'funnydannyg',		'Primary Composer, Programmer, and Charter of Mega Mayhem',	'https://www.youtube.com/channel/UCvFaYPlNH5xA8u6EETrdbtg',	'7E9EF7'],
-			['Viath',		'viath',		'Composer of Mega Mayhem',	'https://www.youtube.com/channel/UCtSQGVZD0iMnNQUYhz8kESg',	'FCDA00'],
-			['Pizzi',		'pizzi',		'Composer of Mega Mayhem',	'https://en.wikipedia.org/wiki/Testicular_torsion',	'2CECBC'],
-			['EzoGaming',		'ezogaming',		'Animator of Mega Mayhem',	'balls.funnydannyg.net',	'57CEE0'],
-			['Sam',		'sam',		'Animator and Writer of Mega Mayhem',	'https://www.youtube.com/user/sjl057',	'7C1308'],
-			['Jordi',		'jordi',		'Writer of Mega Mayhem',	'https://www.twitch.tv/jordi_live_',	'8400FF'],
+			['Megabyte',		'megabyte',		'Creator and Artist',					'https://twitter.com/MegaByteBruh',	'DDACDF'],
+			['FunnyDannyG',		'funnydannyg',		'Director, Composer, and Programmer',	'https://www.youtube.com/channel/UCvFaYPlNH5xA8u6EETrdbtg',	'7E9EF7'],
+			['Jordi',		'jordi',		'Writer and Character Artist',	'https://www.twitch.tv/jordi_live_',	'8400FF'],
+			['Viath',		'viath',		'Composer',	'https://twitter.com/Viath_',	'FCDA00'],
+			['Sam',		'sam',		'Character Animator and Writer',	'https://www.youtube.com/user/sjl057',	'7C1308'],
+			['EzoGaming',		'ezogaming',		'Animator',	'balls.funnydannyg.net',	'57CEE0'],
+			['Pizzi',		'pizzi',		'Composer',	'https://en.wikipedia.org/wiki/Testicular_torsion',	'2CECBC'],
 			['Leffrey',		'leffrey',		'Leffrey',	'https://twitter.com/markiplier/status/353586063379402753?t=jTho6Vac3ACtMw9OyVh5lQ&s=19',	'282EF4'],
 			[''],
-			['Mega Mayhem Website'],
-			['FunnyDannyG',		'funnydannyg',		'UI Design and Prototyping',	'https://www.youtube.com/channel/UCvFaYPlNH5xA8u6EETrdbtg',	'7E9EF7'],
-			['Sam',		'sam',		'Frontend Development',	'https://www.youtube.com/user/sjl057',	'7C1308'],
-			[''],
 			['Psych Engine Team'],
-			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',						'https://twitter.com/Shadow_Mario_',	'FFDD33'],
+			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',						'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',					'https://twitter.com/river_oaken',		'C30085'],
 			['bb-panzu',			'bb-panzu',			'Additional Programmer of Psych Engine',				'https://twitter.com/bbsub3',			'389A58'],
 			[''],
@@ -104,6 +103,8 @@ class CreditsState extends MusicBeatState
 			['iFlicky',				'iflicky',			'Delay/Combo Menu Song Composer\nand Dialogue Sounds',	'https://twitter.com/flicky_i',			'C549DB'],
 			['PolybiusProxy',		'polybiusproxy',	'.MP4 Video Loader Extension',							'https://twitter.com/polybiusproxy',	'FFEAA6'],
 			['Keoiki',				'keoiki',			'Note Splash Animations',								'https://twitter.com/Keoiki_',			'FFFFFF'],
+			['Smokey',				'smokey',			'Spritemap Texture Support',							'https://twitter.com/Smokey_5_',		'0033CC'],
+			[''],
 			[''],
 			["Funkin' Crew"],
 			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",					'https://twitter.com/ninja_muffin99',	'F73838'],

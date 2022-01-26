@@ -48,7 +48,7 @@ class AchievementsMenuState extends MusicBeatState
 	override function create()
 	{
 		#if MODS_ALLOWED
-		Paths.destroyLoadedImages();
+		//Paths.destroyLoadedImages();
 		#end
 		WeekData.reloadWeekFiles(false);
 		#if desktop
@@ -274,7 +274,9 @@ class AchievementsMenuState extends MusicBeatState
 				curDifficulty = 1;
 				trace('Couldnt find file');
 			}
+			curDifficulty = 1;
 			trace(poop);
+			curDifficulty = 1;
 
 			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
 			PlayState.isStoryMode = false;
