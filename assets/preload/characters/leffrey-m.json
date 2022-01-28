@@ -1,66 +1,66 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				51,
 				510
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				56,
 				506
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "back"
+			"fps": 24,
+			"name": "back",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				36,
 				502
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "down"
+			"fps": 24,
+			"name": "down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				43,
 				501
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "up"
+			"fps": 24,
+			"name": "up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				60,
 				519
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "forward"
+			"fps": 24,
+			"name": "forward",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/leffrey-m",
 	"position": [
-		-260,
-		-60
+		-270,
+		-30
 	],
 	"healthicon": "leffrey",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		60
 	],
 	"camera_position": [
-		-60,
-		-420
+		-40,
+		-400
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 0.8
 }

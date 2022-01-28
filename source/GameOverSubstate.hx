@@ -144,6 +144,9 @@ class GameOverSubstate extends MusicBeatSubstate
 					else if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
 						MusicBeatState.switchState(new OutdatedState());
 
+					else if (PlayState.SONG.song.toLowerCase().endsWith('-x'))
+						MusicBeatState.switchState(new OutdatedState());
+
 					else
 						MusicBeatState.switchState(new FreeplayState());
 				}

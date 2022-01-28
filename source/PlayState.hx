@@ -3419,7 +3419,7 @@ class PlayState extends MusicBeatState
 		vocals.volume = 0;
 		vocals.pause();
 
-		if (PlayState.SONG.song == 'tofh-m')
+		if (PlayState.SONG.song == 'tofh-x')
 			{
 				if (cpuControlled == true)
 				{
@@ -3598,6 +3598,9 @@ class PlayState extends MusicBeatState
 					MusicBeatState.switchState(new AchievementsMenuState());
 
 				else if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
+					MusicBeatState.switchState(new OutdatedState());
+		
+				else if (PlayState.SONG.song.toLowerCase().endsWith('-x'))
 					MusicBeatState.switchState(new OutdatedState());
 
 				else
@@ -4240,6 +4243,9 @@ class PlayState extends MusicBeatState
 			}
 
 			var char:Character = dad;
+
+//Health Draining Shit, will move to the chart editor eventually.
+
 			if (PlayState.SONG.song.toLowerCase() == 'tofh')
 				if (health < 0.07)
 					health += 0.00;
@@ -4249,7 +4255,15 @@ class PlayState extends MusicBeatState
 				if (health < 0.07)
 					health += 0.00;
 				else
-					health -= 0.014;
+					health -= 0.004;
+			if (PlayState.SONG.song.toLowerCase() == 'tofh-x')
+				if (health < 0.07)
+					health += 0.00;
+				else
+					health -= 0.016;
+
+
+
 			var animToPlay:String = 'sing' + Note.keysShit.get(mania).get('anims')[note.noteData] + altAnim;
 			if(note.gfNote) {
 				char = gf;
