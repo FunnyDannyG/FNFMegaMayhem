@@ -501,7 +501,6 @@ class PlayState extends MusicBeatState
 				stageFront.scrollFactor.set(0.9, 0.9);
 				stageFront.active = false;
 				add(stageFront);
-
 			
 			case 'stage': //Week 1
 				var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
@@ -1241,6 +1240,8 @@ class PlayState extends MusicBeatState
 				case 'megabyte' | 'silence' | 'overload':
 					startDialogue(dialogueJson);
 				case 'chronokinesis' | 'overclocked' | 'singularity':
+					startDialogue(dialogueJson);
+				case 'back-shift' | 'breakdown' | 'white-noise':
 					startDialogue(dialogueJson);
 				default:
 					startCountdown();

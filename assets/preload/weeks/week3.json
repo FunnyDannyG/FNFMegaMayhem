@@ -1,30 +1,48 @@
 {
+	"storyName": "Momentary Madness",
+	"hideFreeplay": false,
+	"weekBackground": "tutorial",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		132,
+		0,
+		255
+	],
+	"startUnlocked": true,
 	"songs": [
 		[
-			"tofh",
-			"danny",
+			"back-shift",
+			"jordi",
 			[
-				126,
-				158,
-				247
+				132,
+				0,
+				255
+			]
+		],
+		[
+			"breakdown",
+			"jordi",
+			[
+				132,
+				0,
+				255
+			]
+		],
+		[
+			"white-noise",
+			"jordi",
+			[
+				132,
+				0,
+				255
 			]
 		]
 	],
-	"hideFreeplay": false,
-	"weekBackground": "stage",
+	"hideStoryMode": false,
 	"weekCharacters": [
 		"dad",
 		"bf",
 		"gf"
 	],
-	"storyName": "Your New Week",
-	"weekName": "Custom Week",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": true,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"weekName": "Week 3"
 }

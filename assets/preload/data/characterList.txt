@@ -13,6 +13,8 @@ gf_dark
 gf-car
 gf-christmas
 gf-pixel
+jordi
+jordi-m
 leffrey
 leffrey-m
 megabyte-normal
