@@ -1,0 +1,2 @@
+name=Fart
+image=icon.jpg
