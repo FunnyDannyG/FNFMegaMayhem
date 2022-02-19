@@ -1,0 +1,1 @@
+These are formatted to work with OpenUTAU, an open source recreation of UTAU with many enchanced features. HOWEVER, Megabyte and Boyfriend are formatted for use in FL studio ONLY, and do not have an UTAU variant. The OpenUTAU most likely work in standard UTAU, but were made for OpenUTAU use specifically.
