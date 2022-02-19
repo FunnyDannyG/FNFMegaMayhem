@@ -4,8 +4,10 @@ overload-m:megabyte-overload-M:1
 chronokinesis-m:danny-M:2
 overclocked-m:danny-M:2
 singularity-m:danny-M:2
-tofh-m:danny-M:2
-tofh-x:danny-M:2
 back-shift-m:jordi-m:3
 breakdown-m:jordi-m:3
 white-noise-m:jordi-m:3
+chip-shortage-m:megabyte-overload-M:1
+tofh-m:danny-M:2
+tofh-x:danny-M:2
+warp-drive-m:jordi-m:3

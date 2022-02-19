@@ -124,6 +124,7 @@ class PlayState extends MusicBeatState
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
 	public static var storyWeek:Int = 0;
+	public static var RemainingMisses:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
 
@@ -233,6 +234,7 @@ class PlayState extends MusicBeatState
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
 	public var scoreTxt:FlxText;
+	public var MissCountTxt:FlxText;
 	var timeTxt:FlxText;
 	var scoreTxtTween:FlxTween;
 
@@ -303,6 +305,8 @@ class PlayState extends MusicBeatState
 		instakillOnMiss = ClientPrefs.getGameplaySetting('instakill', false);
 		practiceMode = ClientPrefs.getGameplaySetting('practice', false);
 		cpuControlled = ClientPrefs.getGameplaySetting('botplay', false);
+
+		RemainingMisses = SONG.missAllowance;
 
 		
 		
@@ -1116,6 +1120,12 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
+		MissCountTxt = new FlxText(1, 1, FlxG.width, "Remaining Misses: " + RemainingMisses, 20);
+		MissCountTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		MissCountTxt.scrollFactor.set();
+		MissCountTxt.borderSize = 1.25;
+		add(MissCountTxt);
+
 		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
@@ -1134,6 +1144,7 @@ class PlayState extends MusicBeatState
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
+		MissCountTxt.cameras = [camHUD];
 		botplayTxt.cameras = [camHUD];
 		timeBar.cameras = [camHUD];
 		timeBarBG.cameras = [camHUD];
@@ -4155,6 +4166,60 @@ class PlayState extends MusicBeatState
 		//For testing purposes
 		//trace(daNote.missHealth);
 		songMisses++;
+
+		//Misses Remaining
+		RemainingMisses--;
+
+		//Lower the misses remaining if not currently lower than 0
+		if(RemainingMisses > 0)
+			MissCountTxt.text = "Remaining Misses: " + RemainingMisses;
+
+		//When you run out of allowed misses
+		if(RemainingMisses == 0)
+			{
+				//Adjust UI elements
+				MissCountTxt.setFormat(Paths.font("vcr.ttf"), 25, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+
+				//Signify that you have run out of misses
+				FlxG.sound.play(Paths.sound('you_suck' + introSoundsSuffix), 0.6);
+
+				//If fighting Leffrey
+				if(PlayState.SONG.player2.contains('leffrey'))
+				{
+					//This effect straight up kills you
+					MissCountTxt.text = "Punishment: Death";
+					health = 0.05;
+				}
+
+				//If fighting Megabyte
+				else if (PlayState.SONG.player2.contains('megabyte'))
+				{
+					//This effect sets your health very low
+					health = 0.5;
+					MissCountTxt.text = "Punishment: Near Death Experience";	
+				}
+		
+				//If fighting Jordi
+				else if (PlayState.SONG.player2.contains('jordi'))
+				{
+					//This effect restarts the song
+					MissCountTxt.text = "Punishment: Back-Shift";
+					PlayState.instance.paused = true;
+					FlxG.sound.music.volume = 0;
+					PlayState.instance.vocals.volume = 0;		
+					MusicBeatState.resetState();
+				}
+			
+				//If fighting Danny
+				else if (PlayState.SONG.player2.contains('danny'))
+				{
+					//This effect makes the song scroll significantly faster
+					songSpeed = SONG.speed * 1.4;
+					MissCountTxt.text = "Punishment: Faster Scrolling";
+
+				}
+			}//End
+
 		vocals.volume = 0;
 		if(!practiceMode) songScore -= 10;
 		

@@ -215,7 +215,8 @@ class ChartingState extends MusicBeatState
 				speed: 1,
 				stage: 'stage',
 				validScore: false,
-				mania: Note.defaultMania
+				mania: Note.defaultMania,
+				missAllowance: 10
 			};
 			addSection();
 			PlayState.SONG = _song;
@@ -584,6 +585,11 @@ class ChartingState extends MusicBeatState
 		stepperMania.value = _song.mania;
 		stepperMania.name = 'mania';
 		blockPressWhileTypingOnStepper.push(stepperMania);
+
+		var stepperMissAllowance:FlxUINumericStepper = new FlxUINumericStepper(100, stepperBPM.y, 1, 3, 1, 50, 1);
+		stepperMissAllowance.value = _song.missAllowance;
+		stepperMissAllowance.name = 'Miss Allowance';
+		blockPressWhileTypingOnStepper.push(stepperMissAllowance);
 	
 		noteSplashesInputText = new FlxUIInputText(noteSkinInputText.x, noteSkinInputText.y + 35, 150, _song.splashSkin, 8);
 		blockPressWhileTypingOn.push(noteSplashesInputText);
@@ -609,12 +615,14 @@ class ChartingState extends MusicBeatState
 		tab_group_song.add(stepperBPM);
 		tab_group_song.add(stepperSpeed);
 		tab_group_song.add(stepperMania);
+		tab_group_song.add(stepperMissAllowance);
 		tab_group_song.add(reloadNotesButton);
 		tab_group_song.add(noteSkinInputText);
 		tab_group_song.add(noteSplashesInputText);
 		tab_group_song.add(new FlxText(stepperBPM.x, stepperBPM.y - 15, 0, 'Song BPM:'));
 		tab_group_song.add(new FlxText(stepperSpeed.x, stepperSpeed.y - 15, 0, 'Song Speed:'));
 		tab_group_song.add(new FlxText(stepperMania.x, stepperMania.y - 15, 0, 'Mania:'));
+		tab_group_song.add(new FlxText(stepperMissAllowance.x, stepperBPM.y - 15, 0, 'Miss Allowance:'));
 		tab_group_song.add(new FlxText(player2DropDown.x, player2DropDown.y - 15, 0, 'Opponent:'));
 		tab_group_song.add(new FlxText(player3DropDown.x, player3DropDown.y - 15, 0, 'Girlfriend:'));
 		tab_group_song.add(new FlxText(player1DropDown.x, player1DropDown.y - 15, 0, 'Boyfriend:'));
@@ -2810,6 +2818,7 @@ class ChartingState extends MusicBeatState
 			gfVersion: _song.gfVersion,
 			stage: _song.stage,
 			validScore: false,
+			missAllowance: _song.missAllowance,
 			mania: _song.mania
 		};
 		var json = {

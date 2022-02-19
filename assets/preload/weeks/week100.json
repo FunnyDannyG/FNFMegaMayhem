@@ -1,15 +1,35 @@
 {
 	"songs": [
 		[
+			"chip-shortage",
+			"megabyte",
+			[
+				207,
+				117,
+				238
+			]
+		],
+		[
 			"tofh",
 			"danny",
 			[
 				126,
-				158,
+				148,
 				247
+			]
+		],
+		[
+			"warp-drive",
+			"jordi",
+			[
+				132,
+				0,
+				255
 			]
 		]
 	],
+
+
 	"hideFreeplay": false,
 	"weekBackground": "stage",
 	"weekCharacters": [
