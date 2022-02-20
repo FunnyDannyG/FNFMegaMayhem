@@ -939,7 +939,7 @@ voice_parts:
   - position: 30720
     duration: 480
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -952,7 +952,7 @@ voice_parts:
   - position: 31200
     duration: 480
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -965,7 +965,7 @@ voice_parts:
   - position: 31680
     duration: 240
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -978,7 +978,7 @@ voice_parts:
   - position: 31920
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 30, shape: io}
@@ -991,7 +991,7 @@ voice_parts:
   - position: 32160
     duration: 240
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1004,7 +1004,7 @@ voice_parts:
   - position: 32400
     duration: 120
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1017,7 +1017,7 @@ voice_parts:
   - position: 32520
     duration: 120
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1030,7 +1030,7 @@ voice_parts:
   - position: 32640
     duration: 480
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1043,7 +1043,7 @@ voice_parts:
   - position: 33120
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -1056,7 +1056,7 @@ voice_parts:
   - position: 33360
     duration: 480
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -1069,7 +1069,7 @@ voice_parts:
   - position: 33840
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1095,7 +1095,7 @@ voice_parts:
   - position: 34320
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1108,7 +1108,7 @@ voice_parts:
   - position: 34560
     duration: 480
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -70, shape: io}
@@ -1121,7 +1121,7 @@ voice_parts:
   - position: 35040
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 30, shape: io}
@@ -1134,7 +1134,7 @@ voice_parts:
   - position: 35280
     duration: 480
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1147,7 +1147,7 @@ voice_parts:
   - position: 35760
     duration: 240
     tone: 66
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -50, shape: io}
@@ -1160,7 +1160,7 @@ voice_parts:
   - position: 36000
     duration: 240
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 50, shape: io}
@@ -1173,7 +1173,7 @@ voice_parts:
   - position: 36240
     duration: 120
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 30, shape: io}
@@ -1186,7 +1186,7 @@ voice_parts:
   - position: 36360
     duration: 120
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1199,7 +1199,7 @@ voice_parts:
   - position: 36480
     duration: 480
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1212,7 +1212,7 @@ voice_parts:
   - position: 36960
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -1225,7 +1225,7 @@ voice_parts:
   - position: 37200
     duration: 480
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -1251,7 +1251,7 @@ voice_parts:
   - position: 37920
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1264,11 +1264,11 @@ voice_parts:
   - position: 38160
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
-      - {x: 25, y: 0, shape: io}
+      - {x: 51.7578125, y: 0, shape: io}
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0}
     note_expressions: []
@@ -1290,7 +1290,7 @@ voice_parts:
   - position: 39360
     duration: 480
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1303,7 +1303,7 @@ voice_parts:
   - position: 39840
     duration: 240
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1316,7 +1316,7 @@ voice_parts:
   - position: 40080
     duration: 720
     tone: 58
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -1329,7 +1329,7 @@ voice_parts:
   - position: 40800
     duration: 240
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1342,7 +1342,7 @@ voice_parts:
   - position: 41040
     duration: 480
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1355,7 +1355,7 @@ voice_parts:
   - position: 41520
     duration: 240
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 30, shape: io}
@@ -1381,7 +1381,7 @@ voice_parts:
   - position: 42000
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1394,7 +1394,7 @@ voice_parts:
   - position: 42240
     duration: 480
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1407,7 +1407,7 @@ voice_parts:
   - position: 42720
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1420,7 +1420,7 @@ voice_parts:
   - position: 42960
     duration: 480
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1433,7 +1433,7 @@ voice_parts:
   - position: 43440
     duration: 240
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -50, shape: io}
@@ -1446,7 +1446,7 @@ voice_parts:
   - position: 43680
     duration: 240
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1459,7 +1459,7 @@ voice_parts:
   - position: 43920
     duration: 240
     tone: 58
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -1472,7 +1472,7 @@ voice_parts:
   - position: 44160
     duration: 480
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1485,7 +1485,7 @@ voice_parts:
   - position: 44640
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1509,28 +1509,18 @@ voice_parts:
     phoneme_expressions: []
     phoneme_overrides: []
   - position: 45360
-    duration: 480
-    tone: 54
-    lyric: a
-    pitch:
-      data:
-      - {x: -40, y: -30, shape: io}
-      - {x: 25, y: 0, shape: io}
-      snap_first: true
-    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0}
-    note_expressions: []
-    phoneme_expressions: []
-    phoneme_overrides: []
-  - position: 45360
     duration: 720
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
-      - {x: -40, y: 0, shape: io}
-      - {x: 25, y: 0, shape: io}
+      - {x: -40, y: 20, shape: io}
+      - {x: 29.296875, y: -1.25, shape: io}
+      - {x: 327.1484375, y: 50.568180084228516, shape: io}
+      - {x: 729.4921875, y: 49.204544067382812, shape: io}
+      - {x: 729.4921875, y: 0, shape: l}
       snap_first: true
-    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0}
+    vibrato: {length: 75, period: 147.4609375, depth: 25, in: 31.489360809326172, out: 18.581560134887695, shift: 0, drift: 0}
     note_expressions: []
     phoneme_expressions: []
     phoneme_overrides: []
@@ -1550,7 +1540,7 @@ voice_parts:
   - position: 46440
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1576,7 +1566,7 @@ voice_parts:
   - position: 46800
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1589,7 +1579,7 @@ voice_parts:
   - position: 47040
     duration: 120
     tone: 51
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1615,7 +1605,7 @@ voice_parts:
   - position: 47400
     duration: 360
     tone: 58
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -1628,7 +1618,7 @@ voice_parts:
   - position: 47760
     duration: 235
     tone: 54
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -1641,7 +1631,7 @@ voice_parts:
   - position: 48000
     duration: 240
     tone: 56
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1654,7 +1644,7 @@ voice_parts:
   - position: 48240
     duration: 120
     tone: 54
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1667,7 +1657,7 @@ voice_parts:
   - position: 48360
     duration: 240
     tone: 56
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1680,7 +1670,7 @@ voice_parts:
   - position: 48600
     duration: 120
     tone: 54
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1693,7 +1683,7 @@ voice_parts:
   - position: 48720
     duration: 120
     tone: 56
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1706,7 +1696,7 @@ voice_parts:
   - position: 48840
     duration: 115
     tone: 54
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1719,7 +1709,7 @@ voice_parts:
   - position: 48960
     duration: 120
     tone: 51
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1745,7 +1735,7 @@ voice_parts:
   - position: 49320
     duration: 360
     tone: 58
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -1758,7 +1748,7 @@ voice_parts:
   - position: 49680
     duration: 235
     tone: 54
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -1771,7 +1761,7 @@ voice_parts:
   - position: 49920
     duration: 240
     tone: 56
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1784,7 +1774,7 @@ voice_parts:
   - position: 50160
     duration: 120
     tone: 54
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1797,7 +1787,7 @@ voice_parts:
   - position: 50280
     duration: 235
     tone: 58
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -1810,7 +1800,7 @@ voice_parts:
   - position: 50520
     duration: 115
     tone: 54
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1823,7 +1813,7 @@ voice_parts:
   - position: 50640
     duration: 115
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1836,7 +1826,7 @@ voice_parts:
   - position: 50760
     duration: 115
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1849,7 +1839,7 @@ voice_parts:
   - position: 50880
     duration: 240
     tone: 56
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -1862,7 +1852,7 @@ voice_parts:
   - position: 51120
     duration: 120
     tone: 54
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1875,7 +1865,7 @@ voice_parts:
   - position: 51240
     duration: 240
     tone: 56
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1888,7 +1878,7 @@ voice_parts:
   - position: 51480
     duration: 120
     tone: 54
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1901,7 +1891,7 @@ voice_parts:
   - position: 51600
     duration: 120
     tone: 56
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -1914,7 +1904,7 @@ voice_parts:
   - position: 51720
     duration: 115
     tone: 54
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -1940,7 +1930,7 @@ voice_parts:
   - position: 52080
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -1953,7 +1943,7 @@ voice_parts:
   - position: 52200
     duration: 360
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -1966,7 +1956,7 @@ voice_parts:
   - position: 52560
     duration: 240
     tone: 49
-    lyric: a
+    lyric: o
     pitch:
       data:
       - {x: -40, y: 90, shape: io}
@@ -1992,7 +1982,7 @@ voice_parts:
   - position: 53040
     duration: 120
     tone: 58
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -2005,7 +1995,7 @@ voice_parts:
   - position: 53160
     duration: 120
     tone: 61
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2031,7 +2021,7 @@ voice_parts:
   - position: 53520
     duration: 235
     tone: 66
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2070,7 +2060,7 @@ voice_parts:
   - position: 62400
     duration: 480
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2083,7 +2073,7 @@ voice_parts:
   - position: 62880
     duration: 480
     tone: 47
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2109,7 +2099,7 @@ voice_parts:
   - position: 63840
     duration: 240
     tone: 47
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -10, shape: io}
@@ -2148,7 +2138,7 @@ voice_parts:
   - position: 64800
     duration: 240
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2161,7 +2151,7 @@ voice_parts:
   - position: 65040
     duration: 240
     tone: 54
-    lyric: a
+    lyric: o
     pitch:
       data:
       - {x: -40, y: -50, shape: io}
@@ -2174,7 +2164,7 @@ voice_parts:
   - position: 65280
     duration: 480
     tone: 53
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -2200,7 +2190,7 @@ voice_parts:
   - position: 66000
     duration: 480
     tone: 46
-    lyric: a
+    lyric: o
     pitch:
       data:
       - {x: -40, y: 50, shape: io}
@@ -2213,7 +2203,7 @@ voice_parts:
   - position: 66480
     duration: 240
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2226,7 +2216,7 @@ voice_parts:
   - position: 66720
     duration: 240
     tone: 53
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -2252,7 +2242,7 @@ voice_parts:
   - position: 67440
     duration: 240
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2265,7 +2255,7 @@ voice_parts:
   - position: 67680
     duration: 240
     tone: 46
-    lyric: a
+    lyric: o
     pitch:
       data:
       - {x: -40, y: 30, shape: io}
@@ -2291,7 +2281,7 @@ voice_parts:
   - position: 68160
     duration: 480
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2330,7 +2320,7 @@ voice_parts:
   - position: 70080
     duration: 480
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2343,7 +2333,7 @@ voice_parts:
   - position: 70560
     duration: 480
     tone: 47
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2369,7 +2359,7 @@ voice_parts:
   - position: 71520
     duration: 240
     tone: 47
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -10, shape: io}
@@ -2395,7 +2385,7 @@ voice_parts:
   - position: 72240
     duration: 480
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -80, shape: io}
@@ -2408,7 +2398,7 @@ voice_parts:
   - position: 72720
     duration: 720
     tone: 53
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -2421,11 +2411,11 @@ voice_parts:
   - position: 73440
     duration: 240
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
-      - {x: 25, y: 0, shape: io}
+      - {x: 39.0625, y: 0, shape: io}
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0}
     note_expressions: []
@@ -2447,7 +2437,7 @@ voice_parts:
   - position: 74160
     duration: 240
     tone: 49
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -50, shape: io}
@@ -2460,10 +2450,10 @@ voice_parts:
   - position: 74400
     duration: 240
     tone: 53
-    lyric: a
+    lyric: i
     pitch:
       data:
-      - {x: -40, y: -40, shape: io}
+      - {x: -50.78125, y: -40, shape: io}
       - {x: 25, y: 0, shape: io}
       snap_first: true
     vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0}
@@ -2499,7 +2489,7 @@ voice_parts:
   - position: 92520
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2525,7 +2515,7 @@ voice_parts:
   - position: 92880
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -2551,7 +2541,7 @@ voice_parts:
   - position: 93240
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2564,7 +2554,7 @@ voice_parts:
   - position: 93480
     duration: 360
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -2577,7 +2567,7 @@ voice_parts:
   - position: 93840
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -2590,7 +2580,7 @@ voice_parts:
   - position: 94080
     duration: 240
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -2603,7 +2593,7 @@ voice_parts:
   - position: 94320
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2616,7 +2606,7 @@ voice_parts:
   - position: 94440
     duration: 240
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -2629,7 +2619,7 @@ voice_parts:
   - position: 94680
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2642,7 +2632,7 @@ voice_parts:
   - position: 94800
     duration: 120
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -2655,7 +2645,7 @@ voice_parts:
   - position: 94920
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2681,7 +2671,7 @@ voice_parts:
   - position: 95280
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2694,7 +2684,7 @@ voice_parts:
   - position: 95400
     duration: 360
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -2707,7 +2697,7 @@ voice_parts:
   - position: 95760
     duration: 240
     tone: 49
-    lyric: a
+    lyric: o
     pitch:
       data:
       - {x: -40, y: 90, shape: io}
@@ -2733,7 +2723,7 @@ voice_parts:
   - position: 96240
     duration: 120
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -70, shape: io}
@@ -2746,7 +2736,7 @@ voice_parts:
   - position: 96360
     duration: 120
     tone: 54
-    lyric: a
+    lyric: o
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -2772,7 +2762,7 @@ voice_parts:
   - position: 96720
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 0, shape: io}
@@ -2798,7 +2788,7 @@ voice_parts:
   - position: 97080
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2811,7 +2801,7 @@ voice_parts:
   - position: 97320
     duration: 360
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -2824,7 +2814,7 @@ voice_parts:
   - position: 97680
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -2837,7 +2827,7 @@ voice_parts:
   - position: 97920
     duration: 240
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -2850,7 +2840,7 @@ voice_parts:
   - position: 98160
     duration: 120
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -2863,7 +2853,7 @@ voice_parts:
   - position: 98280
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -40, shape: io}
@@ -2876,7 +2866,7 @@ voice_parts:
   - position: 98520
     duration: 240
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2902,7 +2892,7 @@ voice_parts:
   - position: 99120
     duration: 120
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 50, shape: io}
@@ -2915,7 +2905,7 @@ voice_parts:
   - position: 99240
     duration: 120
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2941,7 +2931,7 @@ voice_parts:
   - position: 99600
     duration: 240
     tone: 66
-    lyric: a
+    lyric: o
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2967,7 +2957,7 @@ voice_parts:
   - position: 100320
     duration: 480
     tone: 66
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -2993,7 +2983,7 @@ voice_parts:
   - position: 101280
     duration: 480
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -3006,7 +2996,7 @@ voice_parts:
   - position: 101760
     duration: 360
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 30, shape: io}
@@ -3019,7 +3009,7 @@ voice_parts:
   - position: 102120
     duration: 360
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -3032,7 +3022,7 @@ voice_parts:
   - position: 102480
     duration: 240
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -70, shape: io}
@@ -3045,7 +3035,7 @@ voice_parts:
   - position: 102720
     duration: 240
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -3058,7 +3048,7 @@ voice_parts:
   - position: 102960
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -3071,7 +3061,7 @@ voice_parts:
   - position: 103200
     duration: 240
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -3084,7 +3074,7 @@ voice_parts:
   - position: 103440
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 20, shape: io}
@@ -3097,7 +3087,7 @@ voice_parts:
   - position: 103680
     duration: 240
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -50, shape: io}
@@ -3110,7 +3100,7 @@ voice_parts:
   - position: 103920
     duration: 120
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 10, shape: io}
@@ -3123,7 +3113,7 @@ voice_parts:
   - position: 104040
     duration: 240
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: 40, shape: io}
@@ -3149,7 +3139,7 @@ voice_parts:
   - position: 104520
     duration: 360
     tone: 54
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -3175,7 +3165,7 @@ voice_parts:
   - position: 105120
     duration: 240
     tone: 56
-    lyric: a
+    lyric: e
     pitch:
       data:
       - {x: -40, y: -50, shape: io}
@@ -3188,7 +3178,7 @@ voice_parts:
   - position: 105360
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: -20, shape: io}
@@ -3214,7 +3204,7 @@ voice_parts:
   - position: 105840
     duration: 120
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 50, shape: io}
@@ -3227,7 +3217,7 @@ voice_parts:
   - position: 105960
     duration: 240
     tone: 61
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -3253,7 +3243,7 @@ voice_parts:
   - position: 106440
     duration: 360
     tone: 66
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -30, shape: io}
@@ -3266,7 +3256,7 @@ voice_parts:
   - position: 106800
     duration: 240
     tone: 58
-    lyric: a
+    lyric: i
     pitch:
       data:
       - {x: -40, y: 80, shape: io}
@@ -3279,7 +3269,7 @@ voice_parts:
   - position: 107040
     duration: 240
     tone: 59
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -10, shape: io}
@@ -3292,7 +3282,7 @@ voice_parts:
   - position: 107280
     duration: 240
     tone: 66
-    lyric: a
+    lyric: u
     pitch:
       data:
       - {x: -40, y: -70, shape: io}
