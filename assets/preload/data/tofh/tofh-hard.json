@@ -7320,6 +7320,7 @@
 		"noteStyle": "nonCanon",
 		"speed": 3.1,
 		"bpm": 133,
+		"missAllowance": 50,
 		"mania": 3
 	}
 }

@@ -1357,9 +1357,10 @@
 		"isMoody": false,
 		"sectionLengths": [],
 		"uiType": "normal",
-		"stage": "stage",
+		"stage": "taco_bell",
 		"sections": 0,
 		"needsVoices": true,
+		"missAllowance": 10,
 		"gf": "gf",
 		"bpm": 164,
 		"mania": 3

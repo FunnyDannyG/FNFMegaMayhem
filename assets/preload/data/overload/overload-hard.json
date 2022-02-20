@@ -7738,6 +7738,7 @@
 		"stage": "megamall_overload",
 		"validScore": true,
 		"needsVoices": true,
+		"missAllowance": 35,
 		"speed": 2.5,
 		"bpm": 175,
 		"mania": 3

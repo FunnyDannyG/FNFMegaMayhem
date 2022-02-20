@@ -11791,6 +11791,7 @@
 		"stage": "subway_TOFH",
 		"needsVoices": true,
 		"validScore": true,
+		"missAllowance": 70,
 		"bpm": 135,
 		"speed": 3.3
 	}

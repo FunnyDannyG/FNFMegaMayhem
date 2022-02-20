@@ -418,6 +418,16 @@ class PlayState extends MusicBeatState
 		switch (curStage)
 		{
 
+			case 'taco_bell': //Week L
+				var bg:BGSprite = new BGSprite('Leffrey/floor', -600, -230, 0.85, 0.9);
+				add(bg);
+
+				var fg:BGSprite = new BGSprite('Leffrey/walls', -600, -230, 0.9, 0.9);
+				add(fg);
+
+				var sig:BGSprite = new BGSprite('Leffrey/signage', -600, -230, 0.9, 0.9);
+				add(sig);
+
 			case 'megamall': //Week 1
                 var bg:FlxSprite = new FlxSprite(-600, -380).loadGraphic(Paths.image('Megabyte/MB_stageback'));
                 bg.antialiasing = true;
@@ -1261,6 +1271,7 @@ class PlayState extends MusicBeatState
 		} else {
 			startCountdown();
 		}
+
 		RecalculateRating();
 
 		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FUCK THEM UP IDK HOW HAXE WORKS

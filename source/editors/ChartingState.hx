@@ -213,10 +213,10 @@ class ChartingState extends MusicBeatState
 				player3: null,
 				gfVersion: 'gf',
 				speed: 1,
+				missAllowance: 10,
 				stage: 'stage',
 				validScore: false,
 				mania: Note.defaultMania,
-				missAllowance: 10
 			};
 			addSection();
 			PlayState.SONG = _song;
@@ -586,7 +586,7 @@ class ChartingState extends MusicBeatState
 		stepperMania.name = 'mania';
 		blockPressWhileTypingOnStepper.push(stepperMania);
 
-		var stepperMissAllowance:FlxUINumericStepper = new FlxUINumericStepper(100, stepperBPM.y, 1, 3, 1, 50, 1);
+		var stepperMissAllowance:FlxUINumericStepper = new FlxUINumericStepper(100, stepperBPM.y, 1, 3, 1, 999, 1);
 		stepperMissAllowance.value = _song.missAllowance;
 		stepperMissAllowance.name = 'Miss Allowance';
 		blockPressWhileTypingOnStepper.push(stepperMissAllowance);
@@ -1364,6 +1364,10 @@ class ChartingState extends MusicBeatState
 			else if (wname == 'song_speed')
 			{
 				_song.speed = nums.value;
+			}
+			else if (wname == 'missAllowance')
+			{
+				_song.missAllowance = Std.int(nums.value);
 			}
 			else if (wname == 'song_bpm')
 			{
@@ -2809,6 +2813,7 @@ class ChartingState extends MusicBeatState
 			bpm: _song.bpm,
 			needsVoices: _song.needsVoices,
 			speed: _song.speed,
+			missAllowance: _song.missAllowance,
 			arrowSkin: _song.arrowSkin,
 			splashSkin: _song.splashSkin,
 
@@ -2818,8 +2823,7 @@ class ChartingState extends MusicBeatState
 			gfVersion: _song.gfVersion,
 			stage: _song.stage,
 			validScore: false,
-			missAllowance: _song.missAllowance,
-			mania: _song.mania
+			mania: _song.mania,
 		};
 		var json = {
 			"song": eventsSong

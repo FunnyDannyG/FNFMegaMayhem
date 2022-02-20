@@ -8221,6 +8221,7 @@
 		"song": "overload-m",
 		"stage": "megamall_overload",
 		"validScore": true,
+		"missAllowance": 50,
 		"needsVoices": true,
 		"bpm": 180,
 		"speed": 3

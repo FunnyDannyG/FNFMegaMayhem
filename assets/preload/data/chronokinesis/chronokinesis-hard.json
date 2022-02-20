@@ -2426,6 +2426,7 @@
 		"uiType": "normal",
 		"stage": "subway",
 		"sections": 0,
+		"missAllowance": 10,
 		"needsVoices": true,
 		"bpm": 110,
 		"gf": "gf",

@@ -3802,6 +3802,8 @@
 		"song": "leffrey",
 		"needsVoices": true,
 		"validScore": true,
+		"stage": "taco_bell",
+		"missAllowance": 30,
 		"bpm": 110,
 		"speed": 3,
 		"mania":3

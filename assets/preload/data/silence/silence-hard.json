@@ -3464,6 +3464,7 @@
 		"validScore": true,
 		"stage": "megamall",
 		"bpm": 160,
+		"missAllowance": 20,
 		"speed": 2.20000000000002,
 		"mania": 3
 	}

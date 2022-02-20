@@ -2402,6 +2402,7 @@
 		"stage": "subway",
 		"sections": 0,
 		"needsVoices": true,
+		"missAllowance": 15,
 		"speed": 1.8,
 		"bpm": 156,
 		"mania": 3

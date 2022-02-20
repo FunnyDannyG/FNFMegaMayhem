@@ -3045,6 +3045,7 @@
 		"stage": "subway",
 		"sections": 0,
 		"needsVoices": true,
+		"missAllowance": 20,
 		"gf": "gf",
 		"bpm": 130,
 		"mania": 3

@@ -5697,6 +5697,7 @@
 		"needsVoices": true,
 		"stage": "megamall",
 		"validScore": true,
+		"missAllowance": 30,
 		"speed": 2.5,
 		"bpm": 170,
 		"mania": 3

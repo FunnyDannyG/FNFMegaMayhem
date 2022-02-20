@@ -47,6 +47,7 @@ class Song
 	public var splashSkin:String;
 	public var speed:Float = 1;
 	public var stage:String;
+	public var missAllownce:Int = 10;
 
 	public var player1:String = 'bf';
 	public var player2:String = 'dad';

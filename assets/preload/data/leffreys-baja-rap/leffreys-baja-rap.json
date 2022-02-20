@@ -2910,6 +2910,7 @@
 		"player3": null,
 		"song": "leffreys-baja-rap",
 		"needsVoices": true,
+		"stage": "taco_bell",
 		"validScore": true,
 		"speed": 3,
 		"bpm": 170

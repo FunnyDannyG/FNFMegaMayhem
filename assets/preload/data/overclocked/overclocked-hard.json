@@ -2801,6 +2801,7 @@
 		"sections": 0,
 		"validScore": true,
 		"stage": "subway",
+		"missAllowance": 15,
 		"speed": 2.2,
 		"bpm": 156,
 		"mania": 3

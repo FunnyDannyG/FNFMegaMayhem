@@ -2186,6 +2186,7 @@
 		"needsVoices": true,
 		"sections": 0,
 		"validScore": true,
+		"missAllowance": 15,
 		"bpm": 158,
 		"speed": 1.50000000000002,
 		"mania": 3

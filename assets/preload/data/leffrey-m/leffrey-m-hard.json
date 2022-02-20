@@ -4206,7 +4206,9 @@
 		"player3": "gf",
 		"song": "leffrey-m",
 		"needsVoices": true,
+		"stage": "taco_bell",
 		"validScore": true,
+		"missAllowance": 30,
 		"bpm": 110,
 		"speed": 3,
 		"mania": 3

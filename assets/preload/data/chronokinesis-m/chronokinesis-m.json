@@ -2967,6 +2967,7 @@
 		"needsVoices": true,
 		"validScore": true,
 		"speed": 2.5,
+		"missAllowance": 20,
 		"bpm": 110,
 		"mania": 3
 	}
