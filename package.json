@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "loadavg-windows": "^1.1.1"
+  }
+}

@@ -1,0 +1,50 @@
+{
+	"song": {
+		"speed": 3,
+		"stage": null,
+		"player1": "bf",
+		"player2": "leffrey",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Change Mania",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				33794.1176470588,
+				[
+					[
+						"Change Mania",
+						"5   ",
+						""
+					]
+				]
+			],
+			[
+				56382.3529411764,
+				[
+					[
+						"Change Mania",
+						"2 ",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 170,
+		"mania": 5,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "leffreys-baja-rap-m"
+	}
+}
