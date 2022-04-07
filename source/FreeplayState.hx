@@ -370,6 +370,12 @@ class FreeplayState extends MusicBeatState
 		if (songs[curSelected].songName == 'tofh')
 			curDifficulty = 2;
 
+		if (songs[curSelected].songName == 'warp-drive')
+			curDifficulty = 2;
+
+		if (songs[curSelected].songName == 'chip-shortage')
+			curDifficulty = 2;
+
 		if (curDifficulty < 0)
 			curDifficulty = CoolUtil.difficulties.length-1;
 		if (curDifficulty >= CoolUtil.difficulties.length)

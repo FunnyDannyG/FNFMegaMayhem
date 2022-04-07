@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="warp-drive_FX.png">
+	<!-- Created with Adobe Animate version 22.0.4.185 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Whoosh0000" x="100" y="100" width="5121" height="1400" frameX="-5119" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0001" x="100" y="100" width="5121" height="1400" frameX="-4850" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0002" x="100" y="100" width="5121" height="1400" frameX="-4580" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0003" x="100" y="100" width="5121" height="1400" frameX="-4311" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0004" x="100" y="100" width="5121" height="1400" frameX="-4041" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0005" x="100" y="100" width="5121" height="1400" frameX="-3772" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0006" x="100" y="100" width="5121" height="1400" frameX="-3502" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0007" x="100" y="100" width="5121" height="1400" frameX="-3233" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0008" x="100" y="100" width="5121" height="1400" frameX="-2963" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0009" x="100" y="100" width="5121" height="1400" frameX="-2694" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0010" x="100" y="100" width="5121" height="1400" frameX="-2425" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0011" x="100" y="100" width="5121" height="1400" frameX="-2155" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0012" x="100" y="100" width="5121" height="1400" frameX="-1886" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0013" x="100" y="100" width="5121" height="1400" frameX="-1616" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0014" x="100" y="100" width="5121" height="1400" frameX="-1347" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0015" x="100" y="100" width="5121" height="1400" frameX="-1077" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0016" x="100" y="100" width="5121" height="1400" frameX="-808" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0017" x="100" y="100" width="5121" height="1400" frameX="-538" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0018" x="100" y="100" width="5121" height="1400" frameX="-269" frameY="0" frameWidth="10240" frameHeight="1400"/>
+	<SubTexture name="Whoosh0019" x="100" y="100" width="5121" height="1400" frameX="0" frameY="0" frameWidth="10240" frameHeight="1400"/>
+</TextureAtlas>

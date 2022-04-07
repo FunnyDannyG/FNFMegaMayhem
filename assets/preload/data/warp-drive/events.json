@@ -1,0 +1,31 @@
+{
+	"song": {
+		"speed": 1.6,
+		"stage": "warp_drive",
+		"player1": "playable-danny",
+		"player2": "jordi",
+		"player3": null,
+		"events": [
+			[
+				35520,
+				[
+					[
+						"Change Scroll Speed",
+						"1.239",
+						"2"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 125,
+		"mania": 3,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "warp-drive",
+		"missAllowance": 20
+	}
+}

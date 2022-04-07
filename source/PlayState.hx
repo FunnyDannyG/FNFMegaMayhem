@@ -418,6 +418,19 @@ class PlayState extends MusicBeatState
 		switch (curStage)
 		{
 
+			case 'warp_drive': //Week 3
+
+			var wd:BGSprite = new BGSprite('Danny/warp-drive_front', -600, -230, 0.6, 0.9);
+			add(wd);
+
+			var Woosh:FlxSprite = new FlxSprite(-600, -230);
+			Woosh.frames = Paths.getSparrowAtlas('Danny/warp-drive_FX','shared');
+			Woosh.animation.addByPrefix('Whoosh', 'Whoosh', 32, true);
+			Woosh.scrollFactor.set(0.6, 0.9);
+			Woosh.antialiasing = true;
+			Woosh.animation.play('Whoosh');
+			add(Woosh);
+
 			case 'taco_bell': //Week L
 				var bg:BGSprite = new BGSprite('Leffrey/floor', -600, -230, 0.85, 0.9);
 				add(bg);
@@ -4830,15 +4843,6 @@ class PlayState extends MusicBeatState
 						trainStart();
 					}
 		}
-
-		if (curStage == 'spooky' && FlxG.random.bool(10) && curBeat > lightningStrikeBeat + lightningOffset)
-		{
-			lightningStrikeShit();
-		}
-		lastBeatHit = curBeat;
-
-				setOnLuas('curBeat', curBeat);//DAWGG?????
-		callOnLuas('onBeatHit', []);
 	}
 
 	public var closeLuas:Array<FunkinLua> = [];
