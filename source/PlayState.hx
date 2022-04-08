@@ -2519,6 +2519,24 @@ class PlayState extends MusicBeatState
 				System.exit(0);				
 			}
 
+		if (curSong == 'warp-drive')
+			{
+				switch (curBeat)
+				{
+					case 76:
+						songSpeed = SONG.speed * 1.4;
+	
+					case 143:
+						songSpeed = SONG.speed * 1.0;
+	
+					case 206:
+						songSpeed = SONG.speed * 1.7;
+	
+					case 270:
+						songSpeed = SONG.speed * 0.8;
+				}				
+			}
+
 		super.update(elapsed);
 
 		if(ratingName == '?')
