@@ -48,7 +48,7 @@
 			"loop": false,
 			"offsets": [
 				60,
-				519
+				518
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -59,8 +59,8 @@
 	"no_antialiasing": false,
 	"image": "characters/leffrey-m",
 	"position": [
-		-270,
-		-30
+		-240,
+		0
 	],
 	"healthicon": "leffrey-m",
 	"flip_x": false,
@@ -70,8 +70,8 @@
 		60
 	],
 	"camera_position": [
-		-40,
-		-400
+		40,
+		-310
 	],
 	"sing_duration": 6.1,
 	"scale": 0.8
