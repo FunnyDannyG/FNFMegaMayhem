@@ -4257,7 +4257,7 @@ class PlayState extends MusicBeatState
 				{
 					//This effect makes the song scroll significantly faster
 					songSpeed = SONG.speed * 1.4;
-					MissCountTxt.text = "Punishment: Faster Scrolling";
+					MissCountTxt.text = "Punishment: Warp-Drive";
 
 				}
 			}//End
