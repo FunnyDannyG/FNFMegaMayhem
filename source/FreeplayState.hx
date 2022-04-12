@@ -139,7 +139,7 @@ class FreeplayState extends MusicBeatState
 
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
 		diffText.font = scoreText.font;
-		add(diffText);
+		//add(diffText);
 
 		add(scoreText);
 
@@ -367,19 +367,7 @@ class FreeplayState extends MusicBeatState
 	{
 		curDifficulty += change;
 
-		if (songs[curSelected].songName == 'tofh')
-			curDifficulty = 2;
-
-		if (songs[curSelected].songName == 'warp-drive')
-			curDifficulty = 2;
-
-		if (songs[curSelected].songName == 'chip-shortage')
-			curDifficulty = 2;
-
-		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficulties.length-1;
-		if (curDifficulty >= CoolUtil.difficulties.length)
-			curDifficulty = 0;
+		curDifficulty = 2;
 
 		lastDifficultyName = CoolUtil.difficulties[curDifficulty];
 
