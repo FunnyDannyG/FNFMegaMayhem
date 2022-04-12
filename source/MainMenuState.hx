@@ -20,6 +20,10 @@ import flixel.util.FlxColor;
 import lime.app.Application;
 import Achievements;
 import editors.MasterEditorMenu;
+#if sys
+import sys.FileSystem;
+#end
+
 using StringTools;
 
 class MainMenuState extends MusicBeatState
@@ -38,9 +42,43 @@ class MainMenuState extends MusicBeatState
 
 	public static var firstStart:Bool = true;
 
+	public static var isVideoPlaying:Bool = true;
+
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 	public static var finishedFunnyMove:Bool = false;
+
+	public function startVideo(name:String):Void {
+		#if VIDEOS_ALLOWED
+		var foundFile:Bool = false;
+		var fileName:String = Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
+		#if sys
+		if(FileSystem.exists(fileName)) {
+			foundFile = true;
+		}
+		#end
+
+		if(!foundFile) {
+			fileName = Paths.video(name);
+			#if sys
+			if(FileSystem.exists(fileName)) {
+			#else
+			if(OpenFlAssets.exists(fileName)) {
+			#end
+				foundFile = true;
+			}
+		}
+
+		if(foundFile) {
+			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+			bg.scrollFactor.set();
+			add(bg);
+
+			(new FlxVideo(fileName)).finishCallback = function() {
+				remove(bg);
+			}
+		}
+	}
 
 	override function create()
 	{
@@ -50,9 +88,11 @@ class MainMenuState extends MusicBeatState
 		#end
 
 		if (!FlxG.sound.music.playing)
-		{
-			FlxG.sound.playMusic(Paths.music('freakyMenu'));
-		}
+			{
+				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+			}
+
+		//startVideo("intro");
 
 		Conductor.changeBPM(102);
 		persistentUpdate = true;
@@ -116,7 +156,7 @@ class MainMenuState extends MusicBeatState
             menuItem.antialiasing = ClientPrefs.globalAntialiasing;
 			menuItem.setGraphicSize(Std.int(FlxG.height * 0.32));
 			//ok whAT THE FUCK
-			FlxTween.tween(menuItem,{x: 30 + (i * 325)},1 + (i * 0.25) ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
+			FlxTween.tween(menuItem,{x: 30 + (i * 325)},0.1 ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
 				{ 
 					finishedFunnyMove = true; 
 					changeItem();

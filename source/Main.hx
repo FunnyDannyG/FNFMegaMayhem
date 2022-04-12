@@ -68,7 +68,7 @@ class Main extends Sprite
 		}
 
 		#if !debug
-		initialState = TitleState;
+		initialState = MainMenuState;
 		#end
 	
 		ClientPrefs.loadDefaultKeys();
