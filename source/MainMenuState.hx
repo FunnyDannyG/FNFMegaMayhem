@@ -48,38 +48,6 @@ class MainMenuState extends MusicBeatState
 	var camFollow:FlxObject;
 	public static var finishedFunnyMove:Bool = false;
 
-	public function startVideo(name:String):Void {
-		#if VIDEOS_ALLOWED
-		var foundFile:Bool = false;
-		var fileName:String = Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
-		#if sys
-		if(FileSystem.exists(fileName)) {
-			foundFile = true;
-		}
-		#end
-
-		if(!foundFile) {
-			fileName = Paths.video(name);
-			#if sys
-			if(FileSystem.exists(fileName)) {
-			#else
-			if(OpenFlAssets.exists(fileName)) {
-			#end
-				foundFile = true;
-			}
-		}
-
-		if(foundFile) {
-			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
-			bg.scrollFactor.set();
-			add(bg);
-
-			(new FlxVideo(fileName)).finishCallback = function() {
-				remove(bg);
-			}
-		}
-	}
-
 	override function create()
 	{
 		#if windows
@@ -91,8 +59,6 @@ class MainMenuState extends MusicBeatState
 			{
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 			}
-
-		//startVideo("intro");
 
 		Conductor.changeBPM(102);
 		persistentUpdate = true;

@@ -7326,7 +7326,7 @@
 		"speed": 3.1,
 		"sectionLengths": [],
 		"events": [],
-		"gfVersion": "gf_dark",
+		"gfVersion": "no-gf",
 		"missAllowance": 50,
 		"sections": 0,
 		"stage": "subway_TOFH",

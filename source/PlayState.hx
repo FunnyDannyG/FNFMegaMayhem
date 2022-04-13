@@ -234,6 +234,8 @@ class PlayState extends MusicBeatState
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
 	public var scoreTxt:FlxText;
+	public var MissCountGraphics:FlxSprite;
+	public var MissCountNum:FlxSprite;
 	public var MissCountTxt:FlxText;
 	var timeTxt:FlxText;
 	var scoreTxtTween:FlxTween;
@@ -433,12 +435,15 @@ class PlayState extends MusicBeatState
 
 			case 'taco_bell': //Week L
 				var bg:BGSprite = new BGSprite('Leffrey/floor', -600, -230, 0.85, 0.9);
+				bg.scrollFactor.set(0.9, 0.9);
 				add(bg);
 
 				var fg:BGSprite = new BGSprite('Leffrey/walls', -600, -230, 0.9, 0.9);
+				fg.scrollFactor.set(0.9, 0.9);
 				add(fg);
 
 				var sig:BGSprite = new BGSprite('Leffrey/signage', -600, -230, 0.9, 0.9);
+				sig.scrollFactor.set(0.9, 0.9);
 				add(sig);
 
 			case 'megamall': //Week 1
@@ -1143,7 +1148,12 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		MissCountTxt = new FlxText(1, 1, FlxG.width, "Remaining Misses: " + RemainingMisses, 20);
+		var MissCountGraphics:FlxSprite = new FlxSprite(2, 2).loadGraphic(Paths.image('misses_remaining'));
+		MissCountGraphics.scrollFactor.set();
+		MissCountGraphics.visible = true;
+		add(MissCountGraphics);
+
+		MissCountTxt = new FlxText(128, 10, FlxG.width, "" + RemainingMisses, 20);
 		MissCountTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		MissCountTxt.scrollFactor.set();
 		MissCountTxt.borderSize = 1.25;
@@ -1167,6 +1177,7 @@ class PlayState extends MusicBeatState
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
+		MissCountGraphics.cameras = [camHUD];
 		MissCountTxt.cameras = [camHUD];
 		botplayTxt.cameras = [camHUD];
 		timeBar.cameras = [camHUD];
@@ -1211,6 +1222,7 @@ class PlayState extends MusicBeatState
 			}
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
+
 		if (isStoryMode && !seenCutscene)
 		{
 			switch (daSong)
@@ -3473,23 +3485,6 @@ class PlayState extends MusicBeatState
 		vocals.volume = 0;
 		vocals.pause();
 
-		if (PlayState.SONG.song == 'tofh-x')
-			{
-				if (cpuControlled == true)
-				{
-					lime.app.Application.current.window.alert("Cheater.");
-					System.exit(0);
-				}
-
-				else
-				{
-					lime.app.Application.current.window.alert("You've done well to get this far, friend.");
-					lime.app.Application.current.window.alert("Your score is: " + songScore + ". Please send this to FunnyDannyG#4157. If you have a recording, via Shadowplay, OBS, etc, Send that as well.");
-					lime.app.Application.current.window.alert("We must now beam you out of this realm. We commend your effort.");
-					System.exit(0);
-				}
-			}
-
 		if(ClientPrefs.noteOffset <= 0) {
 			finishCallback();
 		} else {
@@ -3833,6 +3828,7 @@ class PlayState extends MusicBeatState
 		seperatedScore.push(combo % 10);
 
 		var daLoop:Int = 0;
+
 		for (i in seperatedScore)
 		{
 			var numScore:FlxSprite = new FlxSprite().loadGraphic(Paths.image(pixelShitPart1 + 'num' + Std.int(i) + pixelShitPart2));
@@ -4214,7 +4210,7 @@ class PlayState extends MusicBeatState
 
 		//Lower the misses remaining if not currently lower than 0
 		if(RemainingMisses > 0)
-			MissCountTxt.text = "Remaining Misses: " + RemainingMisses;
+			MissCountTxt.text = "" + RemainingMisses;
 
 		//When you run out of allowed misses
 		if(RemainingMisses == 0)
@@ -4229,7 +4225,7 @@ class PlayState extends MusicBeatState
 				if(PlayState.SONG.player2.contains('leffrey'))
 				{
 					//This effect straight up kills you
-					MissCountTxt.text = "Punishment: Death";
+					MissCountTxt.text = "0";
 					health = 0.05;
 				}
 
@@ -4238,14 +4234,14 @@ class PlayState extends MusicBeatState
 				{
 					//This effect sets your health very low
 					health = 0.5;
-					MissCountTxt.text = "Punishment: Near Death Experience";	
+					MissCountTxt.text = "0";	
 				}
 		
 				//If fighting Jordi
 				else if (PlayState.SONG.player2.contains('jordi'))
 				{
 					//This effect restarts the song
-					MissCountTxt.text = "Punishment: Back-Shift";
+					MissCountTxt.text = "0";
 					PlayState.instance.paused = true;
 					FlxG.sound.music.volume = 0;
 					PlayState.instance.vocals.volume = 0;		
@@ -4257,7 +4253,7 @@ class PlayState extends MusicBeatState
 				{
 					//This effect makes the song scroll significantly faster
 					songSpeed = SONG.speed * 1.4;
-					MissCountTxt.text = "Punishment: Warp-Drive";
+					MissCountTxt.text = "0";
 
 				}
 			}//End

@@ -2,7 +2,7 @@
 	"song": {
 		"player1": "bf_dark",
 		"events": [],
-		"gfVersion": "gf_dark",
+		"gfVersion": "no-gf",
 		"notes": [
 			{
 				"sectionNotes": [
