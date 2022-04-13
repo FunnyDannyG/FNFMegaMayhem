@@ -234,6 +234,7 @@ class PlayState extends MusicBeatState
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
 	public var scoreTxt:FlxText;
+	public var MissCountGraphics_Leffrey:FlxSprite;
 	public var MissCountGraphics:FlxSprite;
 	public var MissCountNum:FlxSprite;
 	public var MissCountTxt:FlxText;
@@ -1148,12 +1149,19 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		var MissCountGraphics:FlxSprite = new FlxSprite(2, 2).loadGraphic(Paths.image('misses_remaining'));
+		MissCountGraphics = new FlxSprite(2, 2).loadGraphic(Paths.image('misses_remaining'));
+
+		if(PlayState.SONG.player2.contains('leffrey'))
+			MissCountGraphics = new FlxSprite(2, 0).loadGraphic(Paths.image('misses_remainfrey'));
+
 		MissCountGraphics.scrollFactor.set();
 		MissCountGraphics.visible = true;
 		add(MissCountGraphics);
 
 		MissCountTxt = new FlxText(128, 10, FlxG.width, "" + RemainingMisses, 20);
+		
+		if(PlayState.SONG.player2.contains('leffrey'))
+			MissCountTxt = new FlxText(180, 26, FlxG.width, "" + RemainingMisses, 20);
 		MissCountTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		MissCountTxt.scrollFactor.set();
 		MissCountTxt.borderSize = 1.25;
@@ -4226,6 +4234,13 @@ class PlayState extends MusicBeatState
 				{
 					//This effect straight up kills you
 					MissCountTxt.text = "0";
+					var MissPunishment = new FlxSprite(180, 5).loadGraphic(Paths.image('leffrey_punish'));
+					MissPunishment.scrollFactor.set();
+					MissPunishment.visible = true;
+					MissPunishment.cameras = [camHUD];
+					add(MissPunishment);
+
+					MissCountTxt.visible = false;
 					health = 0.05;
 				}
 
@@ -4235,6 +4250,13 @@ class PlayState extends MusicBeatState
 					//This effect sets your health very low
 					health = 0.5;
 					MissCountTxt.text = "0";	
+					var MissPunishment = new FlxSprite(140,5).loadGraphic(Paths.image('mega_punish'));
+					MissPunishment.scrollFactor.set();
+					MissPunishment.visible = true;
+					MissPunishment.cameras = [camHUD];
+					add(MissPunishment);
+
+					MissCountTxt.visible = false;
 				}
 		
 				//If fighting Jordi
@@ -4242,6 +4264,13 @@ class PlayState extends MusicBeatState
 				{
 					//This effect restarts the song
 					MissCountTxt.text = "0";
+					var MissPunishment = new FlxSprite(140,5).loadGraphic(Paths.image('jordi_punish'));
+					MissPunishment.scrollFactor.set();
+					MissPunishment.visible = true;
+					MissPunishment.cameras = [camHUD];
+					add(MissPunishment);
+
+					MissCountTxt.visible = false;
 					PlayState.instance.paused = true;
 					FlxG.sound.music.volume = 0;
 					PlayState.instance.vocals.volume = 0;		
@@ -4254,6 +4283,13 @@ class PlayState extends MusicBeatState
 					//This effect makes the song scroll significantly faster
 					songSpeed = SONG.speed * 1.4;
 					MissCountTxt.text = "0";
+					var MissPunishment = new FlxSprite(140,5).loadGraphic(Paths.image('danny_punish'));
+					MissPunishment.scrollFactor.set();
+					MissPunishment.visible = true;
+					MissPunishment.cameras = [camHUD];
+					add(MissPunishment);
+
+					MissCountTxt.visible = false;
 
 				}
 			}//End
