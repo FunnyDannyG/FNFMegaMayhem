@@ -527,7 +527,7 @@ class PlayState extends MusicBeatState
 				bg.active = false;
 				add(bg);
 
-				FlxG.sound.list.add(trainSound);	
+				//FlxG.sound.list.add(trainSound);	
 				var stageFront:FlxSprite = new FlxSprite(-600, -230).loadGraphic(Paths.image('Danny/TOFH_stagefront'));
 				stageFront.updateHitbox();
 				stageFront.antialiasing = true;
