@@ -1,0 +1,8 @@
+Made by FunnyDannyG...
+
+requires python lol, python depencies included in the requirements.txt file
+
+put your vocal midi file here and name it "vocals.mid"
+please only use one midi channel for your own sake :)
+put the data from notes.txt into the edit lyrics function of OpenUTAU
+enjoy
