@@ -27,6 +27,7 @@ class CreditsState extends MusicBeatState
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private var iconArray:Array<AttachedSprite> = [];
 	private var creditsStuff:Array<Array<String>> = [];
+	var pisspoop:Array<Array<String>> = [];
 
 	var bg:FlxSprite;
 	var descText:FlxText;
@@ -81,7 +82,7 @@ class CreditsState extends MusicBeatState
 			}
 		#end
 
-		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+		pisspoop = [ //Name - Icon name - Description - Link - BG Color
 			['Team Mayhem'],
 			['Megabyte',		'megabyte',		'Creator and Artist',					'https://twitter.com/MegaByteBruh',	'DDACDF'],
 			['FunnyDannyG',		'funnydannyg',		'Director, Composer, and Programmer',	'https://www.youtube.com/channel/UCvFaYPlNH5xA8u6EETrdbtg',	'7E9EF7'],
@@ -193,6 +194,7 @@ class CreditsState extends MusicBeatState
 		if(controls.ACCEPT) {
 			CoolUtil.browserLoad(creditsStuff[curSelected][3]);
 		}
+
 		super.update(elapsed);
 	}
 
