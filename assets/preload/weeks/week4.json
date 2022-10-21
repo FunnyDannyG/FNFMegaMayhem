@@ -1,0 +1,49 @@
+{
+	"storyName": "Molotov Cocktail",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "tutorial",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		132,
+		0,
+		255
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"fine",
+			"sam-pixel",
+			[
+				123,
+				0,
+				0
+			]
+		],
+		[
+			"whatever",
+			"sam1-pixel",
+			[
+				123,
+				0,
+				0
+			]
+		],
+		[
+			"stressor",
+			"sam1-pixel",
+			[
+				123,
+				0,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"sam",
+		"bf",
+		"gf"
+	],
+	"weekName": "Week 4"
+}

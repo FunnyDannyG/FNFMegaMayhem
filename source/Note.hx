@@ -248,7 +248,7 @@ class Note extends FlxSprite
 
 			offsetX -= width / 2;
 
-			if (PlayState.isPixelStage)
+			if (PlayState.SONG.player2.contains('sam'))
 				offsetX += 30 * Note.pixelScales[mania];
 
 			if (prevNote.isSustainNote)
@@ -261,14 +261,14 @@ class Note extends FlxSprite
 					prevNote.scale.y *= PlayState.instance.songSpeed;
 				}
 
-				if(PlayState.isPixelStage) { ///Y E  A H
+				if(PlayState.SONG.player2.contains('sam')) { ///Y E  A H
 					prevNote.scale.y *= 1.19;
 				}
 				prevNote.updateHitbox();
 				// prevNote.setGraphicSize();
 			}
 
-			if(PlayState.isPixelStage) {
+			if(PlayState.SONG.player2.contains('sam')) {
 				scale.y *= PlayState.daPixelZoom;
 				updateHitbox();
 			}
@@ -304,7 +304,7 @@ class Note extends FlxSprite
 
 		defaultWidth = 157;
 		defaultHeight = 154;
-		if(PlayState.isPixelStage) {
+		if(PlayState.SONG.player2.contains('sam')) {
 			if(isSustainNote) {
 				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS'));
 				width = width / 18;

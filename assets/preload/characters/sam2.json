@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "S_Angry_Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "S_Angry_Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				3
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "S_Angry_Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				-18
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "S_Angry_Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-29
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "S_Angry_Down",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/sam",
+	"position": [
+		170,
+		380
+	],
+	"healthicon": "sam1-pixel",
+	"flip_x": false,
+	"healthbar_colors": [
+		123,
+		0,
+		0
+	],
+	"camera_position": [
+		-40,
+		-400
+	],
+	"sing_duration": 6.1,
+	"scale": 6.05
+}

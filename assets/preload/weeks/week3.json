@@ -2,13 +2,18 @@
 	"storyName": "Momentary Madness",
 	"hideFreeplay": false,
 	"weekBackground": "tutorial",
-	"weekBefore": "tutorial",
 	"freeplayColor": [
 		132,
 		0,
 		255
 	],
+	"weekBefore": "tutorial",
 	"startUnlocked": true,
+	"weekCharacters": [
+		"jordi",
+		"bf",
+		"gf"
+	],
 	"songs": [
 		[
 			"back-shift",
@@ -39,10 +44,5 @@
 		]
 	],
 	"hideStoryMode": false,
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
 	"weekName": "Week 3"
 }

@@ -1,0 +1,49 @@
+{
+	"storyName": "Stack overflow",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "tutorial",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		132,
+		0,
+		255
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"tbd",
+			"megabyte",
+			[
+				207,
+				117,
+				238
+			]
+		],
+		[
+			"tbd",
+			"megabyte",
+			[
+				207,
+				117,
+				238
+			]
+		],
+		[
+			"tbd",
+			"megabyte",
+			[
+				207,
+				117,
+				238
+			]
+		]
+	],
+	"weekCharacters": [
+		"cheesemegabyte",
+		"bf",
+		"gf"
+	],
+	"weekName": "Week 7"
+}

@@ -1,0 +1,49 @@
+{
+	"storyName": "uneasy reunion",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "tutorial",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		132,
+		0,
+		255
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"stargazer",
+			"danny",
+			[
+				126,
+				157,
+				248
+			]
+		],
+		[
+			"aurora",
+			"danny",
+			[
+				126,
+				157,
+				248
+			]
+		],
+		[
+			"confractus",
+			"danny",
+			[
+				126,
+				157,
+				248
+			]
+		]
+	],
+	"weekCharacters": [
+		"cheesedanny",
+		"bf",
+		"gf"
+	],
+	"weekName": "Week 6"
+}

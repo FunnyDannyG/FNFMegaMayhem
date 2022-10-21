@@ -1,0 +1,49 @@
+{
+	"storyName": "Triple trouble",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "tutorial",
+	"freeplayColor": [
+		132,
+		0,
+		255
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"Viath",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"tbd",
+			"viath",
+			[
+				252,
+				218,
+				0
+			]
+		],
+		[
+			"tbd",
+			"viath",
+			[
+				252,
+				218,
+				0
+			]
+		],
+		[
+			"tbd",
+			"viath",
+			[
+				252,
+				218,
+				0
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week 5"
+}

@@ -799,7 +799,7 @@ class EditorPlayState extends MusicBeatState
 		var pixelShitPart1:String = "";
 		var pixelShitPart2:String = '';
 
-		if (PlayState.isPixelStage)
+		if (PlayState.SONG.player2.contains('sam'))
 		{
 			pixelShitPart1 = 'pixelUI/';
 			pixelShitPart2 = '-pixel';
@@ -828,7 +828,7 @@ class EditorPlayState extends MusicBeatState
 		comboSpr.velocity.x += FlxG.random.int(1, 10);
 		comboGroup.add(rating);
 
-		if (!PlayState.isPixelStage)
+		if (!PlayState.SONG.player2.contains('sam'))
 		{
 			rating.setGraphicSize(Std.int(rating.width * 0.7));
 			rating.antialiasing = ClientPrefs.globalAntialiasing;
@@ -864,7 +864,7 @@ class EditorPlayState extends MusicBeatState
 			numScore.x += ClientPrefs.comboOffset[2];
 			numScore.y -= ClientPrefs.comboOffset[3];
 
-			if (!PlayState.isPixelStage)
+			if (!PlayState.SONG.player2.contains('sam'))
 			{
 				numScore.antialiasing = ClientPrefs.globalAntialiasing;
 				numScore.setGraphicSize(Std.int(numScore.width * 0.5));

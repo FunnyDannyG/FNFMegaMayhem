@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-30,
+				-12
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "retryloop"
+		},
+		{
+			"offsets": [
+				-26,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "confirm"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "firstdeath"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/dannyfuckingdies-m",
+	"position": [
+		80,
+		312
+	],
+	"healthicon": "danny-pixel-m",
+	"flip_x": true,
+	"healthbar_colors": [
+		247,
+		126,
+		188
+	],
+	"camera_position": [
+		50,
+		-60
+	],
+	"sing_duration": 4,
+	"scale": 6
+}

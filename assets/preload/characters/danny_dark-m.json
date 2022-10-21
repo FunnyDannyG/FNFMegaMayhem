@@ -3,17 +3,6 @@
 		{
 			"loop": false,
 			"offsets": [
-				76,
-				8
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "BackwardsAnim",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
 				-46,
 				-12
 			],
@@ -34,6 +23,28 @@
 			"indices": []
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "",
+			"indices": [],
+			"name": ""
+		},
+		{
+			"loop": false,
+			"offsets": [
+				76,
+				8
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LeftAnim",
+			"indices": []
+		},
+		{
 			"loop": false,
 			"offsets": [
 				-79,
@@ -41,19 +52,8 @@
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "ForwardsAnim",
+			"name": "RightAnim",
 			"indices": []
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 48,
-			"anim": "",
-			"loop": false,
-			"name": ""
 		},
 		{
 			"offsets": [
@@ -61,14 +61,14 @@
 				0
 			],
 			"indices": [],
-			"fps": 48,
+			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "Idle"
+			"loop": true,
+			"name": "IdleAnim"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Mayhem_Mode/TOFH",
+	"image": "characters/danny-dark-m",
 	"position": [
 		-50,
 		200

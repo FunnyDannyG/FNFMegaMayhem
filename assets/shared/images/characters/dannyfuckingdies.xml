@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dannyfuckingdies.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="confirm0000" x="218" y="33" width="23" height="42" frameX="-31" frameY="0" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0001" x="218" y="33" width="23" height="42" frameX="-31" frameY="0" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0002" x="86" y="116" width="73" height="23" frameX="-6" frameY="-10" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0003" x="86" y="116" width="73" height="23" frameX="-6" frameY="-10" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0004" x="0" y="113" width="86" height="21" frameX="0" frameY="-11" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0005" x="0" y="113" width="86" height="21" frameX="0" frameY="-11" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0006" x="0" y="113" width="86" height="21" frameX="0" frameY="-11" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0007" x="159" y="116" width="73" height="23" frameX="-6" frameY="-10" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="confirm0008" x="159" y="116" width="73" height="23" frameX="-6" frameY="-10" frameWidth="86" frameHeight="42"/>
+	<SubTexture name="firstdeath0000" x="110" y="0" width="53" height="86" frameX="0" frameY="-2" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0001" x="110" y="0" width="53" height="86" frameX="0" frameY="-2" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0002" x="57" y="0" width="53" height="88" frameX="0" frameY="0" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0003" x="57" y="0" width="53" height="88" frameX="0" frameY="0" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0004" x="218" y="0" width="38" height="33" frameX="-10" frameY="-28" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0005" x="218" y="0" width="38" height="33" frameX="-10" frameY="-28" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0006" x="163" y="49" width="48" height="42" frameX="-3" frameY="-25" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0007" x="163" y="49" width="48" height="42" frameX="-3" frameY="-25" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0008" x="163" y="0" width="55" height="49" frameX="0" frameY="-20" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0009" x="163" y="0" width="55" height="49" frameX="0" frameY="-20" frameWidth="57" frameHeight="88"/>
+	<SubTexture name="firstdeath0010" x="0" y="0" width="57" height="88"/>
+	<SubTexture name="retryloop0000" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0001" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0002" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0003" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0004" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0005" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0006" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0007" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0008" x="0" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0009" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0010" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0011" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0012" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0013" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0014" x="146" y="91" width="73" height="25"/>
+	<SubTexture name="retryloop0015" x="146" y="91" width="73" height="25"/>
+	<SubTexture name="retryloop0016" x="146" y="91" width="73" height="25"/>
+	<SubTexture name="retryloop0017" x="146" y="91" width="73" height="25"/>
+	<SubTexture name="retryloop0018" x="146" y="91" width="73" height="25"/>
+	<SubTexture name="retryloop0019" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0020" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0021" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0022" x="73" y="88" width="73" height="25"/>
+	<SubTexture name="retryloop0023" x="73" y="88" width="73" height="25"/>
+</TextureAtlas>

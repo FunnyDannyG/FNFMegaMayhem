@@ -40,7 +40,7 @@ class StrumNote extends FlxSprite
 		skinThing[1] = pres;
 
 		var skin:String = 'NOTE_assets';
-		//if(PlayState.isPixelStage) skin = 'PIXEL_' + skin;
+		//if(PlayState.SONG.player2.contains('sam')) skin = 'PIXEL_' + skin;
 		if(PlayState.SONG.arrowSkin != null && PlayState.SONG.arrowSkin.length > 1) skin = PlayState.SONG.arrowSkin;
 		texture = skin; //Load texture and anims
 
@@ -52,7 +52,7 @@ class StrumNote extends FlxSprite
 		var lastAnim:String = null;
 		if(animation.curAnim != null) lastAnim = animation.curAnim.name;
 
-		if(PlayState.isPixelStage)
+		if(PlayState.SONG.player2.contains('sam'))
 			{
 				loadGraphic(Paths.image('pixelUI/' + texture));
 				width = width / 18;
@@ -116,7 +116,7 @@ class StrumNote extends FlxSprite
 			}
 		}
 		if(animation.curAnim != null){ //my bad i was upset
-			if(animation.curAnim.name == 'confirm' && !PlayState.isPixelStage) {
+			if(animation.curAnim.name == 'confirm' && !PlayState.SONG.player2.contains('sam')) {
 				centerOrigin();
 			}
 		}
@@ -137,7 +137,7 @@ class StrumNote extends FlxSprite
 			colorSwap.saturation = ClientPrefs.arrowHSV[Std.int(Note.keysShit.get(PlayState.mania).get('pixelAnimIndex')[noteData] % Note.ammo[PlayState.mania])][1] / 100;
 			colorSwap.brightness = ClientPrefs.arrowHSV[Std.int(Note.keysShit.get(PlayState.mania).get('pixelAnimIndex')[noteData] % Note.ammo[PlayState.mania])][2] / 100;
 
-			if(animation.curAnim.name == 'confirm' && !PlayState.isPixelStage) {
+			if(animation.curAnim.name == 'confirm' && !PlayState.SONG.player2.contains('sam')) {
 				centerOrigin();
 			}
 		}

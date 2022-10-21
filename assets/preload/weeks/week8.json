@@ -1,0 +1,49 @@
+{
+	"storyName": "Realm of the gods",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "tutorial",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		132,
+		0,
+		255
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"tim",
+			"pizzi",
+			[
+				44,
+				236,
+				188
+			]
+		],
+		[
+			"horton",
+			"pizzi",
+			[
+				44,
+				236,
+				188
+			]
+		],
+		[
+			"thdotu",
+			"pizzi",
+			[
+				44,
+				236,
+				188
+			]
+		]
+	],
+	"weekCharacters": [
+		"pizzi",
+		"bf",
+		"gf"
+	],
+	"weekName": "Week 8"
+}

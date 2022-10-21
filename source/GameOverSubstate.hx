@@ -30,11 +30,17 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	public static function resetVariables() {
 		if (PlayState.SONG.player1.contains('danny') && PlayState.SONG.player1.endsWith('-m') || PlayState.SONG.player1.endsWith('-super'))
-			characterName = 'playable-danny-m';
+			if (PlayState.SONG.player2.contains('sam'))
+				characterName = 'pixel-danny-dead=m'
+			else
+				characterName = 'playable-danny-m';
 
 		
 		else if (PlayState.SONG.player1.contains('danny'))
-			characterName = 'playable-danny';
+			if (PlayState.SONG.player2.contains('sam'))
+				characterName = 'pixel-danny-dead'
+			else	
+				characterName = 'playable-danny';
 
 		else
 			characterName = 'bf';
@@ -55,6 +61,13 @@ class GameOverSubstate extends MusicBeatSubstate
 
 			else if (PlayState.SONG.player2.contains('bf'))
 				loopSoundName = 'gameover_bf_edition';
+
+			else if (PlayState.SONG.player2.contains('sam'))
+					loopSoundName = 'gameover_sam_edition';
+
+
+			else if (PlayState.SONG.player2.contains('crackhead'))
+				loopSoundName = 'gameover_crackhead_edition';
 
 			else
 				loopSoundName = 'gameOver';
@@ -142,9 +155,6 @@ class GameOverSubstate extends MusicBeatSubstate
 						MusicBeatState.switchState(new AchievementsMenuState());
 
 					else if (PlayState.SONG.song.toLowerCase().endsWith('-m'))
-						MusicBeatState.switchState(new OutdatedState());
-
-					else if (PlayState.SONG.song.toLowerCase().endsWith('-x'))
 						MusicBeatState.switchState(new OutdatedState());
 
 					else

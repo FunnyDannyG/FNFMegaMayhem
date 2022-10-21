@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 19,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				-16
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-56,
+				3
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-58,
+				6
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-35,
+				-18
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-58,
+				6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "Lfuckup"
+		},
+		{
+			"offsets": [
+				-35,
+				-18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Dfuckup"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				-16
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Rfuckup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-56,
+				3
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Ufuckup",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/pixeldanny-m",
+	"position": [
+		80,
+		450
+	],
+	"healthicon": "danny-pixel-m",
+	"flip_x": false,
+	"healthbar_colors": [
+		247,
+		126,
+		188
+	],
+	"camera_position": [
+		90,
+		-70
+	],
+	"sing_duration": 6.1,
+	"scale": 5
+}

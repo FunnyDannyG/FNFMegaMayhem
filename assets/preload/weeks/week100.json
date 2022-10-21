@@ -1,4 +1,20 @@
 {
+	"storyName": "Your New Week",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
 	"songs": [
 		[
 			"chip-shortage",
@@ -19,6 +35,15 @@
 			]
 		],
 		[
+			"swoos",
+			"crackhead",
+			[
+				190,
+				227,
+				247
+			]
+		],
+		[
 			"warp-drive",
 			"jordi",
 			[
@@ -26,25 +51,34 @@
 				0,
 				255
 			]
+		],
+		[
+			"overflow",
+			"sam-pixel",
+			[
+				123,
+				0,
+				0
+			]
+		],
+		[
+			"tbd",
+			"viath",
+			[
+				252,
+				218,
+				0
+			]
+		],
+		[
+			"realm-of-the-gods",
+			"pizzi",
+			[
+				44,
+				236,
+				188
+			]
 		]
 	],
-
-
-	"hideFreeplay": false,
-	"weekBackground": "stage",
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
-	"storyName": "Your New Week",
-	"weekName": "Custom Week",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": true,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"weekName": "Custom Week"
 }
